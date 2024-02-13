@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "MMBD4148SE")(type "KiCad")(uri "${KIPRJMOD}/Libraries/MMBD4148SE/KiCADv6/2024-02-13_10-05-38.kicad_sym")(options "")(descr ""))
+)
