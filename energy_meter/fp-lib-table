@@ -9,4 +9,5 @@
   (lib (name "RPi Pico")(type "KiCad")(uri "${KIPRJMOD}/Libraries/RPi_Pico/RPi_Pico.pretty")(options "")(descr ""))
   (lib (name "SN74LV4T125PWR")(type "KiCad")(uri "${KIPRJMOD}/Libraries/SN74LV4T125PWR/footprints.pretty")(options "")(descr ""))
   (lib (name "T60404E4626X502")(type "KiCad")(uri "${KIPRJMOD}/Libraries/T60404E4626X502")(options "")(descr ""))
+  (lib (name "microUSB")(type "KiCad")(uri "${KIPRJMOD}/Libraries/microUSB")(options "")(descr ""))
 )

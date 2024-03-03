@@ -9,4 +9,5 @@
   (lib (name "ADP122AUJZ-3.3-R7")(type "KiCad")(uri "${KIPRJMOD}/Libraries/ADP122AUJZ-3.3-R7/ADP122AUJZ-3_3-R7.kicad_sym")(options "")(descr ""))
   (lib (name "24LC32A_SN")(type "KiCad")(uri "${KIPRJMOD}/Libraries/24LC32A_SN/24LC32A_SN.kicad_sym")(options "")(descr ""))
   (lib (name "RPi Pico")(type "KiCad")(uri "${KIPRJMOD}/Libraries/RPi_Pico/RPi_Pico.kicad_sym")(options "")(descr ""))
+  (lib (name "microUSB")(type "KiCad")(uri "${KIPRJMOD}/Libraries/microUSB/ZX62-AB-5PA_31_.kicad_sym")(options "")(descr ""))
 )
