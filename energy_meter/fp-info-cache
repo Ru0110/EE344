@@ -1,4 +1,4 @@
-23075472281386695
+23077181812260119
 24LC32A_SN
 SOIC127P600X175-8N
 8-Lead(SN) SOIC
@@ -41,6 +41,13 @@ audio belton reverb
 0
 7
 7
+BME280_beakout
+BME_breakout
+
+
+0
+6
+6
 Battery
 BatteryClip_Keystone_54_D16-19mm
 Battery clip for batteries with a diameter between 16-19 mm: https://www.keyelco.com/product.cfm/product_id/826
