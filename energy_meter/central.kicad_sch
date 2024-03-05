@@ -1,0 +1,16 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 25ad33ec-5d9a-4477-8036-cc48fdbde08b)
+
+  (paper "A4")
+
+  (title_block
+    (date "2024-03-05")
+    (rev "1")
+    (company "Group TUE-01, EE344 \\nAutodialing alarm system for temperature and humidity monitoring\\n\\n\\n\\n")
+  )
+
+  (lib_symbols
+  )
+
+)

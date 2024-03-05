@@ -458,7 +458,7 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "./",
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
     "spice_model_current_sheet_as_root": true,
@@ -473,8 +473,8 @@
       ""
     ],
     [
-      "a48287d8-0677-4683-8c2a-76c27f4b156f",
-      "central_unit"
+      "843f8458-337f-48a0-b7b3-418a085491cd",
+      "Central unit"
     ]
   ],
   "text_variables": {}
