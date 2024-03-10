@@ -8670,7 +8670,7 @@
     (property "Reference" "J10" (at 52.07 120.65 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "EARTH" (at 52.07 123.19 0)
+    (property "Value" "IB_in" (at 52.07 123.19 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" (at 49.53 120.65 0)
@@ -12674,23 +12674,6 @@
         (path "/911e1b35-25a5-4acc-afe7-a5e849f2ebf2"
           (reference "C40") (unit 1)
         )
-      )
-    )
-  )
-
-  (sheet (at 626.11 31.75) (size 452.12 334.01) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 843f8458-337f-48a0-b7b3-418a085491cd)
-    (property "Sheetname" "Central unit" (at 626.11 31.0384 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "central.kicad_sch" (at 626.11 366.3446 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (instances
-      (project "energy_meter"
-        (path "/911e1b35-25a5-4acc-afe7-a5e849f2ebf2" (page "2"))
       )
     )
   )
