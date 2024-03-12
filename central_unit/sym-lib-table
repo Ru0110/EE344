@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Rpi Pico")(type "KiCad")(uri "${KIPRJMOD}/Libraries/RPi_Pico/RPi_Pico.kicad_sym")(options "")(descr ""))
+  (lib (name "SIM800L breakout")(type "KiCad")(uri "${KIPRJMOD}/Libraries/SIM800L/sim800l-core.kicad_sym")(options "")(descr ""))
+)
