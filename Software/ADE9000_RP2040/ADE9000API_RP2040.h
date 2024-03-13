@@ -46,7 +46,7 @@
 /*Waveform buffer Settings*/
 #define ADE9000_WFB_CFG 0x1000			/*Neutral current samples enabled, Resampled data enabled*/
 										/*Burst all channels*/
-#define WFB_ELEMENT_ARRAY_SIZE 1  	/*size of buffer to read. 512 Max.Each element IA,VA...IN has max 512 points 
+#define WFB_ELEMENT_ARRAY_SIZE 4  	/*size of buffer to read. 512 Max.Each element IA,VA...IN has max 512 points 
 										/*[Size of waveform buffer/number of sample sets = 2048/4 = 512]*/
 										/*(Refer ADE9000 technical reference manual for more details)*/
 
