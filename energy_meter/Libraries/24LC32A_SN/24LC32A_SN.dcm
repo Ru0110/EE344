@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 24LC32A_SN
+D 32 K bit Serial EEPROM
+K
+F http://ww1.microchip.com/downloads/en/DeviceDoc/21713M.pdf
+$ENDCMP
+#
+#End Doc Library
