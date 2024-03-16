@@ -56,6 +56,7 @@ Output:-
 void ADE9000Class::SPI_Init(uint32_t SPI_speed , uint8_t chipSelect_Pin)
 {
 	SPI.begin();		//Initiate SPI port
+
 	SPI.beginTransaction(SPISettings(SPI_speed,MSBFIRST,SPI_MODE0));		//Setup SPI parameters
 	pinMode(chipSelect_Pin, OUTPUT);		//Set Chip select pin as output	
 	digitalWrite(chipSelect_Pin, HIGH);		//Set Chip select pin high 

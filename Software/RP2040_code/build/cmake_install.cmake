@@ -1,4 +1,4 @@
-# Install script for directory: /home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040
+# Install script for directory: /home/shob/Desktop/acads/EE344/Software/RP2040_code
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/pico-sdk/cmake_install.cmake")
+  include("/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/pico-sdk/cmake_install.cmake")
 
 endif()
 
@@ -51,5 +51,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

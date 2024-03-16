@@ -15,9 +15,9 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_devi
  /usr/include/newlib/sys/features.h \
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
- /home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/generated/pico_base/pico/version.h \
+ /home/shob/Desktop/acads/EE344/Software/RP2040_code/build/generated/pico_base/pico/version.h \
  /opt/pico/pico-sdk/src/common/pico_base/include/pico/config.h \
- /home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/generated/pico_base/pico/config_autogen.h \
+ /home/shob/Desktop/acads/EE344/Software/RP2040_code/build/generated/pico_base/pico/config_autogen.h \
  /opt/pico/pico-sdk/src/boards/include/boards/pico.h \
  /opt/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
  /opt/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \

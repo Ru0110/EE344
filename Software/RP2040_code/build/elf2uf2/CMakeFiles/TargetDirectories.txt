@@ -1,5 +1,5 @@
-/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/elf2uf2/CMakeFiles/elf2uf2.dir
-/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/elf2uf2/CMakeFiles/edit_cache.dir
-/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/elf2uf2/CMakeFiles/rebuild_cache.dir
-/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/elf2uf2/boot_uf2_headers/CMakeFiles/edit_cache.dir
-/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/elf2uf2/boot_uf2_headers/CMakeFiles/rebuild_cache.dir
+/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/elf2uf2/CMakeFiles/elf2uf2.dir
+/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/elf2uf2/CMakeFiles/edit_cache.dir
+/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/elf2uf2/CMakeFiles/rebuild_cache.dir
+/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/elf2uf2/boot_uf2_headers/CMakeFiles/edit_cache.dir
+/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/elf2uf2/boot_uf2_headers/CMakeFiles/rebuild_cache.dir

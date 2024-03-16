@@ -1,5 +1,5 @@
 CMakeFiles/sensing_unit.dir/main.c.obj: \
- /home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/main.c \
+ /home/shob/Desktop/acads/EE344/Software/RP2040_code/main.c \
  /usr/include/newlib/stdio.h /usr/include/newlib/_ansi.h \
  /usr/include/newlib/newlib.h /usr/include/newlib/_newlib_version.h \
  /usr/include/newlib/sys/config.h /usr/include/newlib/machine/ieeefp.h \
@@ -23,9 +23,9 @@ CMakeFiles/sensing_unit.dir/main.c.obj: \
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
  /usr/include/newlib/assert.h \
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
- /home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/generated/pico_base/pico/version.h \
+ /home/shob/Desktop/acads/EE344/Software/RP2040_code/build/generated/pico_base/pico/version.h \
  /opt/pico/pico-sdk/src/common/pico_base/include/pico/config.h \
- /home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/generated/pico_base/pico/config_autogen.h \
+ /home/shob/Desktop/acads/EE344/Software/RP2040_code/build/generated/pico_base/pico/config_autogen.h \
  /opt/pico/pico-sdk/src/boards/include/boards/pico.h \
  /opt/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
  /opt/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \
@@ -58,5 +58,5 @@ CMakeFiles/sensing_unit.dir/main.c.obj: \
  /opt/pico/pico-sdk/src/rp2_common/hardware_spi/include/hardware/spi.h \
  /opt/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/spi.h \
  /opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/spi.h \
- /home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/ADE9000API_RP2040.h \
- /home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/ADE9000RegMap.h
+ /home/shob/Desktop/acads/EE344/Software/RP2040_code/ADE9000API_RP2040.h \
+ /home/shob/Desktop/acads/EE344/Software/RP2040_code/ADE9000RegMap.h

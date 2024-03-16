@@ -124,6 +124,8 @@ int main() {
         printf("%d\n", vltgRMSRegs.VoltageRMSReg_A); //Print AVRMS register
         printf("AWATT:");        
         printf("%d\n", powerRegs.ActivePowerReg_A); //Print AWATT register
-
+        printf("VERSION: ");
+        printf("%d\n", SPI_Read_16(spi, CS_PIN, ADDR_VERSION));
+        printf("\n");
     }
 }

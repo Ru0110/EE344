@@ -8,17 +8,17 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_ASM
-  "/opt/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S" "/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj"
-  "/opt/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S" "/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj"
-  "/opt/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S" "/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj"
-  "/opt/pico/pico-sdk/src/rp2_common/pico_divider/divider.S" "/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj"
-  "/opt/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S" "/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj"
-  "/opt/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S" "/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj"
-  "/opt/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S" "/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj"
-  "/opt/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S" "/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj"
-  "/opt/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S" "/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj"
-  "/opt/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S" "/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
-  "/opt/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S" "/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj"
+  "/opt/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S" "/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj"
+  "/opt/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S" "/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj"
+  "/opt/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S" "/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj"
+  "/opt/pico/pico-sdk/src/rp2_common/pico_divider/divider.S" "/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj"
+  "/opt/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S" "/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj"
+  "/opt/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S" "/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj"
+  "/opt/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S" "/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj"
+  "/opt/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S" "/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj"
+  "/opt/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S" "/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj"
+  "/opt/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S" "/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
+  "/opt/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S" "/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj"
   )
 set(CMAKE_ASM_COMPILER_ID "GNU")
 
@@ -120,8 +120,8 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/ADE9000API_RP2040.c" "CMakeFiles/sensing_unit.dir/ADE9000API_RP2040.c.obj" "gcc" "CMakeFiles/sensing_unit.dir/ADE9000API_RP2040.c.obj.d"
-  "/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/main.c" "CMakeFiles/sensing_unit.dir/main.c.obj" "gcc" "CMakeFiles/sensing_unit.dir/main.c.obj.d"
+  "/home/shob/Desktop/acads/EE344/Software/RP2040_code/ADE9000API_RP2040.c" "CMakeFiles/sensing_unit.dir/ADE9000API_RP2040.c.obj" "gcc" "CMakeFiles/sensing_unit.dir/ADE9000API_RP2040.c.obj.d"
+  "/home/shob/Desktop/acads/EE344/Software/RP2040_code/main.c" "CMakeFiles/sensing_unit.dir/main.c.obj" "gcc" "CMakeFiles/sensing_unit.dir/main.c.obj.d"
   "/opt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c" "CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj" "gcc" "CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj.d"
   "/opt/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c" "CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj" "gcc" "CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj.d"
   "/opt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c" "CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj" "gcc" "CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj.d"

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040
+CMAKE_SOURCE_DIR = /home/shob/Desktop/acads/EE344/Software/RP2040_code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build
+CMAKE_BINARY_DIR = /home/shob/Desktop/acads/EE344/Software/RP2040_code/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/sensing_unit.dir/depend.make
@@ -70,37 +70,37 @@ include CMakeFiles/sensing_unit.dir/progress.make
 include CMakeFiles/sensing_unit.dir/flags.make
 
 CMakeFiles/sensing_unit.dir/ADE9000API_RP2040.c.obj: CMakeFiles/sensing_unit.dir/flags.make
-CMakeFiles/sensing_unit.dir/ADE9000API_RP2040.c.obj: /home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/ADE9000API_RP2040.c
+CMakeFiles/sensing_unit.dir/ADE9000API_RP2040.c.obj: /home/shob/Desktop/acads/EE344/Software/RP2040_code/ADE9000API_RP2040.c
 CMakeFiles/sensing_unit.dir/ADE9000API_RP2040.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/sensing_unit.dir/ADE9000API_RP2040.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/ADE9000API_RP2040.c.obj -MF CMakeFiles/sensing_unit.dir/ADE9000API_RP2040.c.obj.d -o CMakeFiles/sensing_unit.dir/ADE9000API_RP2040.c.obj -c /home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/ADE9000API_RP2040.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/sensing_unit.dir/ADE9000API_RP2040.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/ADE9000API_RP2040.c.obj -MF CMakeFiles/sensing_unit.dir/ADE9000API_RP2040.c.obj.d -o CMakeFiles/sensing_unit.dir/ADE9000API_RP2040.c.obj -c /home/shob/Desktop/acads/EE344/Software/RP2040_code/ADE9000API_RP2040.c
 
 CMakeFiles/sensing_unit.dir/ADE9000API_RP2040.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sensing_unit.dir/ADE9000API_RP2040.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/ADE9000API_RP2040.c > CMakeFiles/sensing_unit.dir/ADE9000API_RP2040.c.i
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shob/Desktop/acads/EE344/Software/RP2040_code/ADE9000API_RP2040.c > CMakeFiles/sensing_unit.dir/ADE9000API_RP2040.c.i
 
 CMakeFiles/sensing_unit.dir/ADE9000API_RP2040.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sensing_unit.dir/ADE9000API_RP2040.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/ADE9000API_RP2040.c -o CMakeFiles/sensing_unit.dir/ADE9000API_RP2040.c.s
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shob/Desktop/acads/EE344/Software/RP2040_code/ADE9000API_RP2040.c -o CMakeFiles/sensing_unit.dir/ADE9000API_RP2040.c.s
 
 CMakeFiles/sensing_unit.dir/main.c.obj: CMakeFiles/sensing_unit.dir/flags.make
-CMakeFiles/sensing_unit.dir/main.c.obj: /home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/main.c
+CMakeFiles/sensing_unit.dir/main.c.obj: /home/shob/Desktop/acads/EE344/Software/RP2040_code/main.c
 CMakeFiles/sensing_unit.dir/main.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/sensing_unit.dir/main.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/main.c.obj -MF CMakeFiles/sensing_unit.dir/main.c.obj.d -o CMakeFiles/sensing_unit.dir/main.c.obj -c /home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/sensing_unit.dir/main.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/main.c.obj -MF CMakeFiles/sensing_unit.dir/main.c.obj.d -o CMakeFiles/sensing_unit.dir/main.c.obj -c /home/shob/Desktop/acads/EE344/Software/RP2040_code/main.c
 
 CMakeFiles/sensing_unit.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sensing_unit.dir/main.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/main.c > CMakeFiles/sensing_unit.dir/main.c.i
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shob/Desktop/acads/EE344/Software/RP2040_code/main.c > CMakeFiles/sensing_unit.dir/main.c.i
 
 CMakeFiles/sensing_unit.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sensing_unit.dir/main.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/main.c -o CMakeFiles/sensing_unit.dir/main.c.s
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shob/Desktop/acads/EE344/Software/RP2040_code/main.c -o CMakeFiles/sensing_unit.dir/main.c.s
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: /opt/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj -c /opt/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i: cmake_force
@@ -114,7 +114,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj: /opt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj -c /opt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i: cmake_force
@@ -128,7 +128,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj: /opt/pico/pico-sdk/src/rp2_common/pico_platform/platform.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj -c /opt/pico/pico-sdk/src/rp2_common/pico_platform/platform.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i: cmake_force
@@ -142,7 +142,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_platform/platf
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj: /opt/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj -c /opt/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i: cmake_force
@@ -156,7 +156,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_claim/clai
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj: /opt/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj -c /opt/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i: cmake_force
@@ -170,7 +170,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_sync/sync.
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj: /opt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj -c /opt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i: cmake_force
@@ -183,7 +183,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj: /opt/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building ASM object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building ASM object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj   -c /opt/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.i: cmake_force
@@ -197,7 +197,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_irq/irq_ha
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_sync/sem.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_sync/sem.c.obj: /opt/pico/pico-sdk/src/common/pico_sync/sem.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_sync/sem.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_sync/sem.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_sync/sem.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_sync/sem.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_sync/sem.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_sync/sem.c.obj -c /opt/pico/pico-sdk/src/common/pico_sync/sem.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_sync/sem.c.i: cmake_force
@@ -211,7 +211,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_sync/sem.c.s: cmak
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj: /opt/pico/pico-sdk/src/common/pico_sync/lock_core.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj -c /opt/pico/pico-sdk/src/common/pico_sync/lock_core.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_sync/lock_core.c.i: cmake_force
@@ -225,7 +225,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_sync/mutex.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_sync/mutex.c.obj: /opt/pico/pico-sdk/src/common/pico_sync/mutex.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_sync/mutex.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_sync/mutex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_sync/mutex.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_sync/mutex.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_sync/mutex.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_sync/mutex.c.obj -c /opt/pico/pico-sdk/src/common/pico_sync/mutex.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_sync/mutex.c.i: cmake_force
@@ -239,7 +239,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_sync/mutex.c.s: cm
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj: /opt/pico/pico-sdk/src/common/pico_sync/critical_section.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj -c /opt/pico/pico-sdk/src/common/pico_sync/critical_section.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_sync/critical_section.c.i: cmake_force
@@ -253,7 +253,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_sync/critical_sect
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_time/time.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_time/time.c.obj: /opt/pico/pico-sdk/src/common/pico_time/time.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_time/time.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_time/time.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_time/time.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_time/time.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_time/time.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_time/time.c.obj -c /opt/pico/pico-sdk/src/common/pico_time/time.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_time/time.c.i: cmake_force
@@ -267,7 +267,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_time/time.c.s: cma
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj: /opt/pico/pico-sdk/src/common/pico_time/timeout_helper.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj -c /opt/pico/pico-sdk/src/common/pico_time/timeout_helper.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i: cmake_force
@@ -281,7 +281,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_time/timeout_helpe
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj: /opt/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj -c /opt/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i: cmake_force
@@ -295,7 +295,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_timer/time
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_util/datetime.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_util/datetime.c.obj: /opt/pico/pico-sdk/src/common/pico_util/datetime.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_util/datetime.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_util/datetime.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_util/datetime.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_util/datetime.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_util/datetime.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_util/datetime.c.obj -c /opt/pico/pico-sdk/src/common/pico_util/datetime.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_util/datetime.c.i: cmake_force
@@ -309,7 +309,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_util/datetime.c.s:
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_util/pheap.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_util/pheap.c.obj: /opt/pico/pico-sdk/src/common/pico_util/pheap.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_util/pheap.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_util/pheap.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_util/pheap.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_util/pheap.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_util/pheap.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_util/pheap.c.obj -c /opt/pico/pico-sdk/src/common/pico_util/pheap.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_util/pheap.c.i: cmake_force
@@ -323,7 +323,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_util/pheap.c.s: cm
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_util/queue.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_util/queue.c.obj: /opt/pico/pico-sdk/src/common/pico_util/queue.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_util/queue.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_util/queue.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_util/queue.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_util/queue.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_util/queue.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_util/queue.c.obj -c /opt/pico/pico-sdk/src/common/pico_util/queue.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_util/queue.c.i: cmake_force
@@ -337,7 +337,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/common/pico_util/queue.c.s: cm
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj: /opt/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj -c /opt/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i: cmake_force
@@ -351,7 +351,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_uart/uart.
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj: /opt/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj -c /opt/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i: cmake_force
@@ -365,7 +365,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_clocks/clo
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj: /opt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj -c /opt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i: cmake_force
@@ -379,7 +379,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj: /opt/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj -c /opt/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i: cmake_force
@@ -393,7 +393,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj: /opt/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj -c /opt/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i: cmake_force
@@ -407,7 +407,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_watchdog/w
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj: /opt/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj -c /opt/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i: cmake_force
@@ -420,7 +420,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj: /opt/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building ASM object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building ASM object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj   -c /opt/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.i: cmake_force
@@ -434,7 +434,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_divider/di
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj: /opt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj -c /opt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i: cmake_force
@@ -448,7 +448,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_runtime/runtim
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj: /opt/pico/pico-sdk/src/rp2_common/pico_printf/printf.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj -c /opt/pico/pico-sdk/src/rp2_common/pico_printf/printf.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i: cmake_force
@@ -461,7 +461,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_printf/printf.
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj: /opt/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building ASM object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building ASM object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj   -c /opt/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.i: cmake_force
@@ -475,7 +475,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_op
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj: /opt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj -c /opt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i: cmake_force
@@ -488,7 +488,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootro
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj: /opt/pico/pico-sdk/src/rp2_common/pico_divider/divider.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building ASM object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building ASM object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj   -c /opt/pico/pico-sdk/src/rp2_common/pico_divider/divider.S
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.i: cmake_force
@@ -501,7 +501,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_divider/divide
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj: /opt/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building ASM object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building ASM object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj   -c /opt/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.i: cmake_force
@@ -515,7 +515,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_double/double_
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj: /opt/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj -c /opt/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i: cmake_force
@@ -529,7 +529,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_double/double_
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj: /opt/pico/pico-sdk/src/rp2_common/pico_double/double_math.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj -c /opt/pico/pico-sdk/src/rp2_common/pico_double/double_math.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i: cmake_force
@@ -542,7 +542,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_double/double_
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj: /opt/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building ASM object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building ASM object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj   -c /opt/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.i: cmake_force
@@ -555,7 +555,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_double/double_
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj: /opt/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building ASM object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building ASM object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj   -c /opt/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.i: cmake_force
@@ -568,7 +568,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj: /opt/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building ASM object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building ASM object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj   -c /opt/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.i: cmake_force
@@ -582,7 +582,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_float/float_ae
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj: /opt/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj -c /opt/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i: cmake_force
@@ -596,7 +596,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_float/float_in
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj: /opt/pico/pico-sdk/src/rp2_common/pico_float/float_math.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj -c /opt/pico/pico-sdk/src/rp2_common/pico_float/float_math.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i: cmake_force
@@ -609,7 +609,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_float/float_ma
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj: /opt/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building ASM object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building ASM object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj   -c /opt/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.i: cmake_force
@@ -623,7 +623,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_float/float_v1
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj: /opt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj -c /opt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i: cmake_force
@@ -636,7 +636,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_ma
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj: /opt/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building ASM object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building ASM object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj   -c /opt/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.i: cmake_force
@@ -649,7 +649,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_op
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj: /opt/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building ASM object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building ASM object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj   -c /opt/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.i: cmake_force
@@ -663,7 +663,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_standard_link/
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj: /opt/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
 	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj -c /opt/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i: cmake_force
@@ -677,7 +677,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_standard_link/
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj: /opt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj -c /opt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i: cmake_force
@@ -691,7 +691,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_standard_link/
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj: /opt/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj -c /opt/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i: cmake_force
@@ -705,7 +705,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj: /opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj -c /opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i: cmake_force
@@ -719,7 +719,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/rese
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj: /opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj -c /opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i: cmake_force
@@ -733,7 +733,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdi
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj: /opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj -c /opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i: cmake_force
@@ -747,7 +747,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdi
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj: /opt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj -c /opt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i: cmake_force
@@ -761,7 +761,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_unique_id/uniq
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj: /opt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj -c /opt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i: cmake_force
@@ -775,7 +775,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_flash/flas
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj: /opt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj -c /opt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i: cmake_force
@@ -789,7 +789,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/portable/raspberry
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj: /opt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj -c /opt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i: cmake_force
@@ -803,7 +803,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/portable/raspberry
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj: /opt/pico/pico-sdk/lib/tinyusb/src/device/usbd.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj -c /opt/pico/pico-sdk/lib/tinyusb/src/device/usbd.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i: cmake_force
@@ -817,7 +817,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s: c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj: /opt/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj -c /opt/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i: cmake_force
@@ -831,7 +831,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/device/usbd_contro
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj: /opt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj -c /opt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i: cmake_force
@@ -845,7 +845,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj: /opt/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj -c /opt/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i: cmake_force
@@ -859,7 +859,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_devi
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj: /opt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj -c /opt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i: cmake_force
@@ -873,7 +873,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_devi
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj: /opt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj -c /opt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i: cmake_force
@@ -887,7 +887,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_d
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj: /opt/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj -c /opt/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i: cmake_force
@@ -901,7 +901,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_devi
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj: /opt/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj -c /opt/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i: cmake_force
@@ -915,7 +915,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_de
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj: /opt/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj -c /opt/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i: cmake_force
@@ -929,7 +929,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_devi
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj: /opt/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj -c /opt/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i: cmake_force
@@ -943,7 +943,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndi
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj: /opt/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj -c /opt/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i: cmake_force
@@ -957,7 +957,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_devi
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj: /opt/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj -c /opt/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i: cmake_force
@@ -971,7 +971,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtm
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj: /opt/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj -c /opt/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i: cmake_force
@@ -985,7 +985,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendo
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj: /opt/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj -c /opt/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i: cmake_force
@@ -999,7 +999,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/class/video/video_
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj: /opt/pico/pico-sdk/lib/tinyusb/src/tusb.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj -c /opt/pico/pico-sdk/lib/tinyusb/src/tusb.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/tusb.c.i: cmake_force
@@ -1013,7 +1013,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/tusb.c.s: cmake_fo
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj: /opt/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj -c /opt/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i: cmake_force
@@ -1027,7 +1027,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj: /opt/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj -c /opt/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i: cmake_force
@@ -1041,7 +1041,7 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj: CMakeFiles/sensing_unit.dir/flags.make
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj: /opt/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj: CMakeFiles/sensing_unit.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj -MF CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj.d -o CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj -c /opt/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.i: cmake_force
@@ -1203,13 +1203,13 @@ sensing_unit.elf: CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/h
 sensing_unit.elf: CMakeFiles/sensing_unit.dir/build.make
 sensing_unit.elf: pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
 sensing_unit.elf: CMakeFiles/sensing_unit.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Linking CXX executable sensing_unit.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Linking CXX executable sensing_unit.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sensing_unit.dir/link.txt --verbose=$(VERBOSE)
-	/usr/bin/arm-none-eabi-objcopy -Oihex /home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/sensing_unit.elf sensing_unit.hex
-	/usr/bin/arm-none-eabi-objcopy -Obinary /home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/sensing_unit.elf sensing_unit.bin
-	/usr/bin/arm-none-eabi-objdump -h /home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/sensing_unit.elf > sensing_unit.dis
-	/usr/bin/arm-none-eabi-objdump -d /home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/sensing_unit.elf >> sensing_unit.dis
-	elf2uf2/elf2uf2 /home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/sensing_unit.elf sensing_unit.uf2
+	/usr/bin/arm-none-eabi-objcopy -Oihex /home/shob/Desktop/acads/EE344/Software/RP2040_code/build/sensing_unit.elf sensing_unit.hex
+	/usr/bin/arm-none-eabi-objcopy -Obinary /home/shob/Desktop/acads/EE344/Software/RP2040_code/build/sensing_unit.elf sensing_unit.bin
+	/usr/bin/arm-none-eabi-objdump -h /home/shob/Desktop/acads/EE344/Software/RP2040_code/build/sensing_unit.elf > sensing_unit.dis
+	/usr/bin/arm-none-eabi-objdump -d /home/shob/Desktop/acads/EE344/Software/RP2040_code/build/sensing_unit.elf >> sensing_unit.dis
+	elf2uf2/elf2uf2 /home/shob/Desktop/acads/EE344/Software/RP2040_code/build/sensing_unit.elf sensing_unit.uf2
 
 # Rule to build all files generated by this target.
 CMakeFiles/sensing_unit.dir/build: sensing_unit.elf
@@ -1220,6 +1220,6 @@ CMakeFiles/sensing_unit.dir/clean:
 .PHONY : CMakeFiles/sensing_unit.dir/clean
 
 CMakeFiles/sensing_unit.dir/depend:
-	cd /home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040 /home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040 /home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build /home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build /home/shob/Desktop/acads/EE344/Software/ADE9000_RP2040/build/CMakeFiles/sensing_unit.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/shob/Desktop/acads/EE344/Software/RP2040_code/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/shob/Desktop/acads/EE344/Software/RP2040_code /home/shob/Desktop/acads/EE344/Software/RP2040_code /home/shob/Desktop/acads/EE344/Software/RP2040_code/build /home/shob/Desktop/acads/EE344/Software/RP2040_code/build /home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles/sensing_unit.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/sensing_unit.dir/depend
 
