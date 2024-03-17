@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ADUM6404ARIZ
+D Analog Devices ADUM6404ARIZ PCB SMT 4-channel Digital Isolator, 5000 Vrms, 16-Pin SOIC
+K
+F https://www.analog.com/media/en/technical-documentation/data-sheets/ADuM6400_6401_6402_6403_6404.pdf
+$ENDCMP
+#
+#End Doc Library

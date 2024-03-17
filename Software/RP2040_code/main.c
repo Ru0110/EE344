@@ -45,21 +45,17 @@ int main() {
     spi_init(spi, SPI_SPEED);
 
     // Set SPI format. We set it to transfer 16 bits every transfer
-    spi_set_format( spi0,   // SPI instance
+    spi_set_format( spi,   // SPI instance
                     16,     // Number of bits per transfer
-                    1,      // Polarity (CPOL)
-                    1,      // Phase (CPHA)
+                    SPI_CPOL_1,      // Polarity (CPOL)
+                    SPI_CPHA_1,      // Phase (CPHA)
                     SPI_MSB_FIRST);
 
     // Initialize SPI pins
     gpio_set_function(SCK_PIN, GPIO_FUNC_SPI);
     gpio_set_function(MOSI_PIN, GPIO_FUNC_SPI);
     gpio_set_function(MISO_PIN, GPIO_FUNC_SPI);
-
-    // Initialize CS pin high
-    gpio_init(CS_PIN);
-    gpio_set_dir(CS_PIN, GPIO_OUT);
-    gpio_put(CS_PIN, 1);
+    gpio_set_function(CS_PIN, GPIO_FUNC_SPI);
 
     // Initialize other pins 
     gpio_init(PM1_PIN);
@@ -79,12 +75,12 @@ int main() {
     gpio_put(RESETADE_PIN, 1); // reset is active low
 
     // Workaround: perform throw-away read to make SCK idle high. idk, just copied
-    SPI_Read_16(spi, CS_PIN, ADDR_VERSION);
+    SPI_Read_16(spi, ADDR_VERSION);
 
     /* PERFORM ADE9000 CONFIGURATIONS HERE. LIKE THE INIT ADE9000 FUNCTION IDK */
     resetADE(RESETADE_PIN);
     sleep_ms(1000);
-    SetupADE9000(spi, CS_PIN);
+    SetupADE9000(spi);
     
     // Wait before taking measurements
     sleep_ms(2000);
@@ -100,11 +96,11 @@ int main() {
         uint32_t temp;
         /*Read and Print Resampled data*/
         /*Start the Resampling engine to acquire 4 cycles of resampled data*/
-        SPI_Write_16(spi, CS_PIN, ADDR_WFB_CFG,0x1000);
-        SPI_Write_16(spi, CS_PIN, ADDR_WFB_CFG,0x1010);
+        SPI_Write_16(spi, ADDR_WFB_CFG,0x1000);
+        SPI_Write_16(spi, ADDR_WFB_CFG,0x1010);
         sleep_ms(100); //approximate time to fill the waveform buffer with 4 line cycles  
-        SPI_Burst_Read_Resampled_Wfb(spi, CS_PIN, 0x800,WFB_ELEMENT_ARRAY_SIZE,&resampledData);   // Burst read function
-        
+        SPI_Burst_Read_Resampled_Wfb(spi, 0x800,WFB_ELEMENT_ARRAY_SIZE,&resampledData);   // Burst read function
+        printf("==========Waveform buffer============\n");
         for(temp=0;temp<WFB_ELEMENT_ARRAY_SIZE;temp++)
             {
             printf("VA: ");
@@ -117,15 +113,20 @@ int main() {
             printf("%d\n", resampledData.IB_Resampled[temp]);
             printf("\n");
         } 
+        printf("====================================\n");
 
-        ReadVoltageRMSRegs(spi, CS_PIN, &vltgRMSRegs);    //Template to read Power registers from ADE9000 and store data in Arduino MCU
-        ReadActivePowerRegs(spi, CS_PIN, &powerRegs);
+        //Template to read Power registers from ADE9000 and store data in Arduino MCU
+        ReadActivePowerRegs(spi, &powerRegs);
+        ReadCurrentRMSRegs(spi, &curntRMSRegs);
+        ReadVoltageRMSRegs(spi, &vltgRMSRegs);
+        printf("VA_rms: %d\n", vltgRMSRegs.VoltageRMSReg_A);
         printf("AVRMS:");        
         printf("%d\n", vltgRMSRegs.VoltageRMSReg_A); //Print AVRMS register
         printf("AWATT:");        
         printf("%d\n", powerRegs.ActivePowerReg_A); //Print AWATT register
         printf("VERSION: ");
-        printf("%d\n", SPI_Read_16(spi, CS_PIN, ADDR_VERSION));
+        printf("%d\n", SPI_Read_16(spi, ADDR_VERSION));
         printf("\n");
     }
+    return 0;
 }

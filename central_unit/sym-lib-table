@@ -2,4 +2,6 @@
   (version 7)
   (lib (name "Rpi Pico")(type "KiCad")(uri "${KIPRJMOD}/Libraries/RPi_Pico/RPi_Pico.kicad_sym")(options "")(descr ""))
   (lib (name "SIM800L breakout")(type "KiCad")(uri "${KIPRJMOD}/Libraries/SIM800L/sim800l-core.kicad_sym")(options "")(descr ""))
+  (lib (name "Charleslabs_Parts")(type "KiCad")(uri "${KIPRJMOD}/Libraries/extras/Charleslabs_Parts.kicad_sym")(options "")(descr ""))
+  (lib (name "ZX62-AB-5PA_31_")(type "KiCad")(uri "${KIPRJMOD}/Libraries/microUSB/ZX62-AB-5PA_31_.kicad_sym")(options "")(descr ""))
 )

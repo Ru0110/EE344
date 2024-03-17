@@ -254,33 +254,27 @@ typedef	struct TemperatureRegnValue {
 /*--------------------------------------------NEW CODE BEGINS HERE----------------------------*/
 
 void resetADE(const uint reset_pin);
-void SetupADE9000(spi_inst_t *spi, 
-                const uint cs); 
+void SetupADE9000(spi_inst_t *spi); 
 
 /* SPI FUNCTION DECLARATIONS */
 
 //void SPI_Init(uint32_t SPI_speed , uint8_t chipSelect_Pin); // idk if this is needed 	
 
-void SPI_Write_16(spi_inst_t *spi, 
-                const uint cs, 
+void SPI_Write_16(spi_inst_t *spi,
                 const uint16_t reg, 
                 const uint16_t data);
 
-void SPI_Write_32(spi_inst_t *spi, 
-                const uint cs, 
+void SPI_Write_32(spi_inst_t *spi,
                 const uint16_t reg, 
                 const uint32_t data);		
 
 uint16_t SPI_Read_16(spi_inst_t *spi,
-                const uint cs,
                 const uint16_t reg);
 
 uint32_t SPI_Read_32(spi_inst_t *spi,
-                const uint cs,
                 const uint16_t reg);
 
 void SPI_Burst_Read_Resampled_Wfb(spi_inst_t *spi,
-                                const uint cs,
                                 uint16_t Address, 
                                 uint16_t Read_Element_Length, 
                                 ResampledWfbData *ResampledData);
@@ -288,83 +282,63 @@ void SPI_Burst_Read_Resampled_Wfb(spi_inst_t *spi,
 /*ADE9000 Calculated Parameter Read Functions*/
 
 void ReadActivePowerRegs(spi_inst_t *spi,
-                        const uint cs,
                         ActivePowerRegs *Data);
 
 void ReadReactivePowerRegs(spi_inst_t *spi,
-                        const uint cs,
                         ReactivePowerRegs *Data);
 
 void ReadApparentPowerRegs(spi_inst_t *spi,
-                        const uint cs,
                         ApparentPowerRegs *Data);
 
 void ReadVoltageRMSRegs(spi_inst_t *spi,
-                        const uint cs,
                         VoltageRMSRegs *Data);
 
 void ReadCurrentRMSRegs(spi_inst_t *spi,
-                        const uint cs,
                         CurrentRMSRegs *Data);
 
 void ReadFundActivePowerRegs(spi_inst_t *spi,
-                        const uint cs,
                         FundActivePowerRegs *Data);
 
 void ReadFundReactivePowerRegs(spi_inst_t *spi,
-                        const uint cs,
                         FundReactivePowerRegs *Data);
 
 void ReadFundApparentPowerRegs(spi_inst_t *spi,
-                        const uint cs,
                         FundApparentPowerRegs *Data);
 
 void ReadFundVoltageRMSRegs(spi_inst_t *spi,
-                        const uint cs,
                         FundVoltageRMSRegs *Data);
 
 void ReadFundCurrentRMSRegs(spi_inst_t *spi,
-                        const uint cs,
                         FundCurrentRMSRegs *Data);
 
 void ReadHalfVoltageRMSRegs(spi_inst_t *spi,
-                        const uint cs,
                         HalfVoltageRMSRegs *Data);
 
 void ReadHalfCurrentRMSRegs(spi_inst_t *spi,
-                        const uint cs,
                         HalfCurrentRMSRegs *Data);
 
 void ReadTen12VoltageRMSRegs(spi_inst_t *spi,
-                        const uint cs,
                         Ten12VoltageRMSRegs *Data);
 
 void ReadTen12CurrentRMSRegs(spi_inst_t *spi,
-                        const uint cs,
                         Ten12CurrentRMSRegs *Data);
 
 void ReadVoltageTHDRegsnValues(spi_inst_t *spi,
-                        const uint cs,
                         VoltageTHDRegs *Data);
 
 void ReadCurrentTHDRegsnValues(spi_inst_t *spi,
-                        const uint cs,
                         CurrentTHDRegs *Data);
 
 void ReadPowerFactorRegsnValues(spi_inst_t *spi,
-                        const uint cs,
                         PowerFactorRegs *Data);
 
 void ReadPeriodRegsnValues(spi_inst_t *spi,
-                        const uint cs,
                         PeriodRegs *Data);
 
 void ReadAngleRegsnValues(spi_inst_t *spi,
-                        const uint cs,
                         AngleRegs *Data);		
 
 void ReadTempRegnValue(spi_inst_t *spi,
-                        const uint cs,
                         TemperatureRegnValue *Data);
 
 

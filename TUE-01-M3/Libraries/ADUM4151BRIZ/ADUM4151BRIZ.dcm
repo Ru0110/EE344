@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ADUM4151BRIZ
+D Digital Isolators 7 Ch Isolator f or SPI Interface
+K
+F http://www.analog.com/media/en/technical-documentation/data-sheets/ADuM4151_4152_4153.pdf
+$ENDCMP
+#
+#End Doc Library
