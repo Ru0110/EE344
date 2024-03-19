@@ -322,4 +322,3 @@ class ADE9000Class
 	
 
 #endif
-

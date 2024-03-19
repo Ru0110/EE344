@@ -8,7 +8,7 @@ ADE9000Class ade9000;
 #define SPI_SPEED 5000000     //SPI Speed
 #define CS_PIN 17 //8-->Arduino Zero. 16-->ESP8266 
 #define ADE9000_RESET_PIN 5 //Reset Pin on HW
-#define PM_1 12              //PM1 Pin: 4-->Arduino Zero. 15-->ESP8266 
+#define PM_1 14              //PM1 Pin: 4-->Arduino Zero. 15-->ESP8266 
 
 /*Structure decleration */
 struct ActivePowerRegs powerRegs;     // Declare powerRegs of type ActivePowerRegs to store Active Power Register data
@@ -26,9 +26,7 @@ void setup()
 {
   Serial.begin(115200);
   pinMode(PM_1, OUTPUT);    //Set PM1 pin as output 
-  pinMode(21, OUTPUT);
   digitalWrite(PM_1, LOW);   //Set PM1 select pin low for PSM0 mode
-  digitalWrite(21, LOW);   
   pinMode(ADE9000_RESET_PIN, OUTPUT);
   digitalWrite(ADE9000_RESET_PIN, HIGH); 
   void resetADE9000(); 
@@ -41,8 +39,8 @@ void setup()
 }
 
 void loop() {
-  delay(5000);
-  readRegisterData();
+  delay(35);
+  //readRegisterData();
   readResampledData();
   
 }
@@ -75,41 +73,24 @@ void readResampledData()
   
   for(temp=0;temp<WFB_ELEMENT_ARRAY_SIZE;temp++)
     {
-      Serial.print("VA: ");
-      Serial.println(resampledData.VA_Resampled[temp],HEX);
-      Serial.print("IA: ");
-      Serial.println(resampledData.IA_Resampled[temp],HEX);
-      Serial.print("VB: ");
-      Serial.println(resampledData.VB_Resampled[temp],HEX);
+      //Serial.print("VA: ");
+      //Serial.println((float)resampledData.VA_Resampled[temp]*801.0/(float)ADE9000_RESAMPLED_FULL_SCALE_CODES);
+      //Serial.print("IA: ");
+      Serial.println((float)resampledData.IA_Resampled[temp]*2000/((float)ADE9000_RESAMPLED_FULL_SCALE_CODES)*5.1);
+      /*Serial.print("VB: ");
+      Serial.println((float)resampledData.VB_Resampled[temp]*801.0/(float)ADE9000_RESAMPLED_FULL_SCALE_CODES);
       Serial.print("IB: ");
-      Serial.println(resampledData.IB_Resampled[temp],HEX);
-      Serial.print("VC: ");
-      Serial.println(resampledData.VC_Resampled[temp],HEX);
-      Serial.print("IC: ");
-      Serial.println(resampledData.IC_Resampled[temp],HEX);
-      Serial.print("IN: ");
-      Serial.println(resampledData.IN_Resampled[temp],HEX);
+      Serial.println((float)resampledData.IB_Resampled[temp]*801.0/(float)ADE9000_RESAMPLED_FULL_SCALE_CODES);*/
    } 
-
-
-   Serial.print("MOSI: ");
-    Serial.println(MOSI);
-    Serial.print("MISO: ");
-    Serial.println(MISO);
-    Serial.print(" SCK: ");
-    Serial.println(SCK);
-    Serial.print("  SS: ");
-    Serial.println(SS);
     
-   Serial.print("Device ID: ");
-   Serial.println(ade9000.SPI_Read_16(ADDR_VERSION),HEX);
+   /*Serial.print("Device ID: ");
+   Serial.println(ade9000.SPI_Read_16(ADDR_VERSION));
    Serial.print("RUN Register: ");
   Serial.println(ade9000.SPI_Read_16(ADDR_RUN),HEX);
   Serial.println();
   Serial.print("Zero crossing threshold: ");
   Serial.println(ade9000.SPI_Read_16(ADDR_ZXTHRSH),HEX);
-  Serial.println();
-  digitalWrite(21, HIGH);
+  Serial.println();*/
 
 }
 

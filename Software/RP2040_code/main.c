@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
 #include "hardware/spi.h"
+#include "hardware/gpio.h"
 #include "ADE9000API_RP2040.h"
 
 /* SPI DEFINITIONS */
@@ -25,6 +26,45 @@ ActivePowerRegs powerRegs;     // Declare powerRegs of type ActivePowerRegs to s
 CurrentRMSRegs curntRMSRegs;   //Current RMS
 VoltageRMSRegs vltgRMSRegs;    //Voltage RMS
 VoltageTHDRegs voltageTHDRegsnValues; //Voltage THD
+
+static char event_str[128];
+
+void gpio_event_string(char *buf, uint32_t events);
+
+void gpio_callback(uint gpio, uint32_t events) {
+    // Put the GPIO event(s) that just happened into event_str
+    // so we can print it
+    gpio_event_string(event_str, events);
+    printf("GPIO %d %s\n", gpio, event_str);
+}
+
+static const char *gpio_irq_str[] = {
+        "LEVEL_LOW",  // 0x1
+        "LEVEL_HIGH", // 0x2
+        "EDGE_FALL",  // 0x4
+        "EDGE_RISE"   // 0x8
+};
+
+void gpio_event_string(char *buf, uint32_t events) {
+    for (uint i = 0; i < 4; i++) {
+        uint mask = (1 << i);
+        if (events & mask) {
+            // Copy this event string into the user string
+            const char *event_str = gpio_irq_str[i];
+            while (*event_str != '\0') {
+                *buf++ = *event_str++;
+            }
+            events &= ~mask;
+
+            // If more events add ", "
+            if (events) {
+                *buf++ = ',';
+                *buf++ = ' ';
+            }
+        }
+    }
+    *buf++ = '\0';
+}
 
 int main() {
 
@@ -85,6 +125,10 @@ int main() {
     // Wait before taking measurements
     sleep_ms(2000);
 
+    // init gpio to monitor some pins
+    // gpio_set_irq_enabled_with_callback(16, GPIO_IRQ_EDGE_RISE | GPIO_IRQ_EDGE_FALL, true, &gpio_callback);  
+
+    uint32_t count = 0;
     // Loop forever
     while (true) {
         // toggle led
@@ -106,11 +150,11 @@ int main() {
             printf("VA: ");
             printf("%d\n", resampledData.VA_Resampled[temp]);
             printf("IA: ");
-            printf("%d\n", resampledData.IA_Resampled[temp]);
+            printf("%d\n", (float)resampledData.IA_Resampled[temp]/(float)ADE9000_RESAMPLED_FULL_SCALE_CODES);
             printf("VB: ");
-            printf("%d\n", resampledData.VB_Resampled[temp]);
+            printf("%d\n", (float)resampledData.VB_Resampled[temp]/(float)ADE9000_RESAMPLED_FULL_SCALE_CODES);
             printf("IB: ");
-            printf("%d\n", resampledData.IB_Resampled[temp]);
+            printf("%d\n", (float)resampledData.IB_Resampled[temp]/(float)ADE9000_RESAMPLED_FULL_SCALE_CODES);
             printf("\n");
         } 
         printf("====================================\n");
@@ -119,13 +163,14 @@ int main() {
         ReadActivePowerRegs(spi, &powerRegs);
         ReadCurrentRMSRegs(spi, &curntRMSRegs);
         ReadVoltageRMSRegs(spi, &vltgRMSRegs);
-        printf("VA_rms: %d\n", vltgRMSRegs.VoltageRMSReg_A);
-        printf("AVRMS:");        
-        printf("%d\n", vltgRMSRegs.VoltageRMSReg_A); //Print AVRMS register
-        printf("AWATT:");        
-        printf("%d\n", powerRegs.ActivePowerReg_A); //Print AWATT register
-        printf("VERSION: ");
-        printf("%d\n", SPI_Read_16(spi, ADDR_VERSION));
+        printf("VA_rms: %f\n", (float)vltgRMSRegs.VoltageRMSReg_A*(801.0)/(float)ADE9000_RMS_FULL_SCALE_CODES);
+        //printf("VB_rms: %f\n", 0.707*(float)vltgRMSRegs.VoltageRMSReg_B/(float)ADE9000_RMS_FULL_SCALE_CODES);
+        //printf("IA_rms: %f\n", 0.707*(float)curntRMSRegs.CurrentRMSReg_A/(float)ADE9000_RMS_FULL_SCALE_CODES);
+        //printf("IB_rms: %f\n", 0.707*(float)curntRMSRegs.CurrentRMSReg_B/(float)ADE9000_RMS_FULL_SCALE_CODES);
+        printf("Power in A channel (WATT): %f\n", (float)powerRegs.ActivePowerReg_A/(float)ADE9000_WATT_FULL_SCALE_CODES);
+        printf("Power in B channel (WATT): %f\n", (float)powerRegs.ActivePowerReg_B/(float)ADE9000_WATT_FULL_SCALE_CODES);        
+        printf("VERSION: %d\n", (uint16_t)SPI_Read_16(spi, ADDR_VERSION));
+        printf("MEASURE COUNT: %d\n", count++);
         printf("\n");
     }
     return 0;

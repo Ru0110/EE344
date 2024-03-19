@@ -11,4 +11,5 @@
   (lib (name "ADP122AUJZ-3.3-R7")(type "KiCad")(uri "${KIPRJMOD}/Libraries/ADP122AUJZ-3.3-R7")(options "")(descr ""))
   (lib (name "ADE9000")(type "KiCad")(uri "${KIPRJMOD}/Libraries/ade9000/footprints.pretty")(options "")(descr ""))
   (lib (name "24LC32A_SN")(type "KiCad")(uri "${KIPRJMOD}/Libraries/24LC32A_SN")(options "")(descr ""))
+  (lib (name "bitmaps")(type "KiCad")(uri "${KIPRJMOD}/Libraries/bitmaps")(options "")(descr ""))
 )
