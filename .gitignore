@@ -1,0 +1,8 @@
+energy_meter/energy_meter-backups
+central_unit/central_unit-backups
+energy_meter/*.gbr
+energy_meter/*.gbrjob
+energy_meter/*.drl
+central_unit/*.gbr
+central_unit/*.gbrjob
+central_unit/*.drl

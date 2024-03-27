@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP ADP122AUJZ-3.3-R7
-D Linear Voltage Regulators 5.5V Input 300mA Low Quiescent Crnt CMOS
-K
-F http://www.analog.com/media/en/technical-documentation/data-sheets/ADP122_123.pdf
-$ENDCMP
-#
-#End Doc Library
