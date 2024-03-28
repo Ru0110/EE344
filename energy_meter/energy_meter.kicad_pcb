@@ -1248,7 +1248,7 @@
     (pad "4" thru_hole circle (at 0 10.16 90) (size 1.665 1.665) (drill 1.11) (layers "*.Cu" "*.Mask")
       (net 107 "Net-(J9-Pin_2)") (pinfunction "4") (pintype "passive") (tstamp c810ca67-dc6f-4fa4-a467-fbc15d825b24))
     (model "T60404-E4626-X502.stp"
-      (offset (xyz 13.97000006 -5.079999847 16.91999982))
+      (offset (xyz 13.47 -5.08 16.92))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
     )

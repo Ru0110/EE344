@@ -16,6 +16,8 @@ struct CurrentRMSRegs curntRMSRegs;   //Current RMS
 struct VoltageRMSRegs vltgRMSRegs;    //Voltage RMS
 struct VoltageTHDRegs voltageTHDRegsnValues; //Voltage THD
 struct ResampledWfbData resampledData; // Resampled Data
+struct PeriodRegs freqData;
+struct PowerFactorRegs pfData;
 
 /*Function Decleration*/
 void readRegisterData(void);
@@ -39,8 +41,8 @@ void setup()
 }
 
 void loop() {
-  delay(35);
-  //readRegisterData();
+  delay(2000);
+  readRegisterData();
   readResampledData();
   
 }
@@ -48,16 +50,27 @@ void loop() {
 void readRegisterData()
 {
  /*Read and Print Specific Register using ADE9000 SPI Library */
-  Serial.print("AIRMS: "); 
-  Serial.println(ade9000.SPI_Read_32(ADDR_AIRMS),HEX); // AIRMS
+  //Serial.print("AIRMS: "); 
+  //Serial.println(ade9000.SPI_Read_32(ADDR_AIRMS),HEX); // AIRMS
 
  /*Read and Print RMS & WATT Register using ADE9000 Read Library*/
   ade9000.ReadVoltageRMSRegs(&vltgRMSRegs);    //Template to read Power registers from ADE9000 and store data in Arduino MCU
   ade9000.ReadActivePowerRegs(&powerRegs);
-  Serial.print("AVRMS:");        
-  Serial.println(vltgRMSRegs.VoltageRMSReg_A); //Print AVRMS register
+  ade9000.ReadPeriodRegsnValues(&freqData);
+  ade9000.ReadCurrentRMSRegs(&curntRMSRegs);
+  ade9000.ReadPowerFactorRegsnValues(&pfData);
+  Serial.print("AVRMS: ");        
+  //Serial.println(float(vltgRMSRegs.VoltageRMSReg_A*801)*0.707/float(ADE9000_RMS_FULL_SCALE_CODES)); //Print AVRMS register
+  Serial.println(double(vltgRMSRegs.VoltageRMSReg_A)*801.0*0.707/double(ADE9000_RMS_FULL_SCALE_CODES));
+  Serial.print("AIRMS: ");
+  Serial.println(double(curntRMSRegs.CurrentRMSReg_A*2000)*0.707/(2.0*5.1*double(ADE9000_RMS_FULL_SCALE_CODES)));
+  Serial.print("freq_A: ");        
+  Serial.println(freqData.FrequencyValue_A); //Print AVRMS register
+  Serial.print("Power factor A: ");
+  Serial.println(pfData.PowerFactorValue_A);
   Serial.print("AWATT:");        
-  Serial.println(powerRegs.ActivePowerReg_A); //Print AWATT register
+  Serial.println((double(powerRegs.ActivePowerReg_A)*78327.0)/double(ADE9000_WATT_FULL_SCALE_CODES)); //Print AWATT register. How did 78327.0 come ?
+  Serial.println("");
 }
 
 void readResampledData()
@@ -76,21 +89,20 @@ void readResampledData()
       //Serial.print("VA: ");
       //Serial.println((float)resampledData.VA_Resampled[temp]*801.0/(float)ADE9000_RESAMPLED_FULL_SCALE_CODES);
       //Serial.print("IA: ");
-      Serial.println((float)resampledData.IA_Resampled[temp]*2000/((float)ADE9000_RESAMPLED_FULL_SCALE_CODES)*5.1);
+      //Serial.println((float)resampledData.IA_Resampled[temp]*2000/((float)ADE9000_RESAMPLED_FULL_SCALE_CODES)*5.1);
       /*Serial.print("VB: ");
       Serial.println((float)resampledData.VB_Resampled[temp]*801.0/(float)ADE9000_RESAMPLED_FULL_SCALE_CODES);
       Serial.print("IB: ");
       Serial.println((float)resampledData.IB_Resampled[temp]*801.0/(float)ADE9000_RESAMPLED_FULL_SCALE_CODES);*/
    } 
     
-   /*Serial.print("Device ID: ");
+   Serial.print("Device ID: ");
    Serial.println(ade9000.SPI_Read_16(ADDR_VERSION));
    Serial.print("RUN Register: ");
   Serial.println(ade9000.SPI_Read_16(ADDR_RUN),HEX);
-  Serial.println();
   Serial.print("Zero crossing threshold: ");
   Serial.println(ade9000.SPI_Read_16(ADDR_ZXTHRSH),HEX);
-  Serial.println();*/
+  Serial.println();
 
 }
 
