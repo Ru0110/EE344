@@ -14,7 +14,7 @@ CMakeFiles/sensing_unit.dir/ADE9000API_RP2040.c.obj: \
  /home/shob/Desktop/acads/EE344/Software/RP2040_code/build/generated/pico_base/pico/version.h \
  /opt/pico/pico-sdk/src/common/pico_base/include/pico/config.h \
  /home/shob/Desktop/acads/EE344/Software/RP2040_code/build/generated/pico_base/pico/config_autogen.h \
- /opt/pico/pico-sdk/src/boards/include/boards/pico.h \
+ /opt/pico/pico-sdk/src/boards/include/boards/pico_w.h \
  /opt/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
  /opt/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \
  /opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
@@ -49,4 +49,15 @@ CMakeFiles/sensing_unit.dir/ADE9000API_RP2040.c.obj: \
  /opt/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/spi.h \
  /opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/spi.h \
  /home/shob/Desktop/acads/EE344/Software/RP2040_code/ADE9000API_RP2040.h \
- /home/shob/Desktop/acads/EE344/Software/RP2040_code/ADE9000RegMap.h
+ /home/shob/Desktop/acads/EE344/Software/RP2040_code/ADE9000RegMap.h \
+ /usr/include/newlib/stdio.h \
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
+ /usr/include/newlib/sys/reent.h /usr/include/newlib/_ansi.h \
+ /usr/include/newlib/sys/_types.h /usr/include/newlib/machine/_types.h \
+ /usr/include/newlib/sys/lock.h /usr/include/newlib/sys/types.h \
+ /usr/include/newlib/sys/_stdint.h /usr/include/newlib/machine/endian.h \
+ /usr/include/newlib/machine/_endian.h /usr/include/newlib/sys/select.h \
+ /usr/include/newlib/sys/_sigset.h /usr/include/newlib/sys/_timeval.h \
+ /usr/include/newlib/sys/timespec.h /usr/include/newlib/sys/_timespec.h \
+ /usr/include/newlib/sys/_pthreadtypes.h /usr/include/newlib/sys/sched.h \
+ /usr/include/newlib/machine/types.h /usr/include/newlib/sys/stdio.h

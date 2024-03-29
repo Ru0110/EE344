@@ -35,6 +35,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/pico/pico-sdk/src/CMakeLists.txt"
   "/opt/pico/pico-sdk/src/board_setup.cmake"
   "/opt/pico/pico-sdk/src/boards/generic_board.cmake"
+  "/opt/pico/pico-sdk/src/boards/pico_w.cmake"
   "/opt/pico/pico-sdk/src/common/CMakeLists.txt"
   "/opt/pico/pico-sdk/src/common/boot_picoboot/CMakeLists.txt"
   "/opt/pico/pico-sdk/src/common/boot_uf2/CMakeLists.txt"

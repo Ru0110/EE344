@@ -254,24 +254,28 @@ typedef	struct TemperatureRegnValue {
 /*--------------------------------------------NEW CODE BEGINS HERE----------------------------*/
 
 void resetADE(const uint reset_pin);
-void SetupADE9000(spi_inst_t *spi); 
+void SetupADE9000(spi_inst_t *spi, const uint cs_pin); 
 
 /* SPI FUNCTION DECLARATIONS */
 
 //void SPI_Init(uint32_t SPI_speed , uint8_t chipSelect_Pin); // idk if this is needed 	
 
 void SPI_Write_16(spi_inst_t *spi,
+                const uint cs_pin, 
                 const uint16_t reg, 
                 const uint16_t data);
 
 void SPI_Write_32(spi_inst_t *spi,
+                const uint cs_pin, 
                 const uint16_t reg, 
                 const uint32_t data);		
 
 uint16_t SPI_Read_16(spi_inst_t *spi,
+                const uint cs_pin, 
                 const uint16_t reg);
 
 uint32_t SPI_Read_32(spi_inst_t *spi,
+                const uint cs_pin, 
                 const uint16_t reg);
 
 void SPI_Burst_Read_Resampled_Wfb(spi_inst_t *spi,
@@ -282,63 +286,83 @@ void SPI_Burst_Read_Resampled_Wfb(spi_inst_t *spi,
 /*ADE9000 Calculated Parameter Read Functions*/
 
 void ReadActivePowerRegs(spi_inst_t *spi,
+                        const uint cs_pin, 
                         ActivePowerRegs *Data);
 
 void ReadReactivePowerRegs(spi_inst_t *spi,
+                        const uint cs_pin, 
                         ReactivePowerRegs *Data);
 
 void ReadApparentPowerRegs(spi_inst_t *spi,
+                        const uint cs_pin, 
                         ApparentPowerRegs *Data);
 
 void ReadVoltageRMSRegs(spi_inst_t *spi,
+                        const uint cs_pin, 
                         VoltageRMSRegs *Data);
 
 void ReadCurrentRMSRegs(spi_inst_t *spi,
+                        const uint cs_pin, 
                         CurrentRMSRegs *Data);
 
 void ReadFundActivePowerRegs(spi_inst_t *spi,
+                        const uint cs_pin, 
                         FundActivePowerRegs *Data);
 
 void ReadFundReactivePowerRegs(spi_inst_t *spi,
+                        const uint cs_pin, 
                         FundReactivePowerRegs *Data);
 
 void ReadFundApparentPowerRegs(spi_inst_t *spi,
+                        const uint cs_pin, 
                         FundApparentPowerRegs *Data);
 
 void ReadFundVoltageRMSRegs(spi_inst_t *spi,
+                        const uint cs_pin, 
                         FundVoltageRMSRegs *Data);
 
 void ReadFundCurrentRMSRegs(spi_inst_t *spi,
+                        const uint cs_pin, 
                         FundCurrentRMSRegs *Data);
 
 void ReadHalfVoltageRMSRegs(spi_inst_t *spi,
+                        const uint cs_pin, 
                         HalfVoltageRMSRegs *Data);
 
 void ReadHalfCurrentRMSRegs(spi_inst_t *spi,
+                        const uint cs_pin, 
                         HalfCurrentRMSRegs *Data);
 
 void ReadTen12VoltageRMSRegs(spi_inst_t *spi,
+                        const uint cs_pin, 
                         Ten12VoltageRMSRegs *Data);
 
 void ReadTen12CurrentRMSRegs(spi_inst_t *spi,
+                        const uint cs_pin, 
                         Ten12CurrentRMSRegs *Data);
 
 void ReadVoltageTHDRegsnValues(spi_inst_t *spi,
+                        const uint cs_pin, 
                         VoltageTHDRegs *Data);
 
 void ReadCurrentTHDRegsnValues(spi_inst_t *spi,
+                        const uint cs_pin, 
                         CurrentTHDRegs *Data);
 
 void ReadPowerFactorRegsnValues(spi_inst_t *spi,
+                        const uint cs_pin, 
                         PowerFactorRegs *Data);
 
 void ReadPeriodRegsnValues(spi_inst_t *spi,
+                        const uint cs_pin, 
                         PeriodRegs *Data);
 
 void ReadAngleRegsnValues(spi_inst_t *spi,
+                        const uint cs_pin, 
                         AngleRegs *Data);		
 
 void ReadTempRegnValue(spi_inst_t *spi,
+                        const uint cs_pin,
                         TemperatureRegnValue *Data);
 
 

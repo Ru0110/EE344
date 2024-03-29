@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
+#include "pico/cyw43_arch.h"
 #include "hardware/spi.h"
 #include "hardware/gpio.h"
 #include "ADE9000API_RP2040.h"
+#include "lwipopts.h"
 
 /* SPI DEFINITIONS */
 #define SPI_SPEED 5000000  // 5 MHz
@@ -27,56 +29,14 @@ CurrentRMSRegs curntRMSRegs;   //Current RMS
 VoltageRMSRegs vltgRMSRegs;    //Voltage RMS
 VoltageTHDRegs voltageTHDRegsnValues; //Voltage THD
 
-static char event_str[128];
-
-void gpio_event_string(char *buf, uint32_t events);
-
-void gpio_callback(uint gpio, uint32_t events) {
-    // Put the GPIO event(s) that just happened into event_str
-    // so we can print it
-    gpio_event_string(event_str, events);
-    printf("GPIO %d %s\n", gpio, event_str);
-}
-
-static const char *gpio_irq_str[] = {
-        "LEVEL_LOW",  // 0x1
-        "LEVEL_HIGH", // 0x2
-        "EDGE_FALL",  // 0x4
-        "EDGE_RISE"   // 0x8
-};
-
-void gpio_event_string(char *buf, uint32_t events) {
-    for (uint i = 0; i < 4; i++) {
-        uint mask = (1 << i);
-        if (events & mask) {
-            // Copy this event string into the user string
-            const char *event_str = gpio_irq_str[i];
-            while (*event_str != '\0') {
-                *buf++ = *event_str++;
-            }
-            events &= ~mask;
-
-            // If more events add ", "
-            if (events) {
-                *buf++ = ',';
-                *buf++ = ' ';
-            }
-        }
-    }
-    *buf++ = '\0';
-}
-
 int main() {
 
     // Initialize chosen serial port (USB for now)
     stdio_init_all();
-
-    // define led pin
-    const uint led_pin = 25;
-
-    // Initialize LED pin
-    gpio_init(led_pin);
-    gpio_set_dir(led_pin, GPIO_OUT);
+    if (cyw43_arch_init()) {
+        printf("Wifi init failed");
+        return -1;
+    }
 
     // Ports
     spi_inst_t *spi = spi0;
@@ -84,18 +44,17 @@ int main() {
     // Initialize SPI port at specified speed
     spi_init(spi, SPI_SPEED);
 
-    // Set SPI format. We set it to transfer 16 bits every transfer
+    // Set SPI format. We set it to transfer 16 bits every transfer. SPI MODE 0
     spi_set_format( spi,   // SPI instance
                     16,     // Number of bits per transfer
-                    SPI_CPOL_1,      // Polarity (CPOL)
-                    SPI_CPHA_1,      // Phase (CPHA)
+                    SPI_CPOL_0,      // Polarity (CPOL)
+                    SPI_CPHA_0,      // Phase (CPHA)
                     SPI_MSB_FIRST);
 
     // Initialize SPI pins
     gpio_set_function(SCK_PIN, GPIO_FUNC_SPI);
     gpio_set_function(MOSI_PIN, GPIO_FUNC_SPI);
     gpio_set_function(MISO_PIN, GPIO_FUNC_SPI);
-    gpio_set_function(CS_PIN, GPIO_FUNC_SPI);
 
     // Initialize other pins 
     gpio_init(PM1_PIN);
@@ -104,43 +63,51 @@ int main() {
     gpio_init(ZX_PIN);
     gpio_init(DREADY_PIN);
     gpio_init(RESETADE_PIN);
+    gpio_init(CS_PIN);
     gpio_set_dir(PM1_PIN, GPIO_OUT);
     gpio_set_dir(RESETADE_PIN, GPIO_OUT);
     gpio_set_dir(IRQ0_PIN, GPIO_IN);
     gpio_set_dir(IRQ1_PIN, GPIO_IN);
     gpio_set_dir(ZX_PIN, GPIO_IN);
     gpio_set_dir(DREADY_PIN, GPIO_IN);
+    gpio_set_dir(CS_PIN, GPIO_OUT);
 
+    gpio_put(CS_PIN, 1);
     gpio_put(PM1_PIN, 0); // start in normal power mode
     gpio_put(RESETADE_PIN, 1); // reset is active low
-
-    // Workaround: perform throw-away read to make SCK idle high. idk, just copied
-    SPI_Read_16(spi, ADDR_VERSION);
 
     /* PERFORM ADE9000 CONFIGURATIONS HERE. LIKE THE INIT ADE9000 FUNCTION IDK */
     resetADE(RESETADE_PIN);
     sleep_ms(1000);
-    SetupADE9000(spi);
+    SetupADE9000(spi, CS_PIN);
     
     // Wait before taking measurements
-    sleep_ms(2000);
+    sleep_ms(3000);
 
-    // init gpio to monitor some pins
-    // gpio_set_irq_enabled_with_callback(16, GPIO_IRQ_EDGE_RISE | GPIO_IRQ_EDGE_FALL, true, &gpio_callback);  
+    // Workaround: perform throw-away read to make SCK idle high. idk, just copied
+    SPI_Read_16(spi, CS_PIN, ADDR_VERSION);
+
+    // print DEBUG info for the spi bus
+    //printf("Baudrate: %d\n", spi_get_baudrate(spi));
+    //printf("Instance number: %d\n", spi_get_index(spi));
+    //printf("SPI device writeable? %s\n", spi_is_writable(spi) ? "True" : "False");
+    //printf("SPI device readable? %s\n", spi_is_readable(spi)? "True": "False");
+    //printf("ADDRESS: %d\n", SPI_Read_16(spi, CS_PIN, ADDR_VERSION));
+    //printf("\n");
 
     uint32_t count = 0;
     // Loop forever
     while (true) {
         // toggle led
-        gpio_put(led_pin, 1);
+        gpio_put(CYW43_WL_GPIO_LED_PIN, 1);
         sleep_ms(500);
-        gpio_put(led_pin, 0);
+        gpio_put(CYW43_WL_GPIO_LED_PIN, 0);
         sleep_ms(500);
 
-        uint32_t temp;
+        //uint32_t temp;
         /*Read and Print Resampled data*/
         /*Start the Resampling engine to acquire 4 cycles of resampled data*/
-        SPI_Write_16(spi, ADDR_WFB_CFG,0x1000);
+        /*SPI_Write_16(spi, ADDR_WFB_CFG,0x1000);
         SPI_Write_16(spi, ADDR_WFB_CFG,0x1010);
         sleep_ms(100); //approximate time to fill the waveform buffer with 4 line cycles  
         SPI_Burst_Read_Resampled_Wfb(spi, 0x800,WFB_ELEMENT_ARRAY_SIZE,&resampledData);   // Burst read function
@@ -158,18 +125,18 @@ int main() {
             printf("\n");
         } 
         printf("====================================\n");
+        */
 
         //Template to read Power registers from ADE9000 and store data in Arduino MCU
-        ReadActivePowerRegs(spi, &powerRegs);
-        ReadCurrentRMSRegs(spi, &curntRMSRegs);
-        ReadVoltageRMSRegs(spi, &vltgRMSRegs);
-        printf("VA_rms: %f\n", (float)vltgRMSRegs.VoltageRMSReg_A*(801.0)/(float)ADE9000_RMS_FULL_SCALE_CODES);
-        //printf("VB_rms: %f\n", 0.707*(float)vltgRMSRegs.VoltageRMSReg_B/(float)ADE9000_RMS_FULL_SCALE_CODES);
-        //printf("IA_rms: %f\n", 0.707*(float)curntRMSRegs.CurrentRMSReg_A/(float)ADE9000_RMS_FULL_SCALE_CODES);
-        //printf("IB_rms: %f\n", 0.707*(float)curntRMSRegs.CurrentRMSReg_B/(float)ADE9000_RMS_FULL_SCALE_CODES);
-        printf("Power in A channel (WATT): %f\n", (float)powerRegs.ActivePowerReg_A/(float)ADE9000_WATT_FULL_SCALE_CODES);
-        printf("Power in B channel (WATT): %f\n", (float)powerRegs.ActivePowerReg_B/(float)ADE9000_WATT_FULL_SCALE_CODES);        
-        printf("VERSION: %d\n", (uint16_t)SPI_Read_16(spi, ADDR_VERSION));
+        ReadActivePowerRegs(spi, CS_PIN, &powerRegs);
+        ReadCurrentRMSRegs(spi, CS_PIN, &curntRMSRegs);
+        ReadVoltageRMSRegs(spi, CS_PIN, &vltgRMSRegs);
+        printf("VA_rms: %f\n", (double)(vltgRMSRegs.VoltageRMSReg_A*801)*0.707/(double)ADE9000_RMS_FULL_SCALE_CODES);
+        printf("IA_rms: %f\n", 0.707*(double)(curntRMSRegs.CurrentRMSReg_A*2000)/(10.2*(double)(ADE9000_RMS_FULL_SCALE_CODES)));
+        printf("Power in A channel (WATT): %f\n", (double)(powerRegs.ActivePowerReg_A*78327)/(double)ADE9000_WATT_FULL_SCALE_CODES);
+        printf("VERSION (should be 254): %d\n", SPI_Read_16(spi, CS_PIN, ADDR_VERSION));
+        printf("RUN REGISTER: %d\n", SPI_Read_16(spi, CS_PIN, ADDR_RUN));
+        printf("ZERO CROSSING THRESHOLD: %d\n", SPI_Read_16(spi, CS_PIN, ADDR_ZXTHRSH));
         printf("MEASURE COUNT: %d\n", count++);
         printf("\n");
     }

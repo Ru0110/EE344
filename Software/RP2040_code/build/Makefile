@@ -255,6 +255,2142 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/main.c.s
 .PHONY : main.c.s
 
+opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.obj: opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj
+.PHONY : opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj
+.PHONY : opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj
+
+opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.i: opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.i
+.PHONY : opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.i
+.PHONY : opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.i
+
+opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.s: opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.s
+.PHONY : opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.s
+.PHONY : opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.s
+
+opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.obj: opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
+.PHONY : opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
+.PHONY : opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
+
+opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.i: opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.i
+.PHONY : opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.i
+.PHONY : opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.i
+
+opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.s: opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.s
+.PHONY : opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.s
+.PHONY : opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.s
+
+opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.obj: opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj
+.PHONY : opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj
+.PHONY : opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj
+
+opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.i: opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.i
+.PHONY : opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.i
+.PHONY : opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.i
+
+opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.s: opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.s
+.PHONY : opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.s
+.PHONY : opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.s
+
+opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.obj: opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj
+.PHONY : opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj
+.PHONY : opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj
+
+opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.i: opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.i
+.PHONY : opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.i
+.PHONY : opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.i
+
+opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.s: opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.s
+.PHONY : opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.s
+.PHONY : opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/api/api_lib.obj: opt/pico/pico-sdk/lib/lwip/src/api/api_lib.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/api_lib.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/api/api_lib.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/api/api_lib.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/api_lib.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/api/api_lib.i: opt/pico/pico-sdk/lib/lwip/src/api/api_lib.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/api_lib.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/api/api_lib.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/api/api_lib.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/api_lib.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/api/api_lib.s: opt/pico/pico-sdk/lib/lwip/src/api/api_lib.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/api_lib.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/api/api_lib.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/api/api_lib.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/api_lib.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/api/api_msg.obj: opt/pico/pico-sdk/lib/lwip/src/api/api_msg.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/api_msg.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/api/api_msg.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/api/api_msg.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/api_msg.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/api/api_msg.i: opt/pico/pico-sdk/lib/lwip/src/api/api_msg.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/api_msg.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/api/api_msg.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/api/api_msg.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/api_msg.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/api/api_msg.s: opt/pico/pico-sdk/lib/lwip/src/api/api_msg.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/api_msg.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/api/api_msg.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/api/api_msg.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/api_msg.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/api/err.obj: opt/pico/pico-sdk/lib/lwip/src/api/err.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/err.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/api/err.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/api/err.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/err.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/api/err.i: opt/pico/pico-sdk/lib/lwip/src/api/err.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/err.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/api/err.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/api/err.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/err.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/api/err.s: opt/pico/pico-sdk/lib/lwip/src/api/err.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/err.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/api/err.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/api/err.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/err.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/api/if_api.obj: opt/pico/pico-sdk/lib/lwip/src/api/if_api.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/if_api.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/api/if_api.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/api/if_api.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/if_api.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/api/if_api.i: opt/pico/pico-sdk/lib/lwip/src/api/if_api.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/if_api.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/api/if_api.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/api/if_api.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/if_api.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/api/if_api.s: opt/pico/pico-sdk/lib/lwip/src/api/if_api.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/if_api.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/api/if_api.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/api/if_api.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/if_api.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/api/netbuf.obj: opt/pico/pico-sdk/lib/lwip/src/api/netbuf.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/netbuf.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/api/netbuf.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/api/netbuf.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/netbuf.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/api/netbuf.i: opt/pico/pico-sdk/lib/lwip/src/api/netbuf.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/netbuf.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/api/netbuf.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/api/netbuf.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/netbuf.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/api/netbuf.s: opt/pico/pico-sdk/lib/lwip/src/api/netbuf.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/netbuf.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/api/netbuf.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/api/netbuf.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/netbuf.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/api/netdb.obj: opt/pico/pico-sdk/lib/lwip/src/api/netdb.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/netdb.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/api/netdb.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/api/netdb.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/netdb.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/api/netdb.i: opt/pico/pico-sdk/lib/lwip/src/api/netdb.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/netdb.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/api/netdb.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/api/netdb.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/netdb.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/api/netdb.s: opt/pico/pico-sdk/lib/lwip/src/api/netdb.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/netdb.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/api/netdb.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/api/netdb.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/netdb.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/api/netifapi.obj: opt/pico/pico-sdk/lib/lwip/src/api/netifapi.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/netifapi.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/api/netifapi.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/api/netifapi.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/netifapi.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/api/netifapi.i: opt/pico/pico-sdk/lib/lwip/src/api/netifapi.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/netifapi.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/api/netifapi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/api/netifapi.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/netifapi.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/api/netifapi.s: opt/pico/pico-sdk/lib/lwip/src/api/netifapi.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/netifapi.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/api/netifapi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/api/netifapi.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/netifapi.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/api/sockets.obj: opt/pico/pico-sdk/lib/lwip/src/api/sockets.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/sockets.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/api/sockets.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/api/sockets.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/sockets.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/api/sockets.i: opt/pico/pico-sdk/lib/lwip/src/api/sockets.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/sockets.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/api/sockets.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/api/sockets.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/sockets.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/api/sockets.s: opt/pico/pico-sdk/lib/lwip/src/api/sockets.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/sockets.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/api/sockets.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/api/sockets.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/sockets.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/api/tcpip.obj: opt/pico/pico-sdk/lib/lwip/src/api/tcpip.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/tcpip.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/api/tcpip.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/api/tcpip.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/tcpip.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/api/tcpip.i: opt/pico/pico-sdk/lib/lwip/src/api/tcpip.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/tcpip.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/api/tcpip.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/api/tcpip.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/tcpip.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/api/tcpip.s: opt/pico/pico-sdk/lib/lwip/src/api/tcpip.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/tcpip.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/api/tcpip.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/api/tcpip.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/api/tcpip.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/core/altcp.obj: opt/pico/pico-sdk/lib/lwip/src/core/altcp.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/altcp.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/core/altcp.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/altcp.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/altcp.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/core/altcp.i: opt/pico/pico-sdk/lib/lwip/src/core/altcp.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/altcp.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/core/altcp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/altcp.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/altcp.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/core/altcp.s: opt/pico/pico-sdk/lib/lwip/src/core/altcp.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/altcp.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/core/altcp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/altcp.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/altcp.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.obj: opt/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.i: opt/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.s: opt/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.obj: opt/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.i: opt/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.s: opt/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/core/def.obj: opt/pico/pico-sdk/lib/lwip/src/core/def.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/def.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/core/def.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/def.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/def.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/core/def.i: opt/pico/pico-sdk/lib/lwip/src/core/def.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/def.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/core/def.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/def.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/def.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/core/def.s: opt/pico/pico-sdk/lib/lwip/src/core/def.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/def.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/core/def.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/def.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/def.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/core/dns.obj: opt/pico/pico-sdk/lib/lwip/src/core/dns.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/dns.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/core/dns.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/dns.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/dns.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/core/dns.i: opt/pico/pico-sdk/lib/lwip/src/core/dns.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/dns.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/core/dns.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/dns.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/dns.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/core/dns.s: opt/pico/pico-sdk/lib/lwip/src/core/dns.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/dns.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/core/dns.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/dns.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/dns.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/core/inet_chksum.obj: opt/pico/pico-sdk/lib/lwip/src/core/inet_chksum.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/inet_chksum.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/core/inet_chksum.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/inet_chksum.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/inet_chksum.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/core/inet_chksum.i: opt/pico/pico-sdk/lib/lwip/src/core/inet_chksum.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/inet_chksum.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/core/inet_chksum.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/inet_chksum.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/inet_chksum.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/core/inet_chksum.s: opt/pico/pico-sdk/lib/lwip/src/core/inet_chksum.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/inet_chksum.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/core/inet_chksum.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/inet_chksum.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/inet_chksum.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/core/init.obj: opt/pico/pico-sdk/lib/lwip/src/core/init.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/init.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/core/init.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/init.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/init.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/core/init.i: opt/pico/pico-sdk/lib/lwip/src/core/init.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/init.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/core/init.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/init.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/init.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/core/init.s: opt/pico/pico-sdk/lib/lwip/src/core/init.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/init.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/core/init.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/init.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/init.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/core/ip.obj: opt/pico/pico-sdk/lib/lwip/src/core/ip.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ip.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/core/ip.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ip.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ip.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/core/ip.i: opt/pico/pico-sdk/lib/lwip/src/core/ip.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ip.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/core/ip.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ip.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ip.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/core/ip.s: opt/pico/pico-sdk/lib/lwip/src/core/ip.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ip.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/core/ip.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ip.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ip.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.obj: opt/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.i: opt/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.s: opt/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.obj: opt/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.i: opt/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.s: opt/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.obj: opt/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.i: opt/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.s: opt/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.obj: opt/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.i: opt/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.s: opt/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.obj: opt/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.i: opt/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.s: opt/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.obj: opt/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.i: opt/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.s: opt/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.obj: opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.i: opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.s: opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.obj: opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.i: opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.s: opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.obj: opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.i: opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.s: opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.obj: opt/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.i: opt/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.s: opt/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.obj: opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.i: opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.s: opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.obj: opt/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.i: opt/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.s: opt/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.obj: opt/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.i: opt/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.s: opt/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.obj: opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.i: opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.s: opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.obj: opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.i: opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.s: opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.obj: opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.i: opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.s: opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.obj: opt/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.i: opt/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.s: opt/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.obj: opt/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.i: opt/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.s: opt/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/core/mem.obj: opt/pico/pico-sdk/lib/lwip/src/core/mem.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/mem.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/core/mem.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/mem.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/mem.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/core/mem.i: opt/pico/pico-sdk/lib/lwip/src/core/mem.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/mem.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/core/mem.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/mem.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/mem.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/core/mem.s: opt/pico/pico-sdk/lib/lwip/src/core/mem.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/mem.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/core/mem.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/mem.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/mem.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/core/memp.obj: opt/pico/pico-sdk/lib/lwip/src/core/memp.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/memp.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/core/memp.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/memp.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/memp.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/core/memp.i: opt/pico/pico-sdk/lib/lwip/src/core/memp.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/memp.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/core/memp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/memp.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/memp.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/core/memp.s: opt/pico/pico-sdk/lib/lwip/src/core/memp.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/memp.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/core/memp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/memp.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/memp.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/core/netif.obj: opt/pico/pico-sdk/lib/lwip/src/core/netif.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/netif.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/core/netif.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/netif.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/netif.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/core/netif.i: opt/pico/pico-sdk/lib/lwip/src/core/netif.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/netif.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/core/netif.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/netif.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/netif.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/core/netif.s: opt/pico/pico-sdk/lib/lwip/src/core/netif.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/netif.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/core/netif.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/netif.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/netif.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/core/pbuf.obj: opt/pico/pico-sdk/lib/lwip/src/core/pbuf.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/pbuf.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/core/pbuf.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/pbuf.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/pbuf.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/core/pbuf.i: opt/pico/pico-sdk/lib/lwip/src/core/pbuf.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/pbuf.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/core/pbuf.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/pbuf.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/pbuf.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/core/pbuf.s: opt/pico/pico-sdk/lib/lwip/src/core/pbuf.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/pbuf.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/core/pbuf.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/pbuf.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/pbuf.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/core/raw.obj: opt/pico/pico-sdk/lib/lwip/src/core/raw.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/raw.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/core/raw.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/raw.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/raw.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/core/raw.i: opt/pico/pico-sdk/lib/lwip/src/core/raw.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/raw.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/core/raw.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/raw.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/raw.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/core/raw.s: opt/pico/pico-sdk/lib/lwip/src/core/raw.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/raw.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/core/raw.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/raw.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/raw.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/core/stats.obj: opt/pico/pico-sdk/lib/lwip/src/core/stats.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/stats.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/core/stats.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/stats.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/stats.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/core/stats.i: opt/pico/pico-sdk/lib/lwip/src/core/stats.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/stats.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/core/stats.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/stats.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/stats.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/core/stats.s: opt/pico/pico-sdk/lib/lwip/src/core/stats.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/stats.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/core/stats.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/stats.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/stats.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/core/sys.obj: opt/pico/pico-sdk/lib/lwip/src/core/sys.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/sys.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/core/sys.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/sys.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/sys.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/core/sys.i: opt/pico/pico-sdk/lib/lwip/src/core/sys.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/sys.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/core/sys.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/sys.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/sys.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/core/sys.s: opt/pico/pico-sdk/lib/lwip/src/core/sys.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/sys.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/core/sys.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/sys.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/sys.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/core/tcp.obj: opt/pico/pico-sdk/lib/lwip/src/core/tcp.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/tcp.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/core/tcp.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/tcp.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/tcp.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/core/tcp.i: opt/pico/pico-sdk/lib/lwip/src/core/tcp.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/tcp.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/core/tcp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/tcp.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/tcp.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/core/tcp.s: opt/pico/pico-sdk/lib/lwip/src/core/tcp.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/tcp.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/core/tcp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/tcp.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/tcp.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/core/tcp_in.obj: opt/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/tcp_in.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/core/tcp_in.i: opt/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/tcp_in.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/core/tcp_in.s: opt/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/tcp_in.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/core/tcp_out.obj: opt/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/tcp_out.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/core/tcp_out.i: opt/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/tcp_out.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/core/tcp_out.s: opt/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/tcp_out.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/core/timeouts.obj: opt/pico/pico-sdk/lib/lwip/src/core/timeouts.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/timeouts.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/core/timeouts.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/timeouts.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/timeouts.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/core/timeouts.i: opt/pico/pico-sdk/lib/lwip/src/core/timeouts.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/timeouts.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/core/timeouts.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/timeouts.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/timeouts.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/core/timeouts.s: opt/pico/pico-sdk/lib/lwip/src/core/timeouts.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/timeouts.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/core/timeouts.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/timeouts.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/timeouts.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/core/udp.obj: opt/pico/pico-sdk/lib/lwip/src/core/udp.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/udp.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/core/udp.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/udp.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/udp.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/core/udp.i: opt/pico/pico-sdk/lib/lwip/src/core/udp.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/udp.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/core/udp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/udp.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/udp.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/core/udp.s: opt/pico/pico-sdk/lib/lwip/src/core/udp.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/udp.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/core/udp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/core/udp.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/core/udp.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif.obj: opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif.i: opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif.s: opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.obj: opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.i: opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.s: opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ethernet.obj: opt/pico/pico-sdk/lib/lwip/src/netif/ethernet.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ethernet.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/netif/ethernet.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ethernet.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ethernet.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ethernet.i: opt/pico/pico-sdk/lib/lwip/src/netif/ethernet.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ethernet.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/netif/ethernet.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ethernet.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ethernet.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ethernet.s: opt/pico/pico-sdk/lib/lwip/src/netif/ethernet.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ethernet.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/netif/ethernet.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ethernet.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ethernet.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6.obj: opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6.i: opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6.s: opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.obj: opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.i: opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.s: opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.obj: opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.i: opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.s: opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.obj: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.i: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.s: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.obj: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.i: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.s: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.obj: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.i: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.s: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.obj: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.i: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.s: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.obj: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.i: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.s: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.obj: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.i: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.s: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.obj: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.i: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.s: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.obj: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.i: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.s: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.obj: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.i: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.s: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.obj: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.i: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.s: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.obj: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.i: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.s: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.obj: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.i: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.s: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.obj: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.i: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.s: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.obj: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.i: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.s: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.obj: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.i: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.s: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.obj: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.i: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.s: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.obj: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.i: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.s: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.obj: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.i: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.s: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.obj: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.i: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.s: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.obj: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.i: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.s: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.obj: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.i: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.s: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.obj: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.i: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.s: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.obj: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.i: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.s: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.obj: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.i: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.s: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.obj: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.i: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.s: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.obj: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.i: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.s: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.obj: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.i: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.s: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.obj: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.i: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.s: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.obj: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.i: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.s: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.obj: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.i: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.s: opt/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/netif/slipif.obj: opt/pico/pico-sdk/lib/lwip/src/netif/slipif.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/slipif.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/netif/slipif.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/slipif.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/slipif.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/netif/slipif.i: opt/pico/pico-sdk/lib/lwip/src/netif/slipif.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/slipif.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/netif/slipif.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/slipif.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/slipif.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/netif/slipif.s: opt/pico/pico-sdk/lib/lwip/src/netif/slipif.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/slipif.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/netif/slipif.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/slipif.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/slipif.c.s
+
+opt/pico/pico-sdk/lib/lwip/src/netif/zepif.obj: opt/pico/pico-sdk/lib/lwip/src/netif/zepif.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/zepif.obj
+
+# target to build an object file
+opt/pico/pico-sdk/lib/lwip/src/netif/zepif.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/zepif.c.obj
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/zepif.c.obj
+
+opt/pico/pico-sdk/lib/lwip/src/netif/zepif.i: opt/pico/pico-sdk/lib/lwip/src/netif/zepif.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/zepif.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/lib/lwip/src/netif/zepif.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/zepif.c.i
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/zepif.c.i
+
+opt/pico/pico-sdk/lib/lwip/src/netif/zepif.s: opt/pico/pico-sdk/lib/lwip/src/netif/zepif.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/zepif.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/lib/lwip/src/netif/zepif.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/lwip/src/netif/zepif.c.s
+.PHONY : opt/pico/pico-sdk/lib/lwip/src/netif/zepif.c.s
+
 opt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj: opt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 .PHONY : opt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj
 
@@ -959,6 +3095,54 @@ opt/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 .PHONY : opt/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 
+opt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.obj: opt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
+.PHONY : opt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.obj
+
+# target to build an object file
+opt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
+.PHONY : opt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
+
+opt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.i: opt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
+.PHONY : opt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
+.PHONY : opt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
+
+opt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.s: opt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
+.PHONY : opt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
+.PHONY : opt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
+
+opt/pico/pico-sdk/src/rp2_common/hardware_exception/exception.obj: opt/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj
+.PHONY : opt/pico/pico-sdk/src/rp2_common/hardware_exception/exception.obj
+
+# target to build an object file
+opt/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj
+.PHONY : opt/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj
+
+opt/pico/pico-sdk/src/rp2_common/hardware_exception/exception.i: opt/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.i
+.PHONY : opt/pico/pico-sdk/src/rp2_common/hardware_exception/exception.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.i
+.PHONY : opt/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.i
+
+opt/pico/pico-sdk/src/rp2_common/hardware_exception/exception.s: opt/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.s
+.PHONY : opt/pico/pico-sdk/src/rp2_common/hardware_exception/exception.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.s
+.PHONY : opt/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.s
+
 opt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.obj: opt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 .PHONY : opt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.obj
 
@@ -1007,6 +3191,30 @@ opt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : opt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
+opt/pico/pico-sdk/src/rp2_common/hardware_interp/interp.obj: opt/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.obj
+.PHONY : opt/pico/pico-sdk/src/rp2_common/hardware_interp/interp.obj
+
+# target to build an object file
+opt/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.obj
+.PHONY : opt/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.obj
+
+opt/pico/pico-sdk/src/rp2_common/hardware_interp/interp.i: opt/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.i
+.PHONY : opt/pico/pico-sdk/src/rp2_common/hardware_interp/interp.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.i
+.PHONY : opt/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.i
+
+opt/pico/pico-sdk/src/rp2_common/hardware_interp/interp.s: opt/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.s
+.PHONY : opt/pico/pico-sdk/src/rp2_common/hardware_interp/interp.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.s
+.PHONY : opt/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.s
+
 opt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj: opt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 .PHONY : opt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj
 
@@ -1038,6 +3246,30 @@ opt/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj: opt/pico/pi
 opt/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 .PHONY : opt/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+
+opt/pico/pico-sdk/src/rp2_common/hardware_pio/pio.obj: opt/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+.PHONY : opt/pico/pico-sdk/src/rp2_common/hardware_pio/pio.obj
+
+# target to build an object file
+opt/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+.PHONY : opt/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+
+opt/pico/pico-sdk/src/rp2_common/hardware_pio/pio.i: opt/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
+.PHONY : opt/pico/pico-sdk/src/rp2_common/hardware_pio/pio.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
+.PHONY : opt/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
+
+opt/pico/pico-sdk/src/rp2_common/hardware_pio/pio.s: opt/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
+.PHONY : opt/pico/pico-sdk/src/rp2_common/hardware_pio/pio.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
+.PHONY : opt/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
 
 opt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj: opt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 .PHONY : opt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj
@@ -1231,6 +3463,54 @@ opt/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 .PHONY : opt/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 
+opt/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.obj: opt/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.obj
+
+# target to build an object file
+opt/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj
+
+opt/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.i: opt/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.i
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.i
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.i
+
+opt/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.s: opt/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.s
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.s
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.s
+
+opt/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.obj: opt/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.obj
+
+# target to build an object file
+opt/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
+
+opt/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.i: opt/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.i
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.i
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.i
+
+opt/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.s: opt/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.s
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.s
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.s
+
 opt/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj: opt/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 .PHONY : opt/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj
 
@@ -1262,6 +3542,198 @@ opt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: opt/pico/pico-sdk/src/r
 opt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 .PHONY : opt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.obj: opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.obj
+
+# target to build an object file
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj
+
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.i: opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.i
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.i
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.i
+
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.s: opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.s
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.s
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.s
+
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.obj: opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.obj
+
+# target to build an object file
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj
+
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.i: opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.i
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.i
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.i
+
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.s: opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.s
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.s
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.s
+
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.obj: opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.obj
+
+# target to build an object file
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj
+
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.i: opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.i
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.i
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.i
+
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.s: opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.s
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.s
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.s
+
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.obj: opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.obj
+
+# target to build an object file
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj
+
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.i: opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.i
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.i
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.i
+
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.s: opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.s
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.s
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.s
+
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.obj: opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.obj
+
+# target to build an object file
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj
+
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.i: opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.i
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.i
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.i
+
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.s: opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.s
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.s
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.s
+
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.obj: opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.obj
+
+# target to build an object file
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj
+
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.i: opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.i
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.i
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.i
+
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.s: opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.s
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.s
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.s
+
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.obj: opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.obj
+
+# target to build an object file
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
+
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.i: opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.i
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.i
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.i
+
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.s: opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.s
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.s
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.s
+
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.obj: opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.obj
+
+# target to build an object file
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
+
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.i: opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.i
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.i
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.i
+
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.s: opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.s
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.s
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.s
 
 opt/pico/pico-sdk/src/rp2_common/pico_divider/divider.obj: opt/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 .PHONY : opt/pico/pico-sdk/src/rp2_common/pico_divider/divider.obj
@@ -1431,6 +3903,30 @@ opt/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 .PHONY : opt/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 
+opt/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.obj: opt/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.c.obj
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.obj
+
+# target to build an object file
+opt/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.c.obj
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.c.obj
+
+opt/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.i: opt/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.c.i
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.c.i
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.c.i
+
+opt/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.s: opt/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.c.s
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.c.s
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.c.s
+
 opt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj: opt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 .PHONY : opt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj
 
@@ -1510,6 +4006,30 @@ opt/pico/pico-sdk/src/rp2_common/pico_printf/printf.s: opt/pico/pico-sdk/src/rp2
 opt/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 .PHONY : opt/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+
+opt/pico/pico-sdk/src/rp2_common/pico_rand/rand.obj: opt/pico/pico-sdk/src/rp2_common/pico_rand/rand.c.obj
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_rand/rand.obj
+
+# target to build an object file
+opt/pico/pico-sdk/src/rp2_common/pico_rand/rand.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_rand/rand.c.obj
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_rand/rand.c.obj
+
+opt/pico/pico-sdk/src/rp2_common/pico_rand/rand.i: opt/pico/pico-sdk/src/rp2_common/pico_rand/rand.c.i
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_rand/rand.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/src/rp2_common/pico_rand/rand.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_rand/rand.c.i
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_rand/rand.c.i
+
+opt/pico/pico-sdk/src/rp2_common/pico_rand/rand.s: opt/pico/pico-sdk/src/rp2_common/pico_rand/rand.c.s
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_rand/rand.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/src/rp2_common/pico_rand/rand.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_rand/rand.c.s
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_rand/rand.c.s
 
 opt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.obj: opt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 .PHONY : opt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.obj
@@ -1756,6 +4276,273 @@ help:
 	@echo "... main.obj"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.obj"
+	@echo "... opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.i"
+	@echo "... opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.s"
+	@echo "... opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.obj"
+	@echo "... opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.i"
+	@echo "... opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.s"
+	@echo "... opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.obj"
+	@echo "... opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.i"
+	@echo "... opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.s"
+	@echo "... opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.obj"
+	@echo "... opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.i"
+	@echo "... opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/api/api_lib.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/api/api_lib.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/api/api_lib.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/api/api_msg.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/api/api_msg.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/api/api_msg.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/api/err.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/api/err.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/api/err.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/api/if_api.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/api/if_api.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/api/if_api.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/api/netbuf.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/api/netbuf.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/api/netbuf.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/api/netdb.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/api/netdb.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/api/netdb.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/api/netifapi.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/api/netifapi.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/api/netifapi.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/api/sockets.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/api/sockets.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/api/sockets.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/api/tcpip.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/api/tcpip.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/api/tcpip.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/altcp.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/altcp.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/altcp.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/def.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/def.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/def.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/dns.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/dns.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/dns.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/inet_chksum.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/inet_chksum.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/inet_chksum.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/init.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/init.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/init.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ip.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ip.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ip.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/mem.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/mem.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/mem.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/memp.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/memp.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/memp.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/netif.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/netif.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/netif.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/pbuf.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/pbuf.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/pbuf.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/raw.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/raw.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/raw.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/stats.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/stats.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/stats.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/sys.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/sys.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/sys.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/tcp.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/tcp.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/tcp.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/tcp_in.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/tcp_in.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/tcp_in.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/tcp_out.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/tcp_out.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/tcp_out.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/timeouts.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/timeouts.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/timeouts.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/udp.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/udp.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/core/udp.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ethernet.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ethernet.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ethernet.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/slipif.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/slipif.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/slipif.s"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/zepif.obj"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/zepif.i"
+	@echo "... opt/pico/pico-sdk/lib/lwip/src/netif/zepif.s"
 	@echo "... opt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj"
 	@echo "... opt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i"
 	@echo "... opt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s"
@@ -1844,16 +4631,28 @@ help:
 	@echo "... opt/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/hardware_divider/divider.obj"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.obj"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.i"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.s"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/hardware_exception/exception.obj"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/hardware_exception/exception.i"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/hardware_exception/exception.s"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.obj"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.i"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.s"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/hardware_interp/interp.obj"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/hardware_interp/interp.i"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/hardware_interp/interp.s"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/hardware_pio/pio.obj"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/hardware_pio/pio.i"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/hardware_pio/pio.s"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.s"
@@ -1878,10 +4677,40 @@ help:
 	@echo "... opt/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.obj"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.i"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.s"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.obj"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.i"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.s"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.obj"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.i"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.s"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.obj"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.i"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.s"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.obj"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.i"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.s"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.obj"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.i"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.s"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.obj"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.i"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.s"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.obj"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.i"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.s"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.obj"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.i"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.s"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.obj"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.i"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.s"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_divider/divider.obj"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj"
@@ -1903,6 +4732,9 @@ help:
 	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_float/float_math.s"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.obj"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.i"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.s"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s"
@@ -1913,6 +4745,9 @@ help:
 	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_printf/printf.obj"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_printf/printf.i"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_printf/printf.s"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_rand/rand.obj"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_rand/rand.i"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_rand/rand.s"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.obj"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.i"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.s"

@@ -1,11 +1,11 @@
 # Set minimum required version of CMake
-cmake_minimum_required(VERSION 3.12)
+cmake_minimum_required(VERSION 3.13)
 
 # Include build functions from Pico SDK
 include($ENV{PICO_SDK_PATH}/external/pico_sdk_import.cmake)
 
-# Set board as PICO W or PICO
-set(PICO_BOARD pico)
+# Set board as PICO W
+set(PICO_BOARD pico_w CACHE STRING "Board type")
 
 # Set name of project (as PROJECT_NAME) and C/C++ standards
 project(sensing_unit C CXX ASM)
@@ -29,6 +29,21 @@ target_link_libraries(${PROJECT_NAME}
     pico_stdlib
     hardware_spi
 )
+
+# Link to wifi libraries
+target_link_libraries(${PROJECT_NAME} 
+        hardware_interp
+        hardware_timer
+        hardware_watchdog
+        hardware_clocks
+        pico_cyw43_arch_lwip_threadsafe_background
+        )
+
+# Add the standard include files to the build
+target_include_directories(${PROJECT_NAME} PRIVATE
+  ${CMAKE_CURRENT_LIST_DIR}
+  ${CMAKE_CURRENT_LIST_DIR}/.. # for our common lwipopts or any other standard includes, if required
+)   
 
 # Enable usb output, disable uart output
 pico_enable_stdio_usb(${PROJECT_NAME} 1)

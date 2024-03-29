@@ -99,9 +99,9 @@ void readResampledData()
    Serial.print("Device ID: ");
    Serial.println(ade9000.SPI_Read_16(ADDR_VERSION));
    Serial.print("RUN Register: ");
-  Serial.println(ade9000.SPI_Read_16(ADDR_RUN),HEX);
+  Serial.println(ade9000.SPI_Read_16(ADDR_RUN));
   Serial.print("Zero crossing threshold: ");
-  Serial.println(ade9000.SPI_Read_16(ADDR_ZXTHRSH),HEX);
+  Serial.println(ade9000.SPI_Read_16(ADDR_ZXTHRSH));
   Serial.println();
 
 }
