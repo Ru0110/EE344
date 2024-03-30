@@ -105,6 +105,12 @@ CMakeFiles/sensing_unit.dir/main.c.obj: \
  /opt/pico/pico-sdk/src/rp2_common/hardware_spi/include/hardware/spi.h \
  /opt/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/spi.h \
  /opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/spi.h \
+ /opt/pico/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/i2c.h \
+ /opt/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/i2c.h \
+ /opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/i2c.h \
  /home/shob/Desktop/acads/EE344/Software/RP2040_code/ADE9000API_RP2040.h \
  /home/shob/Desktop/acads/EE344/Software/RP2040_code/ADE9000RegMap.h \
- /home/shob/Desktop/acads/EE344/Software/RP2040_code/lwipopts.h
+ /home/shob/Desktop/acads/EE344/Software/RP2040_code/lwipopts.h \
+ /home/shob/Desktop/acads/EE344/Software/RP2040_code/bme280.h \
+ /home/shob/Desktop/acads/EE344/Software/RP2040_code/callbacks.h \
+ /home/shob/Desktop/acads/EE344/Software/RP2040_code/blocking.h

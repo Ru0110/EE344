@@ -123,6 +123,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/opt/pico/pico-sdk/lib/tinyusb/hw"
   "/opt/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include"
   "/opt/pico/pico-sdk/src/rp2_common/hardware_spi/include"
+  "/opt/pico/pico-sdk/src/rp2_common/hardware_i2c/include"
   "/opt/pico/pico-sdk/src/rp2_common/hardware_interp/include"
   "/opt/pico/pico-sdk/src/rp2_common/pico_async_context/include"
   "/opt/pico/pico-sdk/src/rp2_common/pico_lwip/include"
@@ -142,6 +143,8 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/shob/Desktop/acads/EE344/Software/RP2040_code/ADE9000API_RP2040.c" "CMakeFiles/sensing_unit.dir/ADE9000API_RP2040.c.obj" "gcc" "CMakeFiles/sensing_unit.dir/ADE9000API_RP2040.c.obj.d"
+  "/home/shob/Desktop/acads/EE344/Software/RP2040_code/blocking.c" "CMakeFiles/sensing_unit.dir/blocking.c.obj" "gcc" "CMakeFiles/sensing_unit.dir/blocking.c.obj.d"
+  "/home/shob/Desktop/acads/EE344/Software/RP2040_code/bme280.c" "CMakeFiles/sensing_unit.dir/bme280.c.obj" "gcc" "CMakeFiles/sensing_unit.dir/bme280.c.obj.d"
   "/home/shob/Desktop/acads/EE344/Software/RP2040_code/main.c" "CMakeFiles/sensing_unit.dir/main.c.obj" "gcc" "CMakeFiles/sensing_unit.dir/main.c.obj.d"
   "/opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c" "CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj" "gcc" "CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj.d"
   "/opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c" "CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj" "gcc" "CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj.d"
@@ -265,6 +268,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/opt/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c" "CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj" "gcc" "CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj.d"
   "/opt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c" "CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj" "gcc" "CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj.d"
   "/opt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c" "CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj" "gcc" "CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj.d"
+  "/opt/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c" "CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj" "gcc" "CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj.d"
   "/opt/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c" "CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.obj" "gcc" "CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.obj.d"
   "/opt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c" "CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj" "gcc" "CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj.d"
   "/opt/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c" "CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj" "gcc" "CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj.d"

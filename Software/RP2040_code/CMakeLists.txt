@@ -18,6 +18,8 @@ pico_sdk_init()
 # Tell CMake where to find the executable source file
 add_executable(${PROJECT_NAME} 
     ADE9000API_RP2040.c
+    bme280.c
+    blocking.c
     main.c
 )
 
@@ -28,6 +30,7 @@ pico_add_extra_outputs(${PROJECT_NAME})
 target_link_libraries(${PROJECT_NAME} 
     pico_stdlib
     hardware_spi
+    hardware_i2c
 )
 
 # Link to wifi libraries

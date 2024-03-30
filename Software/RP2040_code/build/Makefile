@@ -231,6 +231,54 @@ ADE9000API_RP2040.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/ADE9000API_RP2040.c.s
 .PHONY : ADE9000API_RP2040.c.s
 
+blocking.obj: blocking.c.obj
+.PHONY : blocking.obj
+
+# target to build an object file
+blocking.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/blocking.c.obj
+.PHONY : blocking.c.obj
+
+blocking.i: blocking.c.i
+.PHONY : blocking.i
+
+# target to preprocess a source file
+blocking.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/blocking.c.i
+.PHONY : blocking.c.i
+
+blocking.s: blocking.c.s
+.PHONY : blocking.s
+
+# target to generate assembly for a file
+blocking.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/blocking.c.s
+.PHONY : blocking.c.s
+
+bme280.obj: bme280.c.obj
+.PHONY : bme280.obj
+
+# target to build an object file
+bme280.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/bme280.c.obj
+.PHONY : bme280.c.obj
+
+bme280.i: bme280.c.i
+.PHONY : bme280.i
+
+# target to preprocess a source file
+bme280.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/bme280.c.i
+.PHONY : bme280.c.i
+
+bme280.s: bme280.c.s
+.PHONY : bme280.s
+
+# target to generate assembly for a file
+bme280.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/bme280.c.s
+.PHONY : bme280.c.s
+
 main.obj: main.c.obj
 .PHONY : main.obj
 
@@ -3191,6 +3239,30 @@ opt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : opt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
+opt/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.obj: opt/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+.PHONY : opt/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.obj
+
+# target to build an object file
+opt/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+.PHONY : opt/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+
+opt/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.i: opt/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+.PHONY : opt/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+.PHONY : opt/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+
+opt/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.s: opt/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+.PHONY : opt/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+.PHONY : opt/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+
 opt/pico/pico-sdk/src/rp2_common/hardware_interp/interp.obj: opt/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.obj
 .PHONY : opt/pico/pico-sdk/src/rp2_common/hardware_interp/interp.obj
 
@@ -4273,6 +4345,12 @@ help:
 	@echo "... ADE9000API_RP2040.obj"
 	@echo "... ADE9000API_RP2040.i"
 	@echo "... ADE9000API_RP2040.s"
+	@echo "... blocking.obj"
+	@echo "... blocking.i"
+	@echo "... blocking.s"
+	@echo "... bme280.obj"
+	@echo "... bme280.i"
+	@echo "... bme280.s"
 	@echo "... main.obj"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -4643,6 +4721,9 @@ help:
 	@echo "... opt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.obj"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.i"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.s"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/hardware_interp/interp.obj"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/hardware_interp/interp.i"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/hardware_interp/interp.s"
