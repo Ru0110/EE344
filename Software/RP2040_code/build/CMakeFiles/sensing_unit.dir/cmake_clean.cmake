@@ -321,6 +321,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj"
   "CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj.d"
   "CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
+  "CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj"
+  "CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj.d"
   "CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj"
   "CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj.d"
   "CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj"
@@ -346,6 +348,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj.d"
   "CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj"
   "CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj.d"
+  "CMakeFiles/sensing_unit.dir/tcp_server_new.c.obj"
+  "CMakeFiles/sensing_unit.dir/tcp_server_new.c.obj.d"
   "sensing_unit.elf"
   "sensing_unit.pdb"
 )

@@ -159,6 +159,10 @@ CMakeFiles/sensing_unit.dir/main.c.obj: /home/shob/Desktop/acads/EE344/Software/
   /usr/include/newlib/sys/sched.h \
   /usr/include/newlib/machine/types.h \
   /usr/include/newlib/sys/stdio.h \
+  /usr/include/newlib/string.h \
+  /usr/include/newlib/sys/_locale.h \
+  /usr/include/newlib/strings.h \
+  /usr/include/newlib/sys/string.h \
   /opt/pico/pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h \
   /opt/pico/pico-sdk/src/common/pico_base/include/pico.h \
   /opt/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
@@ -212,7 +216,6 @@ CMakeFiles/sensing_unit.dir/main.c.obj: /home/shob/Desktop/acads/EE344/Software/
   /usr/include/newlib/sys/time.h \
   /usr/include/newlib/time.h \
   /usr/include/newlib/machine/time.h \
-  /usr/include/newlib/sys/_locale.h \
   /usr/include/newlib/machine/_time.h \
   /opt/pico/pico-sdk/src/rp2_common/pico_rand/include/pico/rand.h \
   /usr/include/newlib/stdlib.h \
@@ -244,24 +247,40 @@ CMakeFiles/sensing_unit.dir/main.c.obj: /home/shob/Desktop/acads/EE344/Software/
   /opt/pico/pico-sdk/lib/lwip/src/include/lwip/prot/ip.h \
   /opt/pico/pico-sdk/lib/lwip/src/include/lwip/prot/udp.h \
   /opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.h \
-  /usr/include/newlib/string.h \
-  /usr/include/newlib/strings.h \
-  /usr/include/newlib/sys/string.h \
   /opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_country.h \
   /opt/pico/pico-sdk/src/rp2_common/pico_async_context/include/pico/async_context.h \
   /opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/include/pico/cyw43_arch/arch_threadsafe_background.h \
+  /opt/pico/pico-sdk/src/rp2_common/pico_multicore/include/pico/multicore.h \
+  /opt/pico/pico-sdk/src/common/pico_sync/include/pico/sync.h \
+  /opt/pico/pico-sdk/src/common/pico_sync/include/pico/sem.h \
+  /opt/pico/pico-sdk/src/common/pico_sync/include/pico/lock_core.h \
+  /opt/pico/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
+  /opt/pico/pico-sdk/src/common/pico_sync/include/pico/mutex.h \
+  /opt/pico/pico-sdk/src/common/pico_sync/include/pico/critical_section.h \
   /opt/pico/pico-sdk/src/rp2_common/hardware_spi/include/hardware/spi.h \
   /opt/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/spi.h \
   /opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/spi.h \
   /opt/pico/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/i2c.h \
   /opt/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/i2c.h \
   /opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/i2c.h \
+  /opt/pico/pico-sdk/src/rp2_common/hardware_vreg/include/hardware/vreg.h \
+  /opt/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/vreg_and_chip_reset.h \
+  /opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/vreg_and_chip_reset.h \
+  /opt/pico/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h \
+  /opt/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/clocks.h \
+  /opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h \
   /home/shob/Desktop/acads/EE344/Software/RP2040_code/ADE9000API_RP2040.h \
   /home/shob/Desktop/acads/EE344/Software/RP2040_code/ADE9000RegMap.h \
   /home/shob/Desktop/acads/EE344/Software/RP2040_code/lwipopts.h \
   /home/shob/Desktop/acads/EE344/Software/RP2040_code/bme280.h \
   /home/shob/Desktop/acads/EE344/Software/RP2040_code/callbacks.h \
-  /home/shob/Desktop/acads/EE344/Software/RP2040_code/blocking.h
+  /home/shob/Desktop/acads/EE344/Software/RP2040_code/blocking.h \
+  /home/shob/Desktop/acads/EE344/Software/RP2040_code/flash_utils.h \
+  /home/shob/Desktop/acads/EE344/Software/RP2040_code/tcp_server.h \
+  /opt/pico/pico-sdk/lib/lwip/src/include/lwip/tcp.h \
+  /opt/pico/pico-sdk/lib/lwip/src/include/lwip/tcpbase.h \
+  /opt/pico/pico-sdk/lib/lwip/src/include/lwip/icmp.h \
+  /opt/pico/pico-sdk/lib/lwip/src/include/lwip/prot/icmp.h
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj: /opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c \
   /usr/include/newlib/assert.h \
@@ -10239,7 +10258,63 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_ma
   /opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
   /opt/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
   /opt/pico/pico-sdk/src/common/pico_base/include/pico/error.h \
-  /opt/pico/pico-sdk/src/rp2_common/pico_malloc/include/pico/malloc.h
+  /opt/pico/pico-sdk/src/rp2_common/pico_malloc/include/pico/malloc.h \
+  /opt/pico/pico-sdk/src/common/pico_sync/include/pico/mutex.h \
+  /opt/pico/pico-sdk/src/common/pico_sync/include/pico/lock_core.h \
+  /opt/pico/pico-sdk/src/common/pico_time/include/pico/time.h \
+  /opt/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
+  /opt/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
+  /opt/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+  /opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
+  /opt/pico/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h
+
+CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj: /opt/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c \
+  /opt/pico/pico-sdk/src/rp2_common/pico_multicore/include/pico/multicore.h \
+  /opt/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
+  /opt/pico/pico-sdk/src/common/pico_base/include/pico/assert.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
+  /usr/include/newlib/assert.h \
+  /usr/include/newlib/_ansi.h \
+  /usr/include/newlib/newlib.h \
+  /usr/include/newlib/_newlib_version.h \
+  /usr/include/newlib/sys/config.h \
+  /usr/include/newlib/machine/ieeefp.h \
+  /usr/include/newlib/sys/features.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  /opt/pico/pico-sdk/src/common/pico_sync/include/pico/sync.h \
+  /opt/pico/pico-sdk/src/common/pico_sync/include/pico/sem.h \
+  /opt/pico/pico-sdk/src/common/pico_sync/include/pico/lock_core.h \
+  /opt/pico/pico-sdk/src/common/pico_base/include/pico.h \
+  /opt/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
+  generated/pico_base/pico/version.h \
+  /opt/pico/pico-sdk/src/common/pico_base/include/pico/config.h \
+  generated/pico_base/pico/config_autogen.h \
+  /opt/pico/pico-sdk/src/boards/include/boards/pico_w.h \
+  /opt/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  /opt/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \
+  /opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+  /opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
+  /opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
+  /usr/include/newlib/sys/cdefs.h \
+  /usr/include/newlib/machine/_default_types.h \
+  /opt/pico/pico-sdk/src/common/pico_base/include/pico/error.h \
+  /opt/pico/pico-sdk/src/common/pico_time/include/pico/time.h \
+  /opt/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
+  /opt/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
+  /opt/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+  /opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
+  /opt/pico/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
+  /opt/pico/pico-sdk/src/common/pico_sync/include/pico/mutex.h \
+  /opt/pico/pico-sdk/src/common/pico_sync/include/pico/critical_section.h \
+  /opt/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h \
+  /opt/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h \
+  /opt/pico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h \
+  /opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h \
+  /opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h \
+  /opt/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/scb.h \
+  /opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/psm.h \
+  /opt/pico/pico-sdk/src/rp2_common/hardware_claim/include/hardware/claim.h
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj: /opt/pico/pico-sdk/src/rp2_common/pico_platform/platform.c \
   /opt/pico/pico-sdk/src/common/pico_base/include/pico.h \
@@ -10952,12 +11027,137 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_unique_id/uniq
   /opt/pico/pico-sdk/src/common/pico_base/include/pico/error.h \
   /opt/pico/pico-sdk/src/rp2_common/pico_unique_id/include/pico/unique_id.h
 
+CMakeFiles/sensing_unit.dir/tcp_server_new.c.obj: /home/shob/Desktop/acads/EE344/Software/RP2040_code/tcp_server_new.c \
+  /usr/include/newlib/string.h \
+  /usr/include/newlib/_ansi.h \
+  /usr/include/newlib/newlib.h \
+  /usr/include/newlib/_newlib_version.h \
+  /usr/include/newlib/sys/config.h \
+  /usr/include/newlib/machine/ieeefp.h \
+  /usr/include/newlib/sys/features.h \
+  /usr/include/newlib/sys/reent.h \
+  /usr/include/newlib/_ansi.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  /usr/include/newlib/sys/_types.h \
+  /usr/include/newlib/machine/_types.h \
+  /usr/include/newlib/machine/_default_types.h \
+  /usr/include/newlib/sys/lock.h \
+  /usr/include/newlib/sys/cdefs.h \
+  /usr/include/newlib/sys/_locale.h \
+  /usr/include/newlib/strings.h \
+  /usr/include/newlib/sys/string.h \
+  /usr/include/newlib/stdlib.h \
+  /usr/include/newlib/machine/stdlib.h \
+  /usr/include/newlib/alloca.h \
+  /opt/pico/pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h \
+  /opt/pico/pico-sdk/src/common/pico_base/include/pico.h \
+  /opt/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
+  /opt/pico/pico-sdk/src/common/pico_base/include/pico/assert.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
+  /usr/include/newlib/assert.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
+  generated/pico_base/pico/version.h \
+  /opt/pico/pico-sdk/src/common/pico_base/include/pico/config.h \
+  generated/pico_base/pico/config_autogen.h \
+  /opt/pico/pico-sdk/src/boards/include/boards/pico_w.h \
+  /opt/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  /opt/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \
+  /opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+  /opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
+  /opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
+  /opt/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
+  /opt/pico/pico-sdk/src/common/pico_base/include/pico/error.h \
+  /opt/pico/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h \
+  /opt/pico/pico-sdk/src/common/pico_time/include/pico/time.h \
+  /opt/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
+  /opt/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
+  /opt/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+  /opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
+  /opt/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h \
+  /opt/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h \
+  /opt/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h \
+  /opt/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h \
+  /opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h \
+  /opt/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h \
+  /opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h \
+  /opt/pico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h \
+  /opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h \
+  /opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h \
+  /opt/pico/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h \
+  /opt/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h \
+  /opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
+  /opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
+  /opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
+  /opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/include/pico/cyw43_arch.h \
+  /opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43.h \
+  /opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_config.h \
+  /opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/include/cyw43_configport.h \
+  /usr/include/newlib/stdio.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
+  /usr/include/newlib/sys/types.h \
+  /usr/include/newlib/sys/_stdint.h \
+  /usr/include/newlib/machine/endian.h \
+  /usr/include/newlib/machine/_endian.h \
+  /usr/include/newlib/sys/select.h \
+  /usr/include/newlib/sys/_sigset.h \
+  /usr/include/newlib/sys/_timeval.h \
+  /usr/include/newlib/sys/timespec.h \
+  /usr/include/newlib/sys/_timespec.h \
+  /usr/include/newlib/sys/_pthreadtypes.h \
+  /usr/include/newlib/sys/sched.h \
+  /usr/include/newlib/machine/types.h \
+  /usr/include/newlib/sys/stdio.h \
+  /opt/pico/pico-sdk/lib/lwip/src/include/lwip/netif.h \
+  /opt/pico/pico-sdk/lib/lwip/src/include/lwip/opt.h \
+  /home/shob/Desktop/acads/EE344/Software/RP2040_code/lwipopts.h \
+  /home/shob/Desktop/acads/EE344/Software/RP2040_code/lwipopts_common.h \
+  /opt/pico/pico-sdk/lib/lwip/src/include/lwip/debug.h \
+  /opt/pico/pico-sdk/lib/lwip/src/include/lwip/arch.h \
+  /opt/pico/pico-sdk/src/rp2_common/pico_lwip/include/arch/cc.h \
+  /usr/include/newlib/sys/time.h \
+  /usr/include/newlib/time.h \
+  /usr/include/newlib/machine/time.h \
+  /usr/include/newlib/machine/_time.h \
+  /opt/pico/pico-sdk/src/rp2_common/pico_rand/include/pico/rand.h \
+  /usr/include/newlib/inttypes.h \
+  /usr/include/newlib/sys/_intsup.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h \
+  /usr/include/newlib/ctype.h \
+  /opt/pico/pico-sdk/lib/lwip/src/include/lwip/err.h \
+  /opt/pico/pico-sdk/lib/lwip/src/include/lwip/ip_addr.h \
+  /opt/pico/pico-sdk/lib/lwip/src/include/lwip/def.h \
+  /opt/pico/pico-sdk/lib/lwip/src/include/lwip/ip4_addr.h \
+  /opt/pico/pico-sdk/lib/lwip/src/include/lwip/ip6_addr.h \
+  /opt/pico/pico-sdk/lib/lwip/src/include/lwip/def.h \
+  /opt/pico/pico-sdk/lib/lwip/src/include/lwip/pbuf.h \
+  /opt/pico/pico-sdk/lib/lwip/src/include/lwip/stats.h \
+  /opt/pico/pico-sdk/lib/lwip/src/include/lwip/mem.h \
+  /opt/pico/pico-sdk/lib/lwip/src/include/lwip/memp.h \
+  /opt/pico/pico-sdk/lib/lwip/src/include/lwip/priv/memp_std.h \
+  /opt/pico/pico-sdk/lib/lwip/src/include/lwip/priv/memp_priv.h \
+  /opt/pico/pico-sdk/lib/lwip/src/include/lwip/priv/mem_priv.h \
+  /opt/pico/pico-sdk/lib/lwip/src/include/lwip/dhcp.h \
+  /opt/pico/pico-sdk/lib/lwip/src/include/lwip/udp.h \
+  /opt/pico/pico-sdk/lib/lwip/src/include/lwip/ip.h \
+  /opt/pico/pico-sdk/lib/lwip/src/include/lwip/ip4.h \
+  /opt/pico/pico-sdk/lib/lwip/src/include/lwip/prot/ip4.h \
+  /opt/pico/pico-sdk/lib/lwip/src/include/lwip/ip6.h \
+  /opt/pico/pico-sdk/lib/lwip/src/include/lwip/prot/ip.h \
+  /opt/pico/pico-sdk/lib/lwip/src/include/lwip/prot/udp.h \
+  /opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.h \
+  /opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_country.h \
+  /opt/pico/pico-sdk/src/rp2_common/pico_async_context/include/pico/async_context.h \
+  /opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/include/pico/cyw43_arch/arch_threadsafe_background.h \
+  /opt/pico/pico-sdk/lib/lwip/src/include/lwip/tcp.h \
+  /opt/pico/pico-sdk/lib/lwip/src/include/lwip/tcpbase.h \
+  /opt/pico/pico-sdk/lib/lwip/src/include/lwip/icmp.h \
+  /opt/pico/pico-sdk/lib/lwip/src/include/lwip/prot/icmp.h \
+  /home/shob/Desktop/acads/EE344/Software/RP2040_code/tcp_server.h
+
 
 /opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb/reset_interface.h:
 
 /usr/include/newlib/sys/stat.h:
-
-/usr/include/newlib/c++/10.3.1/arm-none-eabi/thumb/v6-m/nofp/bits/cpu_defines.h:
 
 /usr/include/newlib/c++/10.3.1/arm-none-eabi/thumb/v6-m/nofp/bits/c++config.h:
 
@@ -10972,6 +11172,10 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_unique_id/uniq
 /opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/rosc.h:
 
 /opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sysinfo.h:
+
+/usr/include/newlib/c++/10.3.1/arm-none-eabi/thumb/v6-m/nofp/bits/cpu_defines.h:
+
+/opt/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c:
 
 /opt/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c:
 
@@ -11012,12 +11216,6 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h:
 /opt/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/psm.h:
 
 /opt/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c:
-
-/opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/vreg_and_chip_reset.h:
-
-/opt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c:
-
-/opt/pico/pico-sdk/src/rp2_common/hardware_vreg/include/hardware/vreg.h:
 
 /opt/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c:
 
@@ -11083,10 +11281,6 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h:
 
 /opt/pico/pico-sdk/src/rp2_common/hardware_watchdog/include/hardware/watchdog.h:
 
-/opt/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/clocks.h:
-
-/opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h:
-
 /opt/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c:
 
 /opt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c:
@@ -11149,10 +11343,6 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h:
 
 /opt/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.h:
 
-/opt/pico/pico-sdk/src/common/pico_sync/include/pico/critical_section.h:
-
-/opt/pico/pico-sdk/src/common/pico_sync/include/pico/mutex.h:
-
 /opt/pico/pico-sdk/lib/tinyusb/src/osal/osal_pico.h:
 
 /opt/pico/pico-sdk/lib/tinyusb/src/device/usbd_pvt.h:
@@ -11197,10 +11387,6 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h:
 
 /opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c:
 
-/opt/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/vreg_and_chip_reset.h:
-
-/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c:
-
 /opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c:
 
 /opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.c:
@@ -11229,7 +11415,47 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h:
 
 /opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c:
 
+/opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c:
+
+/opt/pico/pico-sdk/src/common/pico_time/time.c:
+
+/opt/pico/pico-sdk/src/common/pico_sync/mutex.c:
+
+/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.c:
+
+/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.c:
+
+/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c:
+
+/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c:
+
+/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c:
+
+/opt/pico/pico-sdk/src/rp2_common/pico_platform/platform.c:
+
+/opt/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c:
+
+/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.c:
+
+/usr/include/newlib/unistd.h:
+
+/opt/pico/pico-sdk/lib/tinyusb/src/osal/osal.h:
+
+/opt/pico/pico-sdk/lib/lwip/src/include/netif/lowpan6_common.h:
+
+/opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.c:
+
+/opt/pico/pico-sdk/lib/lwip/src/include/netif/lowpan6_ble.h:
+
+/opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c:
+
+/opt/pico/pico-sdk/lib/lwip/src/include/netif/lowpan6_opts.h:
+
 /opt/pico/pico-sdk/lib/lwip/src/include/lwip/dhcp.h:
+
+/opt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c:
+
+/opt/pico/pico-sdk/src/rp2_common/hardware_vreg/include/hardware/vreg.h:
 
 /opt/pico/pico-sdk/lib/lwip/src/include/lwip/memp.h:
 
@@ -11278,10 +11504,6 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h:
 /opt/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/i2c.h:
 
 /opt/pico/pico-sdk/lib/lwip/src/include/lwip/prot/etharp.h:
-
-/opt/pico/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h:
-
-/home/shob/Desktop/acads/EE344/Software/RP2040_code/callbacks.h:
 
 /opt/pico/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/i2c.h:
 
@@ -11421,13 +11643,15 @@ generated/pico_base/pico/config_autogen.h:
 
 /usr/include/newlib/_newlib_version.h:
 
-/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c:
-
 /opt/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c:
 
 /home/shob/Desktop/acads/EE344/Software/RP2040_code/lwipopts_common.h:
 
 /usr/include/newlib/sys/features.h:
+
+/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c:
+
+/opt/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/vreg_and_chip_reset.h:
 
 /opt/pico/pico-sdk/lib/lwip/src/core/inet_chksum.c:
 
@@ -11473,12 +11697,6 @@ generated/pico_base/pico/config_autogen.h:
 
 /opt/pico/pico-sdk/src/common/pico_base/include/pico/config.h:
 
-/opt/pico/pico-sdk/lib/lwip/src/include/netif/lowpan6_opts.h:
-
-/opt/pico/pico-sdk/src/common/pico_sync/include/pico/lock_core.h:
-
-/opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h:
-
 /opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h:
 
 /opt/pico/pico-sdk/lib/lwip/src/include/lwip/udp.h:
@@ -11486,6 +11704,8 @@ generated/pico_base/pico/config_autogen.h:
 /usr/include/newlib/machine/ieeefp.h:
 
 /usr/include/newlib/sys/_types.h:
+
+/opt/pico/pico-sdk/src/rp2_common/pico_multicore/include/pico/multicore.h:
 
 /opt/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c:
 
@@ -11507,7 +11727,7 @@ generated/pico_base/pico/config_autogen.h:
 
 /opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_config.h:
 
-/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.c:
+/opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h:
 
 /opt/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h:
 
@@ -11523,13 +11743,11 @@ generated/pico_base/pico/config_autogen.h:
 
 /opt/pico/pico-sdk/lib/lwip/src/include/lwip/opt.h:
 
-/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c:
-
 /usr/include/newlib/sys/select.h:
 
-/opt/pico/pico-sdk/src/common/pico_sync/include/pico/sync.h:
-
 /usr/include/newlib/machine/types.h:
+
+/opt/pico/pico-sdk/src/common/pico_sync/include/pico/sync.h:
 
 /opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h:
 
@@ -11567,16 +11785,6 @@ generated/pico_base/pico/config_autogen.h:
 
 /opt/pico/pico-sdk/lib/lwip/src/include/lwip/priv/raw_priv.h:
 
-/opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c:
-
-/opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c:
-
-/opt/pico/pico-sdk/src/common/pico_time/time.c:
-
-/opt/pico/pico-sdk/src/common/pico_sync/mutex.c:
-
-/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.c:
-
 /usr/include/newlib/inttypes.h:
 
 /opt/pico/pico-sdk/src/rp2_common/hardware_spi/include/hardware/spi.h:
@@ -11595,6 +11803,8 @@ generated/pico_base/pico/config_autogen.h:
 
 /usr/include/newlib/machine/_types.h:
 
+/opt/pico/pico-sdk/src/common/pico_sync/include/pico/critical_section.h:
+
 /opt/pico/pico-sdk/src/common/pico_sync/lock_core.c:
 
 /opt/pico/pico-sdk/lib/lwip/src/include/lwip/mem.h:
@@ -11608,8 +11818,6 @@ generated/pico_base/pico/config_autogen.h:
 /opt/pico/pico-sdk/lib/lwip/src/api/api_msg.c:
 
 /usr/include/newlib/sys/lock.h:
-
-/opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.c:
 
 /opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c:
 
@@ -11632,6 +11840,24 @@ generated/pico_base/pico/config_autogen.h:
 /opt/pico/pico-sdk/lib/lwip/src/include/lwip/tcp.h:
 
 /opt/pico/pico-sdk/src/rp2_common/pico_async_context/include/pico/async_context.h:
+
+/opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h:
+
+/opt/pico/pico-sdk/src/common/pico_sync/include/pico/lock_core.h:
+
+/home/shob/Desktop/acads/EE344/Software/RP2040_code/callbacks.h:
+
+/opt/pico/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h:
+
+/opt/pico/pico-sdk/src/common/pico_sync/include/pico/mutex.h:
+
+/opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/vreg_and_chip_reset.h:
+
+/opt/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/clocks.h:
+
+/home/shob/Desktop/acads/EE344/Software/RP2040_code/tcp_server.h:
+
+/opt/pico/pico-sdk/lib/lwip/src/include/lwip/tcpbase.h:
 
 /opt/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/structure.h:
 
@@ -11743,6 +11969,8 @@ generated/pico_base/pico/config_autogen.h:
 
 /opt/pico/pico-sdk/lib/lwip/src/core/dns.c:
 
+/home/shob/Desktop/acads/EE344/Software/RP2040_code/tcp_server_new.c:
+
 /opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_country.h:
 
 /opt/pico/pico-sdk/lib/lwip/src/include/lwip/inet_chksum.h:
@@ -11767,11 +11995,7 @@ generated/pico_base/pico/config_autogen.h:
 
 /opt/pico/pico-sdk/lib/lwip/src/include/lwip/raw.h:
 
-/opt/pico/pico-sdk/lib/lwip/src/include/lwip/tcpbase.h:
-
 /opt/pico/pico-sdk/lib/lwip/src/include/lwip/prot/tcp.h:
-
-/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c:
 
 /opt/pico/pico-sdk/lib/lwip/src/include/lwip/snmp.h:
 
@@ -11802,6 +12026,8 @@ generated/pico_base/pico/config_autogen.h:
 /opt/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.c:
 
 /opt/pico/pico-sdk/lib/lwip/src/include/lwip/ethip6.h:
+
+/home/shob/Desktop/acads/EE344/Software/RP2040_code/flash_utils.h:
 
 /opt/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.c:
 
@@ -11880,17 +12106,3 @@ generated/pico_base/pico/version.h:
 /opt/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/mpu.h:
 
 /opt/pico/pico-sdk/lib/lwip/src/include/netif/lowpan6.h:
-
-/opt/pico/pico-sdk/lib/lwip/src/include/netif/lowpan6_ble.h:
-
-/usr/include/newlib/unistd.h:
-
-/opt/pico/pico-sdk/lib/tinyusb/src/osal/osal.h:
-
-/opt/pico/pico-sdk/lib/lwip/src/include/netif/lowpan6_common.h:
-
-/opt/pico/pico-sdk/src/rp2_common/pico_platform/platform.c:
-
-/opt/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c:
-
-/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.c:

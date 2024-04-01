@@ -79,6 +79,11 @@
 #define ADDR_BPGAIN_EEPROM 0x0034
 #define ADDR_CPGAIN_EEPROM 0x0038
 
+/* GAIN CONSTANTS CALCULATED FOR EVAL BOARD */
+#define voltage_gain 566.307/(double)ADE9000_RMS_FULL_SCALE_CODES // 0.707*801/full_scale_code
+#define current_gain 138.63/(double)ADE9000_RMS_FULL_SCALE_CODES  // 0.707*2000/(10.2*full_scale_code)
+#define power_gain 78327.0/(double)ADE9000_WATT_FULL_SCALE_CODES  // 78327/full_scale_code
+
 /****************************************************************************************************************
  EEPROM Global Variables
 ****************************************************************************************************************/

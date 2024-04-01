@@ -27,4 +27,12 @@ CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_ma
  /opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
  /opt/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
  /opt/pico/pico-sdk/src/common/pico_base/include/pico/error.h \
- /opt/pico/pico-sdk/src/rp2_common/pico_malloc/include/pico/malloc.h
+ /opt/pico/pico-sdk/src/rp2_common/pico_malloc/include/pico/malloc.h \
+ /opt/pico/pico-sdk/src/common/pico_sync/include/pico/mutex.h \
+ /opt/pico/pico-sdk/src/common/pico_sync/include/pico/lock_core.h \
+ /opt/pico/pico-sdk/src/common/pico_time/include/pico/time.h \
+ /opt/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
+ /opt/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
+ /opt/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+ /opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
+ /opt/pico/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h

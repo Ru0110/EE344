@@ -4031,6 +4031,30 @@ opt/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 .PHONY : opt/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 
+opt/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.obj: opt/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.obj
+
+# target to build an object file
+opt/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+
+opt/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.i: opt/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.i
+
+# target to preprocess a source file
+opt/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
+
+opt/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.s: opt/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.s
+
+# target to generate assembly for a file
+opt/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
+.PHONY : opt/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
+
 opt/pico/pico-sdk/src/rp2_common/pico_platform/platform.obj: opt/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 .PHONY : opt/pico/pico-sdk/src/rp2_common/pico_platform/platform.obj
 
@@ -4326,6 +4350,30 @@ opt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s: opt/pico/pico-sdk/s
 opt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 .PHONY : opt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
+
+tcp_server_new.obj: tcp_server_new.c.obj
+.PHONY : tcp_server_new.obj
+
+# target to build an object file
+tcp_server_new.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/tcp_server_new.c.obj
+.PHONY : tcp_server_new.c.obj
+
+tcp_server_new.i: tcp_server_new.c.i
+.PHONY : tcp_server_new.i
+
+# target to preprocess a source file
+tcp_server_new.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/tcp_server_new.c.i
+.PHONY : tcp_server_new.c.i
+
+tcp_server_new.s: tcp_server_new.c.s
+.PHONY : tcp_server_new.s
+
+# target to generate assembly for a file
+tcp_server_new.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensing_unit.dir/build.make CMakeFiles/sensing_unit.dir/tcp_server_new.c.s
+.PHONY : tcp_server_new.c.s
 
 # Help Target
 help:
@@ -4820,6 +4868,9 @@ help:
 	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.obj"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.i"
+	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.s"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_platform/platform.obj"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_platform/platform.i"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_platform/platform.s"
@@ -4857,6 +4908,9 @@ help:
 	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i"
 	@echo "... opt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s"
+	@echo "... tcp_server_new.obj"
+	@echo "... tcp_server_new.i"
+	@echo "... tcp_server_new.s"
 .PHONY : help
 
 

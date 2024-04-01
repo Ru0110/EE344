@@ -20,8 +20,12 @@ add_executable(${PROJECT_NAME}
     ADE9000API_RP2040.c
     bme280.c
     blocking.c
+    tcp_server_new.c
     main.c
 )
+
+# Point to a custom linker script which reserves memory in flash
+pico_set_linker_script(${PROJECT_NAME} ${CMAKE_SOURCE_DIR}/memmap_custom.ld)
 
 # Create map/bin/hex/uf2 files
 pico_add_extra_outputs(${PROJECT_NAME})
@@ -29,6 +33,7 @@ pico_add_extra_outputs(${PROJECT_NAME})
 # Link to pico_stdlib (gpio, time, etc. functions)
 target_link_libraries(${PROJECT_NAME} 
     pico_stdlib
+    pico_multicore
     hardware_spi
     hardware_i2c
 )
@@ -51,3 +56,6 @@ target_include_directories(${PROJECT_NAME} PRIVATE
 # Enable usb output, disable uart output
 pico_enable_stdio_usb(${PROJECT_NAME} 1)
 pico_enable_stdio_uart(${PROJECT_NAME} 0)
+
+pico_set_program_name(${PROJECT_NAME} "SensingUnit")
+pico_set_program_version(${PROJECT_NAME} "0.1")
