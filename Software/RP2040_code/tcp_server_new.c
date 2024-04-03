@@ -93,12 +93,18 @@ err_t tcp_server_send_data(void *arg, struct tcp_pcb *tpcb)
     cyw43_arch_lwip_check();
     //DEBUG_printf("We have gotten past the lwip check\n");
     err_t err = tcp_write(tpcb, state->buffer_sent, BUF_SIZE, TCP_WRITE_FLAG_COPY);
+    err_t err_o = tcp_output(tpcb);
     //DEBUG_printf("We have gotten past the write statement\n");
+    cyw43_arch_lwip_end();
     if (err != ERR_OK) {
         DEBUG_printf("Failed to write data %d\n", err);
         return tcp_server_result(arg, -1);
     }
-    cyw43_arch_lwip_end();
+    if (err_o != ERR_OK) {
+        DEBUG_printf("Failed to output data %d\n", err_o);
+        return tcp_server_result(arg, -1);
+    }
+    
     return ERR_OK;
 }
 

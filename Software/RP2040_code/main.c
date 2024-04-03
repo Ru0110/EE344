@@ -40,8 +40,8 @@
 #define ADDR_PERSISTENT getAddressPersistent()
 
 /* WIFI DETAILS */
-#define WIFI_SSID "TP-Link_B050"
-#define WIFI_PASSWORD "50885275"
+#define WIFI_SSID "Shobhit"
+#define WIFI_PASSWORD "nananana"
 
 /* MULTICORE DEFINITIONS */
 /*#define START_LOGGING 1     // signal for first core to start data logging. Make sure its a low number
@@ -116,20 +116,20 @@ static int scan_result(void *env, const cyw43_ev_scan_result_t *result) {
 }
 
 void getData (TCP_SERVER_T *state) {
-    /*printf("===================================\n");
+    printf("===================================\n");
 
-    printf("MEASURE COUNT: %d\n", count++);*/
+    printf("MEASURE COUNT: %d\n", count++);
     curr_time = to_ms_since_boot(get_absolute_time());
-    /*printf("Current time: %d\n", to_ms_since_boot(get_absolute_time()));*/
+    printf("Current time: %d\n", to_ms_since_boot(get_absolute_time()));
 
     // Read from BME280
     bme280_read(&bme280, &r);
-    /*printf(
+    printf(
         "Temperature: %.2f°C\nPressure: %.2f Pa\nHumidity: %.2f%%\n",
         r.temperature, r.pressure, r.humidity
     );
 
-    printf("-----------------------------------\n");*/
+    printf("-----------------------------------\n");
 
     //uint32_t temp;
     /*Read and Print Resampled data*/
@@ -158,7 +158,7 @@ void getData (TCP_SERVER_T *state) {
     ReadActivePowerRegs(spi, CS_PIN, &powerRegs);
     ReadCurrentRMSRegs(spi, CS_PIN, &curntRMSRegs);
     ReadVoltageRMSRegs(spi, CS_PIN, &vltgRMSRegs);
-    /*printf("VA_rms: %f\n", (float)(vltgRMSRegs.VoltageRMSReg_A)*voltage_gain);
+    printf("VA_rms: %f\n", (float)(vltgRMSRegs.VoltageRMSReg_A)*voltage_gain);
     printf("IA_rms: %f\n", (float)(curntRMSRegs.CurrentRMSReg_A)*current_gain);
     printf("freq_A: %f\n", freqData.FrequencyValue_A);        
     printf("Power factor A: %f\n", pfData.PowerFactorValue_A);
@@ -171,7 +171,7 @@ void getData (TCP_SERVER_T *state) {
     printf("VERSION (should be 254): %d\n", SPI_Read_16(spi, CS_PIN, ADDR_VERSION));
     printf("RUN REGISTER: %d\n", SPI_Read_16(spi, CS_PIN, ADDR_RUN));
     printf("ZERO CROSSING THRESHOLD: %d\n", SPI_Read_16(spi, CS_PIN, ADDR_ZXTHRSH));
-    printf("===================================\n");*/
+    printf("===================================\n");
 
     /*if (count == 10) {
         break;
@@ -371,7 +371,7 @@ int main() {
             printf("Not yet connected to client oops\n\n");
             //printf("Connect to ip: %u port: %d\n\n", state->server_pcb->local_ip)
         } 
-        sleep_ms(400);
+        sleep_ms(2000);
 
     }
     free(state);
