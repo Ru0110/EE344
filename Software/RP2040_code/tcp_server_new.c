@@ -47,6 +47,7 @@ err_t tcp_server_close(void *arg) {
         tcp_close(state->server_pcb);
         state->server_pcb = NULL;
     }
+    DEBUG_printf("Server closed successfully\n");
     return err;
 }
 
@@ -57,8 +58,8 @@ err_t tcp_server_result(void *arg, int status) {
     } else {
         DEBUG_printf("failed %d\n", status);
     }
-    state->complete = true;
-    return tcp_server_close(arg);
+    //state->complete = true;
+    return ERR_OK; //lol
 }
 
 err_t tcp_server_sent(void *arg, struct tcp_pcb *tpcb, u16_t len) {
@@ -98,7 +99,15 @@ err_t tcp_server_send_data(void *arg, struct tcp_pcb *tpcb)
     cyw43_arch_lwip_end();
     if (err != ERR_OK) {
         DEBUG_printf("Failed to write data %d\n", err);
-        return tcp_server_result(arg, -1);
+        if (err == ERR_CONN) {
+            // no connection
+            return tcp_restart(arg);
+        } else if (err == ERR_RST) {
+            DEBUG_printf("Connection was reset\n");
+            return ERR_OK;
+        } else {
+            return tcp_server_result(arg, -1);
+        }
     }
     if (err_o != ERR_OK) {
         DEBUG_printf("Failed to output data %d\n", err_o);
@@ -155,7 +164,39 @@ err_t tcp_server_recv(void *arg, struct tcp_pcb *tpcb, struct pbuf *p, err_t err
 
 err_t tcp_server_poll(void *arg, struct tcp_pcb *tpcb) {
     DEBUG_printf("tcp_server_poll_fn\n");
-    //return tcp_server_result(arg, -1); // no response is an error?
+    /*DEBUG_printf("No client connected, restarting server\n");
+    // If there is no response we will restart the server
+    TCP_SERVER_T *state = (TCP_SERVER_T*)arg;
+    tcp_server_close(arg);
+
+    if (!tcp_server_open(state, TCP_PORT)) { // Open the server to connections and wait for someone to connect
+        printf("\nFailed to open TCP server. Exiting program\n");
+        return -1;
+    }
+
+    printf("Waiting for a connection...\n");
+
+    tcp_accept(state->server_pcb, tcp_server_accept); // tcp_server_accept will assign all callbacks
+                                                      // once the connection is made
+    */
+    return ERR_OK;
+}
+
+err_t tcp_restart(void *arg) {
+    DEBUG_printf("No client connected, restarting server\n");
+    // If there is no response we will restart the server
+    TCP_SERVER_T *state = (TCP_SERVER_T*)arg;
+    tcp_server_close(arg);
+
+    if (!tcp_server_open(state, TCP_PORT)) { // Open the server to connections and wait for someone to connect
+        printf("\nFailed to open TCP server. Exiting program\n");
+        return -1;
+    }
+
+    printf("Waiting for a connection...\n\n");
+
+    tcp_accept(state->server_pcb, tcp_server_accept); // tcp_server_accept will assign all callbacks
+                                                      // once the connection is made
     return ERR_OK;
 }
 
@@ -179,7 +220,7 @@ err_t tcp_server_accept(void *arg, struct tcp_pcb *client_pcb, err_t err) {
     tcp_arg(client_pcb, state);
     tcp_sent(client_pcb, tcp_server_sent);
     tcp_recv(client_pcb, tcp_server_recv);
-    tcp_poll(client_pcb, tcp_server_poll, POLL_TIME_S);
+    tcp_poll(client_pcb, tcp_server_poll, POLL_TIME_S * 2);
     //tcp_poll(client_pcb, tcp_server_poll, 10);
     tcp_err(client_pcb, tcp_server_err);
 
@@ -197,11 +238,11 @@ bool tcp_server_open(TCP_SERVER_T *state, uint port) {
         return false;
     }
 
-    err_t err = tcp_bind(pcb, NULL, port);
+    err_t err = tcp_bind(pcb, &netif_list->ip_addr, port);
     if (err) {
         DEBUG_printf("Error: %u. Failed to bind to port %u\n", err, port);
         return false;
-    }
+    }    
 
     state->server_pcb = tcp_listen_with_backlog(pcb, 1);
     if (!state->server_pcb) {

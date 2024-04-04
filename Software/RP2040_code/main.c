@@ -15,6 +15,9 @@
 #include "flash_utils.h"
 #include "tcp_server.h"
 
+#define DELAY_CONN 400
+#define DELAY_NOCONN 2000
+
 /* SPI DEFINITIONS */
 #define SPI_SPEED 5000000  // 5 MHz
 #define SCK_PIN 18
@@ -59,6 +62,7 @@ typedef struct {            // to faciliate sensor data transfer
     float Temperature;
     float Pressure;
     float Humidity;
+    uint32_t emergency;     // (VA)(VB)(IA)(IB)(PA)(PB)(temperature)(humidity)
 } sensorData;
 
 #define DATA_SIZE sizeof(sensorData)
@@ -189,6 +193,7 @@ void getData (TCP_SERVER_T *state) {
     data.Temperature = r.temperature;
     data.Pressure = r.pressure;
     data.Humidity = r.humidity;
+    data.emergency = 0;
 
     printf("Size of structure: %d bytes\n", DATA_SIZE);
 
@@ -310,17 +315,21 @@ int main() {
     sleep_ms(2000); // wait for scan results to arrive
 
     // connect to the specified network
-    printf("\nAttempting connect to %s\n", WIFI_SSID);
-    if (cyw43_arch_wifi_connect_timeout_ms(WIFI_SSID, WIFI_PASSWORD, CYW43_AUTH_WPA2_AES_PSK, 30000)) {
-        printf("failed to connect using {%s, %s}\n", WIFI_SSID, WIFI_PASSWORD);
-        return 1;
-    } else {
-        printf("Connected to %s\n", WIFI_SSID);
+    for (int i = 0; i<3; ++i) {
+    printf("\nConnect attempt %d to %s\n", i, WIFI_SSID);
+        if (cyw43_arch_wifi_connect_timeout_ms(WIFI_SSID, WIFI_PASSWORD, CYW43_AUTH_WPA2_AES_PSK, 30000)) {
+            printf("failed to connect using {%s, %s}\n", WIFI_SSID, WIFI_PASSWORD);
+            if (i == 2) {
+                printf("Giving up now\n");
+                return -1;
+            }
+            printf("Retrying...\n");
+        } else {
+            printf("Connected to %s\n", WIFI_SSID);
+            break;
+        }
+        sleep_ms(1000);
     }
-
-    // Test the TCP connection
-    //printf("Starting TCP test\n");
-    //run_tcp_server_test();
 
     /* PERFORM ADE9000 CONFIGURATIONS HERE. LIKE THE INIT ADE9000 FUNCTION IDK */
     resetADE(RESETADE_PIN);
@@ -339,7 +348,7 @@ int main() {
         printf("\nFailed to open TCP server. Exiting program\n");
         return -1;
     }
-    printf("Waiting for a connection...\n");
+    printf("Waiting for a connection...\n\n");
     tcp_accept(state->server_pcb, tcp_server_accept); // tcp_server_accept will assign all callbacks
                                                       // once the connection is made
     
@@ -358,7 +367,6 @@ int main() {
     //printf("ADDRESS: %d\n", SPI_Read_16(spi, CS_PIN, ADDR_VERSION));
     //printf("\n");
 
-
     // Loop forever
     while (true) {
         if (state->client_pcb) {
@@ -366,14 +374,16 @@ int main() {
             //printf("bruh");
             printf("Sending data...\n");
             tcp_server_send_data(state, state->client_pcb);
+            sleep_ms(DELAY_CONN);
         } else {
-            getData(state);
-            printf("Not yet connected to client oops\n\n");
-            //printf("Connect to ip: %u port: %d\n\n", state->server_pcb->local_ip)
-        } 
-        sleep_ms(2000);
-
+        //getData(state);
+            printf("Not yet connected to client oops\n");
+            printf("Connect to %s:%d\n\n", ip4addr_ntoa(netif_ip4_addr(netif_list)), TCP_PORT);
+            //printf("Connect to ip: %u port: %d\n\n", state->server_pcb->local_ip
+            sleep_ms(DELAY_NOCONN);
+        }
     }
+
     free(state);
     printf("\nExiting main loop\n");
     return 0;

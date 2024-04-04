@@ -5,7 +5,9 @@ import socket
 import sys
 
 #unpacking_str = "fffffffffffi"
-unpacking_str = "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB"
+unpacking_str = "ifffffffffffi"
+print("Unpacking length: ", struct.calcsize(unpacking_str))
+received_params = ["Time (ms)", "VArms", "VBrms", "IArms", "IBrms", "PowerA", "PowerB", "PfA", "PfB", "Temperature (C)", "Pressure (Pa)", "Humidity (%)", "Emergency"]
 
 # Check server ip address set
 if len(sys.argv) < 2:
@@ -15,7 +17,7 @@ if len(sys.argv) < 2:
 SERVER_ADDR = sys.argv[1]
 
 # These constants should match the server
-BUF_SIZE = 48
+BUF_SIZE = 52
 SERVER_PORT = 4242
 TEST_ITERATIONS = 20
 
@@ -41,7 +43,10 @@ for test_iteration in range(TEST_ITERATIONS):
         raise RuntimeError('wrong amount of data read %d', len(read_buf))
     else: 
         received_data = struct.unpack(unpacking_str, read_buf)
-        print(received_data)
+        for i in range(len(received_data)):
+            print(received_params[i], ":", received_data[i])
+        print("")
+        
         
 
     # Send the data back to the server

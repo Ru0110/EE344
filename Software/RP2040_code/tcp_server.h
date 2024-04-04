@@ -9,7 +9,7 @@
 
 #define TCP_PORT 4242
 #define DEBUG_printf printf
-#define BUF_SIZE 48
+#define BUF_SIZE 52
 #define TEST_ITERATIONS 10
 #define POLL_TIME_S 3
 
@@ -34,4 +34,5 @@ err_t tcp_server_poll(void *arg, struct tcp_pcb *tpcb);
 void tcp_server_err(void *arg, err_t err);
 err_t tcp_server_accept(void *arg, struct tcp_pcb *client_pcb, err_t err);
 bool tcp_server_open(TCP_SERVER_T *state, uint port);
+err_t tcp_restart(void *arg);
 //void run_tcp_server_test(void);
