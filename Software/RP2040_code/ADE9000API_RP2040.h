@@ -46,7 +46,7 @@
 /*Waveform buffer Settings*/
 #define ADE9000_WFB_CFG 0x1000			/*Neutral current samples enabled, Resampled data enabled*/
 										/*Burst all channels*/
-#define WFB_ELEMENT_ARRAY_SIZE 4  	/*size of buffer to read. 512 Max.Each element IA,VA...IN has max 512 points 
+#define WFB_ELEMENT_ARRAY_SIZE 256  	/*size of buffer to read. 512 Max.Each element IA,VA...IN has max 512 points 
 										/*[Size of waveform buffer/number of sample sets = 2048/4 = 512]*/
 										/*(Refer ADE9000 technical reference manual for more details)*/
 
@@ -81,8 +81,9 @@
 
 /* GAIN CONSTANTS CALCULATED FOR EVAL BOARD */
 #define voltage_gain 566.307/(double)ADE9000_RMS_FULL_SCALE_CODES // 0.707*801/full_scale_code
-#define current_gain 138.63/(double)ADE9000_RMS_FULL_SCALE_CODES  // 0.707*2000/(10.2*full_scale_code)
-#define power_gain 78327.0/(double)ADE9000_WATT_FULL_SCALE_CODES  // 78327/full_scale_code
+#define current_gain 35.35/(double)ADE9000_RMS_FULL_SCALE_CODES  // 0.707*2000/(10.2*full_scale_code)
+#define power_gain 20018.95/(double)ADE9000_WATT_FULL_SCALE_CODES  // 78327/full_scale_code
+#define resampling_gain 801.0/(double)ADE9000_RESAMPLED_FULL_SCALE_CODES // 801/full_scale_code
 
 /****************************************************************************************************************
  EEPROM Global Variables
@@ -105,6 +106,17 @@ typedef struct ResampledWfbData {
     int16_t IC_Resampled[WFB_ELEMENT_ARRAY_SIZE];
     int16_t IN_Resampled[WFB_ELEMENT_ARRAY_SIZE];
 } ResampledWfbData;
+
+typedef struct WaveformData {
+    int32_t IA_waveform[WFB_ELEMENT_ARRAY_SIZE];
+    int32_t VA_waveform[WFB_ELEMENT_ARRAY_SIZE];
+    int32_t IB_waveform[WFB_ELEMENT_ARRAY_SIZE];
+    int32_t VB_waveform[WFB_ELEMENT_ARRAY_SIZE];
+    int32_t IC_waveform[WFB_ELEMENT_ARRAY_SIZE];
+    int32_t VC_waveform[WFB_ELEMENT_ARRAY_SIZE];
+    int32_t IN_waveform[WFB_ELEMENT_ARRAY_SIZE];
+
+} WaveformData;
 
 typedef struct ActivePowerRegs {
     int32_t ActivePowerReg_A;
@@ -284,9 +296,16 @@ uint32_t SPI_Read_32(spi_inst_t *spi,
                 const uint16_t reg);
 
 void SPI_Burst_Read_Resampled_Wfb(spi_inst_t *spi,
+                                const uint cs_pin,
                                 uint16_t Address, 
                                 uint16_t Read_Element_Length, 
                                 ResampledWfbData *ResampledData);
+
+void SPI_Burst_Read_Fixed_Rate(spi_inst_t *spi,
+                                const uint cs_pin,
+                                uint16_t Address, 
+                                uint16_t Read_Element_Length, 
+                                WaveformData *Data);
 
 /*ADE9000 Calculated Parameter Read Functions*/
 
@@ -369,6 +388,9 @@ void ReadAngleRegsnValues(spi_inst_t *spi,
 void ReadTempRegnValue(spi_inst_t *spi,
                         const uint cs_pin,
                         TemperatureRegnValue *Data);
+
+void SoftwareReset(spi_inst_t *spi,
+                        const uint cs_pin);
 
 
 

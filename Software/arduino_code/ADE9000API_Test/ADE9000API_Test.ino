@@ -7,7 +7,7 @@
 ADE9000Class ade9000;
 #define SPI_SPEED 5000000     //SPI Speed
 #define CS_PIN 17 //8-->Arduino Zero. 16-->ESP8266 
-#define ADE9000_RESET_PIN 5 //Reset Pin on HW
+#define ADE9000_RESET_PIN 20 //Reset Pin on HW
 #define PM_1 14              //PM1 Pin: 4-->Arduino Zero. 15-->ESP8266 
 
 /*Structure decleration */

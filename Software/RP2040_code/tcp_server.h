@@ -9,7 +9,7 @@
 
 #define TCP_PORT 4242
 #define DEBUG_printf printf
-#define BUF_SIZE 52
+#define BUF_SIZE 1084
 #define TEST_ITERATIONS 10
 #define POLL_TIME_S 3
 

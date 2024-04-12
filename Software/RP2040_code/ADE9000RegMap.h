@@ -272,6 +272,7 @@
 #define ADDR_ADC_REDIRECT                    0x00000424            /*  This register allows any ADC output to be redirected to any digital datapath */
 #define ADDR_CF_LCFG                         0x00000425            /*  CF calibration pulse width configuration register */
 #define ADDR_TEMP_TRIM                       0x00000474            /*  Temperature sensor gain and offset, calculated during the manufacturing process */
+#define ADDR_PARTID                          0x472
 #define ADDR_RUN                             0x00000480            /*  Write this register to 1 to start the measurements. */
 #define ADDR_CONFIG1                         0x00000481            /*  Configuration register 1 */
 #define ADDR_ANGL_VA_VB                      0x00000482            /*  Time between positive to negative zero crossings on Phase A and Phase B Voltages */

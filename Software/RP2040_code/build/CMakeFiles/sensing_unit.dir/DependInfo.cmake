@@ -78,6 +78,7 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
 
 # The include file search paths:
 set(CMAKE_ASM_TARGET_INCLUDE_PATH
+  "/home/shob/Desktop/acads/EE344/Software/RP2040_code/generated"
   "/home/shob/Desktop/acads/EE344/Software/RP2040_code"
   "/home/shob/Desktop/acads/EE344/Software/RP2040_code/.."
   "/opt/pico/pico-sdk/src/common/pico_stdlib/include"
@@ -128,6 +129,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/opt/pico/pico-sdk/src/rp2_common/pico_multicore/include"
   "/opt/pico/pico-sdk/src/rp2_common/hardware_spi/include"
   "/opt/pico/pico-sdk/src/rp2_common/hardware_i2c/include"
+  "/opt/pico/pico-sdk/src/rp2_common/hardware_pio/include"
   "/opt/pico/pico-sdk/src/rp2_common/hardware_interp/include"
   "/opt/pico/pico-sdk/src/rp2_common/pico_async_context/include"
   "/opt/pico/pico-sdk/src/rp2_common/pico_lwip/include"
@@ -137,7 +139,6 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/opt/pico/pico-sdk/lib/cyw43-driver/src"
   "/opt/pico/pico-sdk/lib/cyw43-driver/firmware"
   "/opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus"
-  "/opt/pico/pico-sdk/src/rp2_common/hardware_pio/include"
   "/opt/pico/pico-sdk/src/rp2_common/hardware_dma/include"
   "/opt/pico/pico-sdk/src/rp2_common/hardware_exception/include"
   "/opt/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/include"

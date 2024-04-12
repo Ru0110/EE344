@@ -1,4 +1,5 @@
 /home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles/sensing_unit.dir
+/home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles/sensing_unit_ws2812_pio_h.dir
 /home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles/ELF2UF2Build.dir
 /home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles/edit_cache.dir
 /home/shob/Desktop/acads/EE344/Software/RP2040_code/build/CMakeFiles/rebuild_cache.dir

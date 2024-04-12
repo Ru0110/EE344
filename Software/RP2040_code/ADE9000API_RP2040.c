@@ -6,9 +6,17 @@
 // Reset cycle for the ADE9000
 void resetADE(const uint reset_pin) {
     gpio_put(reset_pin, 0);
-    sleep_ms(50);
+    sleep_ms(1000);
     gpio_put(reset_pin, 1);
     sleep_ms(1000);
+}
+
+// Perform a software reset on the ADE9000
+void SoftwareReset(spi_inst_t *spi,
+                        const uint cs_pin) {
+	uint16_t swrst_config1 = SPI_Read_16(spi, cs_pin, ADDR_CONFIG1);
+	swrst_config1 = swrst_config1 | 0b0000000000000001;
+	SPI_Write_16(spi, cs_pin, ADDR_CONFIG1, swrst_config1);
 }
 
 // Write configuration data into the config registers to start up the ADE9000
@@ -120,25 +128,79 @@ Input: The starting address. Use the starting address of a data set. e.g 0x800, 
 Output: Resampled data returned in structure
 */
 void SPI_Burst_Read_Resampled_Wfb(spi_inst_t *spi,
+								const uint cs_pin, 
                                 uint16_t Address, 
                                 uint16_t Read_Element_Length, 
                                 ResampledWfbData *ResampledData) {
     
     uint16_t i;
-    uint16_t reg[1];
-    reg[0] = ((Address << 4) & 0xFFF0)+8;
+    uint16_t temp_address;
+    temp_address = ((Address << 4) & 0xFFF0)+8;
+	uint16_t readData[7];
 
-    spi_write16_blocking(spi, reg, 1); // Send address to read from
+	gpio_put(cs_pin, 0);
+
+    spi_write16_blocking(spi, &temp_address, 1); // Send address to read from
+
     //burst read the data upto Read_Length 
 	for(i=0;i<Read_Element_Length;i++) {
-        spi_read16_blocking(spi, 0, &ResampledData->IA_Resampled[i], 1);
-        spi_read16_blocking(spi, 0, &ResampledData->VA_Resampled[i], 1);
-        spi_read16_blocking(spi, 0, &ResampledData->IB_Resampled[i], 1);
-        spi_read16_blocking(spi, 0, &ResampledData->VB_Resampled[i], 1);
-        spi_read16_blocking(spi, 0, &ResampledData->IC_Resampled[i], 1);
-        spi_read16_blocking(spi, 0, &ResampledData->VC_Resampled[i], 1);
-        spi_read16_blocking(spi, 0, &ResampledData->IN_Resampled[i], 1);
+        //spi_read16_blocking(spi, 0, &(ResampledData->IA_Resampled[i]), 1);
+        //spi_read16_blocking(spi, 0, &(ResampledData->VA_Resampled[i]), 1);
+        //spi_read16_blocking(spi, 0, &(ResampledData->IB_Resampled[i]), 1);
+        //spi_read16_blocking(spi, 0, &(ResampledData->VB_Resampled[i]), 1);
+        //spi_read16_blocking(spi, 0, &(ResampledData->IC_Resampled[i]), 1);
+        //spi_read16_blocking(spi, 0, &(ResampledData->VC_Resampled[i]), 1);
+        //spi_read16_blocking(spi, 0, &(ResampledData->IN_Resampled[i]), 1);
+		spi_read16_blocking(spi, 0, readData, 7);
+		ResampledData->IA_Resampled[i] = (readData[0]);
+		ResampledData->VA_Resampled[i] = (readData[1]);
+		ResampledData->IB_Resampled[i] = (readData[2]);
+		ResampledData->VB_Resampled[i] = (readData[3]);
+		ResampledData->IC_Resampled[i] = (readData[4]);
+		ResampledData->VC_Resampled[i] = (readData[5]);
+		ResampledData->IN_Resampled[i] = (readData[6]);
 	}
+
+	gpio_put(cs_pin, 1);
+
+}
+
+void SPI_Burst_Read_Fixed_Rate(spi_inst_t *spi,
+                                const uint cs_pin,
+                                uint16_t Address, 
+                                uint16_t Read_Element_Length, 
+                                WaveformData *Data) {
+
+	uint16_t i;
+    uint16_t temp_address;
+    temp_address = ((Address << 4) & 0xFFF0)+8;
+	uint16_t readData[14];
+
+	gpio_put(cs_pin, 0);
+
+    spi_write16_blocking(spi, &temp_address, 1); // Send address to read from
+
+    //burst read the data upto Read_Length 
+	for(i=0;i<Read_Element_Length;i++) {
+        //spi_read16_blocking(spi, 0, &(ResampledData->IA_Resampled[i]), 1);
+        //spi_read16_blocking(spi, 0, &(ResampledData->VA_Resampled[i]), 1);
+        //spi_read16_blocking(spi, 0, &(ResampledData->IB_Resampled[i]), 1);
+        //spi_read16_blocking(spi, 0, &(ResampledData->VB_Resampled[i]), 1);
+        //spi_read16_blocking(spi, 0, &(ResampledData->IC_Resampled[i]), 1);
+        //spi_read16_blocking(spi, 0, &(ResampledData->VC_Resampled[i]), 1);
+        //spi_read16_blocking(spi, 0, &(ResampledData->IN_Resampled[i]), 1);
+		spi_read16_blocking(spi, 0, readData, 14);
+		Data->IA_waveform[i] = (readData[0] << 16) + readData[1];
+		Data->VA_waveform[i] = (readData[2] << 16) + readData[3];
+		Data->IB_waveform[i] = (readData[4] << 16) + readData[5];
+		Data->VB_waveform[i] = (readData[6] << 16) + readData[7];
+		Data->IC_waveform[i] = (readData[8] << 16) + readData[9];
+		Data->VC_waveform[i] = (readData[10] << 16) + readData[11];
+		Data->IN_waveform[i] = (readData[12] << 16) + readData[13];
+	}
+
+	gpio_put(cs_pin, 1);
+
 }
 
 void ReadActivePowerRegs(spi_inst_t *spi,

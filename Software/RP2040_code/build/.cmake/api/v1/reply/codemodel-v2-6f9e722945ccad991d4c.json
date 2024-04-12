@@ -20,7 +20,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						6
+						6,
+						7
 					]
 				},
 				{
@@ -1031,7 +1032,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						6
+						6,
+						7
 					]
 				},
 				{
@@ -1135,7 +1137,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ELF2UF2Build::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ELF2UF2Build-Debug-17176a6b84549766ba1c.json",
+					"jsonFile" : "target-ELF2UF2Build-Debug-4fffe78142972b7567dd.json",
 					"name" : "ELF2UF2Build",
 					"projectIndex" : 0
 				},
@@ -1177,8 +1179,15 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "sensing_unit::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-sensing_unit-Debug-a6fbbb9ce6da941f83f3.json",
+					"jsonFile" : "target-sensing_unit-Debug-ebdf6ba4f278190b9de9.json",
 					"name" : "sensing_unit",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sensing_unit_ws2812_pio_h::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sensing_unit_ws2812_pio_h-Debug-cadaed146e4ef1a721dd.json",
+					"name" : "sensing_unit_ws2812_pio_h",
 					"projectIndex" : 0
 				}
 			]

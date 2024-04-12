@@ -15,6 +15,9 @@ set(CMAKE_CXX_STANDARD 17)
 # Creates a pico-sdk subdirectory in our project for the libraries
 pico_sdk_init()
 
+# Generate files for pio headers
+file(MAKE_DIRECTORY ${CMAKE_CURRENT_LIST_DIR}/generated)
+
 # Tell CMake where to find the executable source file
 add_executable(${PROJECT_NAME} 
     ADE9000API_RP2040.c
@@ -23,6 +26,9 @@ add_executable(${PROJECT_NAME}
     tcp_server_new.c
     main.c
 )
+
+# generate the header file into the source tree as it is included in the RP2040 datasheet
+pico_generate_pio_header(${PROJECT_NAME} ${CMAKE_CURRENT_LIST_DIR}/ws2812.pio OUTPUT_DIR ${CMAKE_CURRENT_LIST_DIR}/generated)
 
 # Point to a custom linker script which reserves memory in flash
 pico_set_linker_script(${PROJECT_NAME} ${CMAKE_SOURCE_DIR}/memmap_custom.ld)
@@ -36,6 +42,7 @@ target_link_libraries(${PROJECT_NAME}
     pico_multicore
     hardware_spi
     hardware_i2c
+    hardware_pio
 )
 
 # Link to wifi libraries

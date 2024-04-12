@@ -8,18 +8,37 @@
 #include "hardware/gpio.h"
 #include "hardware/vreg.h"
 #include "hardware/clocks.h"
+#include "hardware/pio.h"
 #include "ADE9000API_RP2040.h"
 #include "lwipopts.h"
 #include "bme280.h"
 #include "blocking.h"
 #include "flash_utils.h"
 #include "tcp_server.h"
+#include "ws2812.pio.h"
 
 #define DELAY_CONN 400
 #define DELAY_NOCONN 2000
 
+/* NEOPIXEL DEFINITIONS */
+#define IS_RGBW true
+#define NUM_PIXELS 1
+#define WS2812_PIN 9
+
+/* ADE9000 POWER QUALITY INTERRUPT DEFINITIONS */
+#define DIP_LEVEL 5.0 // Dip threshold. Must be float
+#define SWELL_LEVEL 9.0 // Swell threshold. Must be float
+#define DIP_SWELL_CYCLE 100 // Number of halfcycles of sustained dip or swell before interrupt
+#define OVERCURRENT_LEVEL 1.0 //Overcurrent threshold. Must be float 
+#define MASK1_USER (1 << 23  | 1 << 20 | 1 << 17) // Enable dip_A, swell_A, and overcurrent detection
+#define EVENTMASK_USER (1 << 3 | 1 << 0) // Enable events for dip_A, swell_A
+#define CONFIG3_USER (1 << 12 | 1 << 2) // Enable overcurrent detection and peak measurement on channel A 
+uint32_t event_start = 0;
+uint32_t event_end = 0;
+uint32_t event_status;
+
 /* SPI DEFINITIONS */
-#define SPI_SPEED 5000000  // 5 MHz
+#define SPI_SPEED 5000000  //1 MHz 
 #define SCK_PIN 18
 #define MOSI_PIN 19
 #define MISO_PIN 16
@@ -28,16 +47,16 @@
 /* I2C DEFINITIONS */
 #define SDA_PIN 4
 #define SCL_PIN 5
-#define I2C_SPEED 100000 // 400 kHz
+#define I2C_SPEED 100000 // 100 kHz
 
 /* GPIO DEFINITIONS */
-#define RESETADE_PIN 9
+#define RESETADE_PIN 20
 #define IRQ0_PIN 10
-#define IRQ1_PIN 11
+#define IRQ1_PIN 22
 #define ZX_PIN 12
 #define DREADY_PIN 13
 #define PM1_PIN 14
-#define BUZZER 15
+#define BUZZER 26
 
 /* FLASH CONFIGURATION ADDRESSES */
 #define ADDR_PERSISTENT getAddressPersistent()
@@ -59,16 +78,20 @@ typedef struct {            // to faciliate sensor data transfer
     float PowerB;
     float PfA;
     float PfB;
+    float freqA;
+    float freqB;
     float Temperature;
     float Pressure;
     float Humidity;
-    uint32_t emergency;     // (VA)(VB)(IA)(IB)(PA)(PB)(temperature)(humidity)
+    uint32_t emergency;     // From LSB: (DipA)(DipB)(SwellA)(SwellB)(OIA)(OIB)(Temp)(Pressure)(Humidity)(NoLoadA)(NoLoadB)
+    int32_t waveform_buffer[WFB_ELEMENT_ARRAY_SIZE];
 } sensorData;
 
 #define DATA_SIZE sizeof(sensorData)
 
 // Data structures and sensor objects
-ResampledWfbData resampledData; // Resampled Data
+//ResampledWfbData resampledData; // Resampled Data
+WaveformData FixedWaveformData; // Fized rate data from waveform
 ActivePowerRegs powerRegs;     // Declare powerRegs of type ActivePowerRegs to store Active Power Register data
 CurrentRMSRegs curntRMSRegs;   //Current RMS
 VoltageRMSRegs vltgRMSRegs;    //Voltage RMS
@@ -77,11 +100,13 @@ PowerFactorRegs pfData;         // Power factors
 VoltageTHDRegs voltageTHDRegsnValues; //Voltage THD
 bme280_t bme280; //BME sensor struct
 bme280_reading_t r; //BME data struct
-sensorData data; // pointer to struct holding all sensor data;
+sensorData data; // struct holding all sensor data;
 
 // Ports
 spi_inst_t *spi = spi0;
 i2c_inst_t *i2c = i2c0;
+PIO pio = pio0;
+int sm = 0;
 
 /*void core0_sio_irq() {
     // Just record the latest entry
@@ -102,12 +127,20 @@ void core1_sio_irq() {
 uint32_t count = 0;
 uint32_t curr_time = 0;
 
+static inline void put_pixel(uint32_t pixel_grb) {
+    pio_sm_put_blocking(pio0, 0, pixel_grb << 8u);
+}
+
+static inline uint32_t urgb_u32(uint8_t r, uint8_t g, uint8_t b) {
+    return
+            ((uint32_t) (r) << 8) |
+            ((uint32_t) (g) << 16) |
+            (uint32_t) (b);
+}
 
 bool reserved_addr(uint8_t addr) {
     return (addr & 0x78) == 0 || (addr & 0x78) == 0x78;
 }
-
-
 
 static int scan_result(void *env, const cyw43_ev_scan_result_t *result) {
     if (result) {
@@ -119,68 +152,28 @@ static int scan_result(void *env, const cyw43_ev_scan_result_t *result) {
     return 0;
 }
 
-void getData (TCP_SERVER_T *state) {
-    printf("===================================\n");
-
-    printf("MEASURE COUNT: %d\n", count++);
+void getData () {
+    count += 1;
     curr_time = to_ms_since_boot(get_absolute_time());
-    printf("Current time: %d\n", to_ms_since_boot(get_absolute_time()));
 
     // Read from BME280
     bme280_read(&bme280, &r);
-    printf(
-        "Temperature: %.2f°C\nPressure: %.2f Pa\nHumidity: %.2f%%\n",
-        r.temperature, r.pressure, r.humidity
-    );
-
-    printf("-----------------------------------\n");
-
-    //uint32_t temp;
-    /*Read and Print Resampled data*/
-    /*Start the Resampling engine to acquire 4 cycles of resampled data*/
-    /*SPI_Write_16(spi, ADDR_WFB_CFG,0x1000);
-    SPI_Write_16(spi, ADDR_WFB_CFG,0x1010);
-    sleep_ms(100); //approximate time to fill the waveform buffer with 4 line cycles  
-    SPI_Burst_Read_Resampled_Wfb(spi, 0x800,WFB_ELEMENT_ARRAY_SIZE,&resampledData);   // Burst read function
-    printf("==========Waveform buffer============\n");
-    for(temp=0;temp<WFB_ELEMENT_ARRAY_SIZE;temp++)
-        {
-        printf("VA: ");
-        printf("%d\n", resampledData.VA_Resampled[temp]);
-        printf("IA: ");
-        printf("%d\n", (float)resampledData.IA_Resampled[temp]/(float)ADE9000_RESAMPLED_FULL_SCALE_CODES);
-        printf("VB: ");
-        printf("%d\n", (float)resampledData.VB_Resampled[temp]/(float)ADE9000_RESAMPLED_FULL_SCALE_CODES);
-        printf("IB: ");
-        printf("%d\n", (float)resampledData.IB_Resampled[temp]/(float)ADE9000_RESAMPLED_FULL_SCALE_CODES);
-        printf("\n");
-    } 
-    printf("====================================\n");
-    */
 
     //Template to read Power registers from ADE9000 and store data in Arduino MCU
     ReadActivePowerRegs(spi, CS_PIN, &powerRegs);
     ReadCurrentRMSRegs(spi, CS_PIN, &curntRMSRegs);
     ReadVoltageRMSRegs(spi, CS_PIN, &vltgRMSRegs);
-    printf("VA_rms: %f\n", (float)(vltgRMSRegs.VoltageRMSReg_A)*voltage_gain);
-    printf("IA_rms: %f\n", (float)(curntRMSRegs.CurrentRMSReg_A)*current_gain);
-    printf("freq_A: %f\n", freqData.FrequencyValue_A);        
-    printf("Power factor A: %f\n", pfData.PowerFactorValue_A);
-    printf("Power in A channel (WATT): %f\n", (float)(powerRegs.ActivePowerReg_A)*power_gain);
-    printf("VB_rms: %f\n", (float)(vltgRMSRegs.VoltageRMSReg_B)*voltage_gain);
-    printf("IB_rms: %f\n", (float)(curntRMSRegs.CurrentRMSReg_B)*current_gain);
-    printf("freq_B: %f\n", freqData.FrequencyValue_B);        
-    printf("Power factor B: %f\n", pfData.PowerFactorValue_B);
-    printf("Power in B channel (WATT): %f\n", (float)(powerRegs.ActivePowerReg_B)*power_gain);
-    printf("VERSION (should be 254): %d\n", SPI_Read_16(spi, CS_PIN, ADDR_VERSION));
-    printf("RUN REGISTER: %d\n", SPI_Read_16(spi, CS_PIN, ADDR_RUN));
-    printf("ZERO CROSSING THRESHOLD: %d\n", SPI_Read_16(spi, CS_PIN, ADDR_ZXTHRSH));
-    printf("===================================\n");
+    ReadPowerFactorRegsnValues(spi, CS_PIN, &pfData);
+    ReadPeriodRegsnValues(spi, CS_PIN, &freqData);
 
-    /*if (count == 10) {
-        break;
-    }*/
+    /*Read Waveform data*/
+    SPI_Write_16(spi, CS_PIN, ADDR_WFB_CFG, 0x1000); // Stop waveform sampling
+    SPI_Write_16(spi, CS_PIN, ADDR_WFB_CFG, 0x1220); // Store the fixed data rate values from sinc4 + LPF
+    SPI_Write_16(spi, CS_PIN, ADDR_WFB_CFG, 0x1230); // Start sampling
+    sleep_ms(200); //approximate time to fill the waveform buffer with 4 line cycles  
+    SPI_Burst_Read_Fixed_Rate(spi, CS_PIN, 0x800, WFB_ELEMENT_ARRAY_SIZE, &FixedWaveformData);   // Burst read function
 
+    // Update data struct
     data.time = curr_time;
     data.VArms = voltage_gain*(float)vltgRMSRegs.VoltageRMSReg_A;
     data.VBrms = voltage_gain*(float)vltgRMSRegs.VoltageRMSReg_B;
@@ -190,27 +183,156 @@ void getData (TCP_SERVER_T *state) {
     data.PowerB = power_gain*(float)powerRegs.ActivePowerReg_B;
     data.PfA = pfData.PowerFactorValue_A;
     data.PfB = pfData.PowerFactorValue_B;
+    data.freqA = freqData.FrequencyValue_A;
+    data.freqB = freqData.FrequencyValue_B;
     data.Temperature = r.temperature;
     data.Pressure = r.pressure;
     data.Humidity = r.humidity;
     data.emergency = 0;
+    memcpy(data.waveform_buffer, FixedWaveformData.VA_waveform, WFB_ELEMENT_ARRAY_SIZE*4); // each entry is four bytes long
+}
 
+void printWaveformBuffer() {
+    printf("\n==========Waveform buffer============\n");
+    uint32_t temp;
+    for(temp=0;temp<WFB_ELEMENT_ARRAY_SIZE;temp++)
+        {
+        printf("VA: %d\n", data.waveform_buffer[temp]);
+        //printf("IA: %f\n", resampledData.IA_Resampled[temp]);
+        //printf("VB: %d\n", resampledData.VB_Resampled[temp]);
+        //printf("IB: %d\n", resampledData.IB_Resampled[temp]);
+        //printf("VC: %d\n", resampledData.VC_Resampled[temp]);
+        //printf("IC: %d\n", resampledData.IC_Resampled[temp]);
+        //printf("IN: %d\n", resampledData.IN_Resampled[temp]);
+    } 
+    printf("====================================\n");
+}
+
+void printData () {
+    printf("===================================\n");
+    printf("MEASURE COUNT: %d\n", count);
+    printf("Current time: %d\n", curr_time);
+    printf("Temperature: %.2f°C\nPressure: %.2f Pa\nHumidity: %.2f%%\n",
+        data.Temperature, data.Pressure, data.Humidity);
+    printf("-----------------------------------\n");
+    printf("VA_rms: %f\n", data.VArms);
+    printf("IA_rms: %f\n", data.IArms);
+    printf("freq_A: %f\n", data.freqA);        
+    printf("Power factor A: %f\n", data.PfA);
+    printf("Power in A channel (WATT): %f\n", data.PowerA);
+    printf("VB_rms: %f\n", data.VBrms);
+    printf("IB_rms: %f\n", data.IBrms);
+    printf("freq_B: %f\n", data.freqB);        
+    printf("Power factor B: %f\n", data.PfB);
+    printf("Power in B channel (WATT): %f\n", data.PowerB);
+    printf("VERSION (should be 254): %d\n", SPI_Read_16(spi, CS_PIN, ADDR_VERSION));
+    printf("RUN REGISTER: %d\n", SPI_Read_16(spi, CS_PIN, ADDR_RUN));
+    printf("===================================\n");
+    
     printf("Size of structure: %d bytes\n", DATA_SIZE);
-
-    // Copy contents to send buffer
-    memcpy(state->buffer_sent, &data, DATA_SIZE);
-    //printf("First element of data: %d\n", data.time);
-    printf("Elements of send buffer: ");
-    for (int i = 0; i<DATA_SIZE; i++) {
-        printf("%hhu ", state->buffer_sent[i]);
-    }
     printf("\n");
+}
+
+void irq0_callback(uint gpio, uint32_t events) {
+    printf("Interrupt at IRQ0 at GPIO %u!\n", gpio);
+    // Read the STATUS0 register
+    printf("STATUS0: %u\n", SPI_Read_32(spi, CS_PIN, ADDR_STATUS0));
+}
+
+void irq1_callback(uint gpio, uint32_t events) {
+    printf("Interrupt at IRQ1 at GPIO %u!\n", gpio);
+    // Read the STATUS1 register
+    uint32_t status1 = SPI_Read_32(spi, CS_PIN, ADDR_STATUS1);
+    printf("STATUS1: %u\n", status1);
+
+    if (status1 & (1 << 23)) { // DIP in channel A
+        // Read the peak voltage
+        double peak = (double)(SPI_Read_32(spi, CS_PIN, ADDR_VPEAK) & ((1 << 24) - 1))*32.0/voltage_gain;
+        status1 ^= (1 << 23);
+        if (data.emergency & (1 << 0)) {
+            printf("Dip event over in channel A\n");
+            printf("Peak voltage during dip: %f\n", peak);
+        } else {
+            data.emergency |= (1 << 0);
+            printf("Dip event started in channel A\n");  
+            printf("Peak voltage before dip: %f\n", peak);
+        }
+    }
+
+    if (status1 & (1 << 20)) { // Swell in channel A
+        // Read the peak voltage
+        double peak = (double)(SPI_Read_32(spi, CS_PIN, ADDR_VPEAK) & ((1 << 24) - 1))*32.0/voltage_gain;
+        status1 ^= (1 << 20);
+        if (data.emergency & (1 << 2)) {
+            printf("Swell event over in channel A\n");
+            printf("Peak voltage during swell: %f\n", peak);
+        } else {
+            data.emergency |= (1 << 2);
+            printf("Swell event started in channel A\n");  
+            printf("Peak voltage before swell: %f\n", peak);
+        }
+    }
+
+    if (status1 & (1 << 17)) { // Overcurrent in channel A
+        // Read the peak current
+        double peak = (double)(SPI_Read_32(spi, CS_PIN, ADDR_IPEAK) & ((1 << 24) - 1))*32.0/current_gain;
+        status1 ^= (1 << 17);
+        if (data.emergency & (1 << 4)) {
+            printf("Overcurrent event over in channel A\n");
+            printf("Peak current during overcurrent: %f\n", peak);
+        } else {
+            data.emergency |= (1 << 4);
+            printf("Overcurrent event started in channel A\n");  
+            printf("Peak current before overcurrent: %f\n", peak);
+        }
+    }
+
+    // Clear the status register to stop the interrupt
+    SPI_Write_32(spi, CS_PIN, ADDR_STATUS1, status1);
+
+}
+
+void event_callback(uint gpio, uint32_t events) {
+    printf("Event interrupt triggered at GPIO %u!\n", gpio);
+    // Read the event status register
+    event_status = SPI_Read_32(spi, CS_PIN, ADDR_EVENT_STATUS);
+    printf("Event status register: %u\n", event_status);
+
+    if (gpio_get(gpio)) { // event started
+        event_start = to_ms_since_boot(get_absolute_time());
+
+        if (event_status & (1 << 0)) {
+            printf("We are in a dip event\n");
+        }
+
+        if (event_status & (1 << 3)) {
+            printf("We are in a swell event\n");
+        }
+    } else { // event ended
+        event_end = to_ms_since_boot(get_absolute_time());
+        printf("Event ended after time: %u ms\n", event_end - event_start);
+    }
+    
+}
+
+void dummy_callback(uint gpio, uint32_t events) {
+    printf("GPIO TOGGLE ON %u\n", gpio);
+    printf("EVENTS: %u\n", events);
 }
 
 int main() {
 
     // Initialize chosen serial port (USB for now) and WiFi
     stdio_init_all();
+
+    // Start the statemachine or the neopixel
+    uint offset = pio_add_program(pio, &ws2812_program);
+    ws2812_program_init(pio, sm, offset, WS2812_PIN, 800000, IS_RGBW);
+    put_pixel(urgb_u32(0,0,0x80)); // light blue?
+
+    //sleep_ms(4000);
+    //printf("ENTERING PROGRAM\n");
+
     if (cyw43_arch_init()) {
         printf("Wifi init failed");
         return -1;
@@ -240,33 +362,35 @@ int main() {
     gpio_pull_up(SDA_PIN);
     gpio_pull_up(SCL_PIN);
 
+    // Initialize interrupt pins. They go low when active so we will only monitor falling edge
+    // gpio_set_irq_enabled_with_callback(IRQ0_PIN,  GPIO_IRQ_EDGE_FALL, true, &irq0_callback);
+    // gpio_set_irq_enabled_with_callback(IRQ1_PIN,  GPIO_IRQ_EDGE_FALL, true, &irq1_callback);
+    // Initialize event pin interrupts. Both edges to measure time of event 
+    //gpio_init(DREADY_PIN);
+    //gpio_set_dir(DREADY_PIN, GPIO_IN);
+    //gpio_set_irq_enabled_with_callback(MISO_PIN, GPIO_IRQ_EDGE_RISE, true, &dummy_callback);
+
     // Initialize other pins 
     gpio_init(PM1_PIN);
-    gpio_init(IRQ0_PIN);
-    gpio_init(IRQ1_PIN);
     gpio_init(ZX_PIN);
-    gpio_init(DREADY_PIN);
     gpio_init(RESETADE_PIN);
     gpio_init(CS_PIN);
     gpio_set_dir(PM1_PIN, GPIO_OUT);
     gpio_set_dir(RESETADE_PIN, GPIO_OUT);
-    gpio_set_dir(IRQ0_PIN, GPIO_IN);
-    gpio_set_dir(IRQ1_PIN, GPIO_IN);
     gpio_set_dir(ZX_PIN, GPIO_IN);
-    gpio_set_dir(DREADY_PIN, GPIO_IN);
     gpio_set_dir(CS_PIN, GPIO_OUT);
 
     gpio_put(CS_PIN, 1);
     gpio_put(PM1_PIN, 0); // start in normal power mode
     gpio_put(RESETADE_PIN, 1); // reset is active low
 
-    sleep_ms(2000);
+    sleep_ms(1000);
 
     // Check if flash reservation works
     printf("\nPersistent Flash (ROM) address at: %d\n\n", ADDR_PERSISTENT);
 
-    // Perform i2c bus scan to see if BME280 is connected
-    printf("\nI2C Bus Scan\n");
+    // Perform i2c bus scan to see if BME280 and EEPROM are connected
+    /*printf("\nI2C Bus Scan\n");
     printf("   0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F\n");
 
     for (int addr = 0; addr < (1 << 7); ++addr) {
@@ -290,9 +414,9 @@ int main() {
         printf(ret < 0 ? "." : "@");
         printf(addr % 16 == 15 ? "\n" : "  ");
     }
-    printf("Done.\n\n");
+    printf("Done.\n\n");*/
 
-    absolute_time_t scan_time = nil_time;
+    /*absolute_time_t scan_time = nil_time;
     bool scan_in_progress = false;
 
     if (absolute_time_diff_us(get_absolute_time(), scan_time) < 0) {
@@ -313,6 +437,38 @@ int main() {
     }
 
     sleep_ms(2000); // wait for scan results to arrive
+    */
+
+   // print DEBUG info for the spi bus
+    /*printf("Baudrate: %d\n", spi_get_baudrate(spi));
+    printf("Instance number: %d\n", spi_get_index(spi));
+    printf("SPI device writeable? %s\n", spi_is_writable(spi) ? "True" : "False");
+    printf("SPI device readable? %s\n", spi_is_readable(spi)? "True": "False");
+    printf("ADDRESS: %d\n", SPI_Read_16(spi, CS_PIN, ADDR_VERSION));
+    printf("\n");*/
+
+    /* PERFORM ADE9000 CONFIGURATIONS HERE. LIKE THE INIT ADE9000 FUNCTION IDK */
+    printf("Reset cycle for the ADE9000\n");
+    resetADE(RESETADE_PIN);
+    sleep_ms(200);
+    SetupADE9000(spi, CS_PIN);
+    sleep_ms(300);
+
+    // Workaround: perform throw-away read to make SCK idle high. idk, just copied
+    printf("Initial VERSION (Should be 254): %d\n", SPI_Read_16(spi, CS_PIN, ADDR_VERSION));
+    printf("PART ID (Should be 1048576): %u\n", SPI_Read_32(spi, CS_PIN, ADDR_PARTID) & (1 << 20));
+    //printf("Initial VERSION2: %d\n", SPI_Read_16(spi, CS_PIN, ADDR_VERSION2));
+    //printf("Initial VERSION: %d\n", SPI_Read_16(spi, CS_PIN, ADDR_VERSION));
+    printf("Initial STATUS1: %d\n", SPI_Read_16(spi, CS_PIN, ADDR_STATUS1));
+
+    /* BME280 configs */
+    bme280_init_struct(&bme280, i2c, 0x76, &pico_callbacks_blocking);
+    bme280_init(&bme280);
+    printf("BME280 config done!\n");
+
+    sleep_ms(1000);
+
+    put_pixel(urgb_u32(80, 16, 120)); // purple
 
     // connect to the specified network
     for (int i = 0; i<3; ++i) {
@@ -331,15 +487,6 @@ int main() {
         sleep_ms(1000);
     }
 
-    /* PERFORM ADE9000 CONFIGURATIONS HERE. LIKE THE INIT ADE9000 FUNCTION IDK */
-    resetADE(RESETADE_PIN);
-    sleep_ms(1000);
-    SetupADE9000(spi, CS_PIN);
-    sleep_ms(1000);
-
-    /* BME280 configs */
-    bme280_init_struct(&bme280, i2c, 0x76, &pico_callbacks_blocking);
-    bme280_init(&bme280);
 
     /* Set up the sensing unit as a TCP server */
     TCP_SERVER_T *state = tcp_server_init(); // Get new server struct
@@ -352,39 +499,61 @@ int main() {
     tcp_accept(state->server_pcb, tcp_server_accept); // tcp_server_accept will assign all callbacks
                                                       // once the connection is made
     
-    
     // Wait before taking measurements
-    sleep_ms(3000);
+    sleep_ms(1000);
 
-    // Workaround: perform throw-away read to make SCK idle high. idk, just copied
-    SPI_Read_16(spi, CS_PIN, ADDR_VERSION);
+    // Set the voltage swell and dip thresholds
+    //SPI_Write_32(spi, CS_PIN, ADDR_DIP_LVL, (uint32_t)DIP_LEVEL/voltage_gain);
+    //SPI_Write_32(spi, CS_PIN, ADDR_SWELL_LVL, (uint32_t)SWELL_LEVEL/voltage_gain);
+    //SPI_Write_16(spi, CS_PIN, ADDR_DIP_CYC, (uint16_t)DIP_SWELL_CYCLE);
+    //SPI_Write_16(spi, CS_PIN, ADDR_SWELL_CYC, (uint16_t)DIP_SWELL_CYCLE);
 
-    // print DEBUG info for the spi bus
-    //printf("Baudrate: %d\n", spi_get_baudrate(spi));
-    //printf("Instance number: %d\n", spi_get_index(spi));
-    //printf("SPI device writeable? %s\n", spi_is_writable(spi) ? "True" : "False");
-    //printf("SPI device readable? %s\n", spi_is_readable(spi)? "True": "False");
-    //printf("ADDRESS: %d\n", SPI_Read_16(spi, CS_PIN, ADDR_VERSION));
-    //printf("\n");
+    //Configure to receive interrupts only when entering and exiting DIP or SWELL modes
+    //uint16_t config1 = SPI_Read_16(spi, CS_PIN, ADDR_CONFIG1);
+    //config1 = config1 | 0b000001000000000;
+    //SPI_Write_16(spi, CS_PIN, ADDR_CONFIG1, config1);
+
+    // Enable overcurrent detection and set threshold
+    //SPI_Write_16(spi, CS_PIN, ADDR_CONFIG3, CONFIG3_USER);
+    //SPI_Write_32(spi, CS_PIN, ADDR_OILVL, (uint32_t)OVERCURRENT_LEVEL/current_gain);
+
+    // Enable interrupts by changing the MASK1 register and EVENT_MASK register
+    // Initially MASK1 and EVENT_MASK are disabled.
+    //SPI_Write_32(spi, CS_PIN, ADDR_MASK1, MASK1_USER); 
+    //SPI_Write_32(spi, CS_PIN, ADDR_EVENT_MASK, EVENTMASK_USER);
+
+    put_pixel(urgb_u32(0, 0x80, 0)); // green. Can now connect
+
 
     // Loop forever
     while (true) {
         if (state->client_pcb) {
-            getData(state);
-            //printf("bruh");
+            getData();
+            printData();
+            // Copy contents to send buffer
+            memcpy(state->buffer_sent, &data, DATA_SIZE);
+            /* printf("Elements of send buffer: ");
+            for (int i = 0; i<DATA_SIZE; i++) {
+                printf("%hhu ", state->buffer_sent[i]);
+            }*/
             printf("Sending data...\n");
             tcp_server_send_data(state, state->client_pcb);
             sleep_ms(DELAY_CONN);
         } else {
         //getData(state);
-            printf("Not yet connected to client oops\n");
-            printf("Connect to %s:%d\n\n", ip4addr_ntoa(netif_ip4_addr(netif_list)), TCP_PORT);
-            //printf("Connect to ip: %u port: %d\n\n", state->server_pcb->local_ip
+            getData();
+            printData();
+            //printWaveformBuffer();
+            //printf("STATUS0: %u\n", SPI_Read_32(spi, CS_PIN, ADDR_STATUS0));
+            //printf("STATUS1: %u\n", SPI_Read_32(spi, CS_PIN, ADDR_STATUS1));
+            //printf("Not yet connected to client oops\n");
+            printf("Connect to %s:%u\n\n", ip4addr_ntoa(netif_ip4_addr(netif_list)), TCP_PORT);
             sleep_ms(DELAY_NOCONN);
         }
-    }
+    } 
 
     free(state);
+    sleep_ms(2000);
     printf("\nExiting main loop\n");
     return 0;
 }

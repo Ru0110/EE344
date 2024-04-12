@@ -269,6 +269,10 @@ CMakeFiles/sensing_unit.dir/main.c.obj: /home/shob/Desktop/acads/EE344/Software/
   /opt/pico/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h \
   /opt/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/clocks.h \
   /opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h \
+  /opt/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h \
+  /opt/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pio.h \
+  /opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pio.h \
+  /opt/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h \
   /home/shob/Desktop/acads/EE344/Software/RP2040_code/ADE9000API_RP2040.h \
   /home/shob/Desktop/acads/EE344/Software/RP2040_code/ADE9000RegMap.h \
   /home/shob/Desktop/acads/EE344/Software/RP2040_code/lwipopts.h \
@@ -280,7 +284,8 @@ CMakeFiles/sensing_unit.dir/main.c.obj: /home/shob/Desktop/acads/EE344/Software/
   /opt/pico/pico-sdk/lib/lwip/src/include/lwip/tcp.h \
   /opt/pico/pico-sdk/lib/lwip/src/include/lwip/tcpbase.h \
   /opt/pico/pico-sdk/lib/lwip/src/include/lwip/icmp.h \
-  /opt/pico/pico-sdk/lib/lwip/src/include/lwip/prot/icmp.h
+  /opt/pico/pico-sdk/lib/lwip/src/include/lwip/prot/icmp.h \
+  /home/shob/Desktop/acads/EE344/Software/RP2040_code/generated/ws2812.pio.h
 
 CMakeFiles/sensing_unit.dir/opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj: /opt/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c \
   /usr/include/newlib/assert.h \
@@ -11225,16 +11230,6 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h:
 
 /opt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c:
 
-/opt/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h:
-
-/opt/pico/pico-sdk/src/rp2_common/pico_malloc/include/pico/malloc.h:
-
-/opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pio.h:
-
-/opt/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pio.h:
-
-/opt/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h:
-
 /opt/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c:
 
 /opt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c:
@@ -11415,14 +11410,6 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h:
 
 /opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c:
 
-/opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c:
-
-/opt/pico/pico-sdk/src/common/pico_time/time.c:
-
-/opt/pico/pico-sdk/src/common/pico_sync/mutex.c:
-
-/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.c:
-
 /opt/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.c:
 
 /opt/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c:
@@ -11450,6 +11437,14 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h:
 /opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c:
 
 /opt/pico/pico-sdk/lib/lwip/src/include/netif/lowpan6_opts.h:
+
+/opt/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/mpu.h:
+
+/opt/pico/pico-sdk/lib/lwip/src/include/netif/lowpan6.h:
+
+/opt/pico/pico-sdk/src/rp2_common/hardware_resets/include/hardware/resets.h:
+
+/opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6.c:
 
 /opt/pico/pico-sdk/lib/lwip/src/include/lwip/dhcp.h:
 
@@ -11542,6 +11537,16 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h:
 /usr/include/newlib/sys/timespec.h:
 
 /opt/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h:
+
+/opt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c:
+
+/opt/pico/pico-sdk/src/common/pico_time/time.c:
+
+/opt/pico/pico-sdk/src/common/pico_sync/mutex.c:
+
+/opt/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.c:
+
+/home/shob/Desktop/acads/EE344/Software/RP2040_code/generated/ws2812.pio.h:
 
 /usr/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h:
 
@@ -11657,6 +11662,10 @@ generated/pico_base/pico/config_autogen.h:
 
 /home/shob/Desktop/acads/EE344/Software/RP2040_code/bme280.c:
 
+/opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c:
+
+/opt/pico/pico-sdk/lib/lwip/src/include/lwip/prot/icmp.h:
+
 /opt/pico/pico-sdk/src/common/pico_base/include/pico/types.h:
 
 /opt/pico/pico-sdk/lib/tinyusb/src/device/dcd.h:
@@ -11759,6 +11768,8 @@ generated/pico_base/pico/config_autogen.h:
 
 /opt/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h:
 
+/opt/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pio.h:
+
 /opt/pico/pico-sdk/lib/lwip/src/include/lwip/ip4_addr.h:
 
 /opt/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c:
@@ -11778,6 +11789,10 @@ generated/pico_base/pico/config_autogen.h:
 /opt/pico/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h:
 
 /opt/pico/pico-sdk/lib/lwip/src/include/lwip/timeouts.h:
+
+/opt/pico/pico-sdk/lib/lwip/src/netif/ethernet.c:
+
+generated/pico_base/pico/version.h:
 
 /opt/pico/pico-sdk/src/rp2_common/pico_float/float_math.c:
 
@@ -11854,6 +11869,14 @@ generated/pico_base/pico/config_autogen.h:
 /opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/vreg_and_chip_reset.h:
 
 /opt/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/clocks.h:
+
+/opt/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h:
+
+/opt/pico/pico-sdk/src/rp2_common/pico_malloc/include/pico/malloc.h:
+
+/opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pio.h:
+
+/opt/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h:
 
 /home/shob/Desktop/acads/EE344/Software/RP2040_code/tcp_server.h:
 
@@ -12090,19 +12113,3 @@ generated/pico_base/pico/config_autogen.h:
 /opt/pico/pico-sdk/src/rp2_common/pico_float/include/pico/float.h:
 
 /opt/pico/pico-sdk/lib/lwip/src/core/udp.c:
-
-/opt/pico/pico-sdk/src/rp2_common/hardware_resets/include/hardware/resets.h:
-
-/opt/pico/pico-sdk/lib/lwip/src/netif/lowpan6.c:
-
-/opt/pico/pico-sdk/lib/lwip/src/include/lwip/prot/icmp.h:
-
-/opt/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c:
-
-generated/pico_base/pico/version.h:
-
-/opt/pico/pico-sdk/lib/lwip/src/netif/ethernet.c:
-
-/opt/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/mpu.h:
-
-/opt/pico/pico-sdk/lib/lwip/src/include/netif/lowpan6.h:

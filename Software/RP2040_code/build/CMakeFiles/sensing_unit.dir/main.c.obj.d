@@ -120,6 +120,10 @@ CMakeFiles/sensing_unit.dir/main.c.obj: \
  /opt/pico/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h \
  /opt/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/clocks.h \
  /opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h \
+ /opt/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h \
+ /opt/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pio.h \
+ /opt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pio.h \
+ /opt/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h \
  /home/shob/Desktop/acads/EE344/Software/RP2040_code/ADE9000API_RP2040.h \
  /home/shob/Desktop/acads/EE344/Software/RP2040_code/ADE9000RegMap.h \
  /home/shob/Desktop/acads/EE344/Software/RP2040_code/lwipopts.h \
@@ -131,4 +135,5 @@ CMakeFiles/sensing_unit.dir/main.c.obj: \
  /opt/pico/pico-sdk/lib/lwip/src/include/lwip/tcp.h \
  /opt/pico/pico-sdk/lib/lwip/src/include/lwip/tcpbase.h \
  /opt/pico/pico-sdk/lib/lwip/src/include/lwip/icmp.h \
- /opt/pico/pico-sdk/lib/lwip/src/include/lwip/prot/icmp.h
+ /opt/pico/pico-sdk/lib/lwip/src/include/lwip/prot/icmp.h \
+ /home/shob/Desktop/acads/EE344/Software/RP2040_code/generated/ws2812.pio.h
