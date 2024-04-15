@@ -25,8 +25,7 @@ TCP_SERVER_T* tcp_server_init(void) {
     return state;
 }
 
-err_t tcp_server_close(void *arg) {
-    TCP_SERVER_T *state = (TCP_SERVER_T*)arg;
+err_t tcp_server_close(TCP_SERVER_T *state) {
     err_t err = ERR_OK;
     if (state->client_pcb != NULL) {
         tcp_arg(state->client_pcb, NULL);
@@ -67,25 +66,25 @@ err_t tcp_server_sent(void *arg, struct tcp_pcb *tpcb, u16_t len) {
     DEBUG_printf("tcp_server_sent %u\n", len);
     state->sent_len += len;
 
-    if (state->sent_len >= BUF_SIZE) {
+    /*if (state->sent_len >= BUF_SIZE) {
 
         // We should get the data back from the client
         state->recv_len = 0;
         DEBUG_printf("Waiting for buffer from client\n");
-    }
+    }*/
 
     return ERR_OK;
 }
 
-err_t tcp_server_send_data(void *arg, struct tcp_pcb *tpcb)
+err_t tcp_server_send_data(TCP_SERVER_T *state, struct tcp_pcb *tpcb, uint buffer_size)
 {
-    TCP_SERVER_T *state = (TCP_SERVER_T*)arg;
+    //TCP_SERVER_T *state = (TCP_SERVER_T*)arg;
     /*for(int i=0; i< BUF_SIZE; i++) {
         state->buffer_sent[i] = rand();
     }*/
 
     state->sent_len = 0;
-    DEBUG_printf("Writing %ld bytes to client\n\n", BUF_SIZE);
+    DEBUG_printf("Writing %ld bytes to client\n\n", buffer_size);
     // this method is callback from lwIP, so cyw43_arch_lwip_begin is not required, however you
     // can use this method to cause an assertion in debug mode, if this method is called when
     // cyw43_arch_lwip_begin IS needed
@@ -93,13 +92,13 @@ err_t tcp_server_send_data(void *arg, struct tcp_pcb *tpcb)
     //DEBUG_printf("Acquired all locks now\n");
     cyw43_arch_lwip_check();
     //DEBUG_printf("We have gotten past the lwip check\n");
-    err_t err = tcp_write(tpcb, state->buffer_sent, BUF_SIZE, TCP_WRITE_FLAG_COPY);
+    err_t err = tcp_write(tpcb, state->buffer_sent, buffer_size, TCP_WRITE_FLAG_COPY);
     err_t err_o = tcp_output(tpcb);
     //DEBUG_printf("We have gotten past the write statement\n");
     cyw43_arch_lwip_end();
     if (err != ERR_OK) {
         DEBUG_printf("Failed to write data %d\n", err);
-        if (err == ERR_CONN) {
+        /*if (err == ERR_CONN) {
             // no connection
             return tcp_restart(arg);
         } else if (err == ERR_RST) {
@@ -107,11 +106,12 @@ err_t tcp_server_send_data(void *arg, struct tcp_pcb *tpcb)
             return ERR_OK;
         } else {
             return tcp_server_result(arg, -1);
-        }
+        }*/
+        return err;
     }
     if (err_o != ERR_OK) {
         DEBUG_printf("Failed to output data %d\n", err_o);
-        return tcp_server_result(arg, -1);
+        return err;
     }
     
     return ERR_OK;
@@ -182,11 +182,16 @@ err_t tcp_server_poll(void *arg, struct tcp_pcb *tpcb) {
     return ERR_OK;
 }
 
-err_t tcp_restart(void *arg) {
+err_t tcp_restart(TCP_SERVER_T *state) {
     DEBUG_printf("No client connected, restarting server\n");
     // If there is no response we will restart the server
-    TCP_SERVER_T *state = (TCP_SERVER_T*)arg;
-    tcp_server_close(arg);
+
+    tcp_server_close(state);
+
+    sleep_ms(2000);  
+
+    //TCP_SERVER_T *state_new = tcp_server_init(); // Get new server struct
+    //if (!state_new) { return -1;}
 
     if (!tcp_server_open(state, TCP_PORT)) { // Open the server to connections and wait for someone to connect
         printf("\nFailed to open TCP server. Exiting program\n");

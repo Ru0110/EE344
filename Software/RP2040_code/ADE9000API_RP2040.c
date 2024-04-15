@@ -174,7 +174,7 @@ void SPI_Burst_Read_Fixed_Rate(spi_inst_t *spi,
 	uint16_t i;
     uint16_t temp_address;
     temp_address = ((Address << 4) & 0xFFF0)+8;
-	uint16_t readData[14];
+	uint16_t readData[12];
 
 	gpio_put(cs_pin, 0);
 
@@ -189,14 +189,13 @@ void SPI_Burst_Read_Fixed_Rate(spi_inst_t *spi,
         //spi_read16_blocking(spi, 0, &(ResampledData->IC_Resampled[i]), 1);
         //spi_read16_blocking(spi, 0, &(ResampledData->VC_Resampled[i]), 1);
         //spi_read16_blocking(spi, 0, &(ResampledData->IN_Resampled[i]), 1);
-		spi_read16_blocking(spi, 0, readData, 14);
+		spi_read16_blocking(spi, 0, readData, 12);
 		Data->IA_waveform[i] = (readData[0] << 16) + readData[1];
 		Data->VA_waveform[i] = (readData[2] << 16) + readData[3];
 		Data->IB_waveform[i] = (readData[4] << 16) + readData[5];
 		Data->VB_waveform[i] = (readData[6] << 16) + readData[7];
 		Data->IC_waveform[i] = (readData[8] << 16) + readData[9];
 		Data->VC_waveform[i] = (readData[10] << 16) + readData[11];
-		Data->IN_waveform[i] = (readData[12] << 16) + readData[13];
 	}
 
 	gpio_put(cs_pin, 1);

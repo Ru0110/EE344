@@ -81,7 +81,7 @@
 
 /* GAIN CONSTANTS CALCULATED FOR EVAL BOARD */
 #define voltage_gain 566.307/(double)ADE9000_RMS_FULL_SCALE_CODES // 0.707*801/full_scale_code
-#define current_gain 35.35/(double)ADE9000_RMS_FULL_SCALE_CODES  // 0.707*2000/(10.2*full_scale_code)
+#define current_gain 44.1875/(double)ADE9000_RMS_FULL_SCALE_CODES  // 0.707*2500/(2*20*full_scale_code)
 #define power_gain 20018.95/(double)ADE9000_WATT_FULL_SCALE_CODES  // 78327/full_scale_code
 #define resampling_gain 801.0/(double)ADE9000_RESAMPLED_FULL_SCALE_CODES // 801/full_scale_code
 
@@ -98,24 +98,23 @@ extern uint32_t ADE9000_Eeprom_CalibrationRegAddress[CALIBRATION_CONSTANTS_ARRAY
 ****************************************************************************************************************/
 
 typedef struct ResampledWfbData {
-    int16_t VA_Resampled[WFB_ELEMENT_ARRAY_SIZE];
-    int16_t IA_Resampled[WFB_ELEMENT_ARRAY_SIZE];
-    int16_t VB_Resampled[WFB_ELEMENT_ARRAY_SIZE];
-    int16_t IB_Resampled[WFB_ELEMENT_ARRAY_SIZE];
-    int16_t VC_Resampled[WFB_ELEMENT_ARRAY_SIZE];
-    int16_t IC_Resampled[WFB_ELEMENT_ARRAY_SIZE];
-    int16_t IN_Resampled[WFB_ELEMENT_ARRAY_SIZE];
+    int16_t VA_Resampled[512];
+    int16_t IA_Resampled[512];
+    int16_t VB_Resampled[512];
+    int16_t IB_Resampled[512];
+    int16_t VC_Resampled[512];
+    int16_t IC_Resampled[512];
+    int16_t IN_Resampled[512];
 } ResampledWfbData;
 
-typedef struct WaveformData {
-    int32_t IA_waveform[WFB_ELEMENT_ARRAY_SIZE];
-    int32_t VA_waveform[WFB_ELEMENT_ARRAY_SIZE];
-    int32_t IB_waveform[WFB_ELEMENT_ARRAY_SIZE];
-    int32_t VB_waveform[WFB_ELEMENT_ARRAY_SIZE];
-    int32_t IC_waveform[WFB_ELEMENT_ARRAY_SIZE];
-    int32_t VC_waveform[WFB_ELEMENT_ARRAY_SIZE];
-    int32_t IN_waveform[WFB_ELEMENT_ARRAY_SIZE];
-
+// Does not read IN btw
+typedef struct WaveformData { 
+    int32_t IA_waveform[128];
+    int32_t VA_waveform[128];
+    int32_t IB_waveform[128];
+    int32_t VB_waveform[128];
+    int32_t IC_waveform[128];
+    int32_t VC_waveform[128];
 } WaveformData;
 
 typedef struct ActivePowerRegs {

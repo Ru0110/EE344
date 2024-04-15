@@ -21,7 +21,7 @@ if len(sys.argv) < 2:
 SERVER_ADDR = sys.argv[1]
 
 # These constants should match the server
-BUF_SIZE = 1084 
+BUF_SIZE = 1024 + 60
 SERVER_PORT = 4242
 TEST_ITERATIONS = 50
 

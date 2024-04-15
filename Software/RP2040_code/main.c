@@ -17,7 +17,8 @@
 #include "tcp_server.h"
 #include "ws2812.pio.h"
 
-#define DELAY_CONN 400
+//hellooooo
+#define DELAY_CONN 10000
 #define DELAY_NOCONN 2000
 
 /* NEOPIXEL DEFINITIONS */
@@ -38,7 +39,7 @@ uint32_t event_end = 0;
 uint32_t event_status;
 
 /* SPI DEFINITIONS */
-#define SPI_SPEED 5000000  //1 MHz 
+#define SPI_SPEED 5000000  //10 MHz 
 #define SCK_PIN 18
 #define MOSI_PIN 19
 #define MISO_PIN 16
@@ -84,13 +85,20 @@ typedef struct {            // to faciliate sensor data transfer
     float Pressure;
     float Humidity;
     uint32_t emergency;     // From LSB: (DipA)(DipB)(SwellA)(SwellB)(OIA)(OIB)(Temp)(Pressure)(Humidity)(NoLoadA)(NoLoadB)
-    int32_t waveform_buffer[WFB_ELEMENT_ARRAY_SIZE];
+    int32_t waveform_buffer1[128*8]; // Eight consecutive readings of the waveform buffer
+    //int32_t waveform_buffer2[WFB_ELEMENT_ARRAY_SIZE];
+    //int32_t waveform_buffer3[WFB_ELEMENT_ARRAY_SIZE];
+    //int32_t waveform_buffer4[WFB_ELEMENT_ARRAY_SIZE];
+    int16_t resampled_VA[512];
+    int16_t resampled_IA[512];
+    int16_t resampled_VB[512];
+    int16_t resampled_IB[512];
 } sensorData;
 
 #define DATA_SIZE sizeof(sensorData)
 
 // Data structures and sensor objects
-//ResampledWfbData resampledData; // Resampled Data
+ResampledWfbData resampledData; // Resampled Data
 WaveformData FixedWaveformData; // Fized rate data from waveform
 ActivePowerRegs powerRegs;     // Declare powerRegs of type ActivePowerRegs to store Active Power Register data
 CurrentRMSRegs curntRMSRegs;   //Current RMS
@@ -152,6 +160,7 @@ static int scan_result(void *env, const cyw43_ev_scan_result_t *result) {
     return 0;
 }
 
+/* Read normal data */
 void getData () {
     count += 1;
     curr_time = to_ms_since_boot(get_absolute_time());
@@ -165,13 +174,6 @@ void getData () {
     ReadVoltageRMSRegs(spi, CS_PIN, &vltgRMSRegs);
     ReadPowerFactorRegsnValues(spi, CS_PIN, &pfData);
     ReadPeriodRegsnValues(spi, CS_PIN, &freqData);
-
-    /*Read Waveform data*/
-    SPI_Write_16(spi, CS_PIN, ADDR_WFB_CFG, 0x1000); // Stop waveform sampling
-    SPI_Write_16(spi, CS_PIN, ADDR_WFB_CFG, 0x1220); // Store the fixed data rate values from sinc4 + LPF
-    SPI_Write_16(spi, CS_PIN, ADDR_WFB_CFG, 0x1230); // Start sampling
-    sleep_ms(200); //approximate time to fill the waveform buffer with 4 line cycles  
-    SPI_Burst_Read_Fixed_Rate(spi, CS_PIN, 0x800, WFB_ELEMENT_ARRAY_SIZE, &FixedWaveformData);   // Burst read function
 
     // Update data struct
     data.time = curr_time;
@@ -189,15 +191,84 @@ void getData () {
     data.Pressure = r.pressure;
     data.Humidity = r.humidity;
     data.emergency = 0;
-    memcpy(data.waveform_buffer, FixedWaveformData.VA_waveform, WFB_ELEMENT_ARRAY_SIZE*4); // each entry is four bytes long
+}
+
+/*Read Waveform data in fixed data rate mode*/
+void getWaveForm() {
+
+    uint32_t mask0_init;
+    uint32_t status0_init;
+    uint32_t last_filled_addr;
+
+    char count = 0;
+
+    // TODO: MAKE CONTINUOUS SAMPLING
+    SPI_Write_16(spi, CS_PIN, ADDR_WFB_CFG, 0x1000); // Stop waveform sampling
+
+    mask0_init = SPI_Read_32(spi, CS_PIN, ADDR_MASK0);
+    status0_init = SPI_Read_32(spi, CS_PIN, ADDR_STATUS0);
+    printf("STATUS0 before waveform read: %u\n", status0_init);
+    printf("MASK0 before waveform read: %u\n", mask0_init);
+    SPI_Write_32(spi, CS_PIN, ADDR_STATUS0, 0); // Clear interrupts
+    SPI_Write_32(spi, CS_PIN, ADDR_MASK0, 0);
+    sleep_ms(10);
+    SPI_Write_32(spi, CS_PIN, ADDR_MASK0, (1 << 17)); // Enable page full interrupt for waveform buffer
+    SPI_Write_16(spi, CS_PIN, ADDR_WFB_PG_IRQEN, 0x8080); // Enable interrupts on page 7 and 15
+
+    SPI_Write_16(spi, CS_PIN, ADDR_RUN,ADE9000_RUN_ON); //DSP ON
+    //SPI_Write_16(spi, CS_PIN, ADDR_WFB_CFG, 0x1220); // Store the fixed data rate values from sinc4 + LPF
+    //SPI_Write_16(spi, CS_PIN, ADDR_WFB_CFG, 0x1230); // Start sampling
+    SPI_Write_16(spi, CS_PIN, ADDR_WFB_CFG, 0x03F0); // Read continuous fixed rate data from all channels except IN
+
+    while (count < 8) {
+        if ((SPI_Read_32(spi, CS_PIN, ADDR_STATUS0) & (1 << 17))) { // Trigger hua
+            SPI_Write_16(spi, CS_PIN, ADDR_WFB_CFG, 0x1000); // STOP
+            printf("STATUS0: %u\n", SPI_Read_32(spi, CS_PIN, ADDR_STATUS0));
+            last_filled_addr = (SPI_Read_32(spi, CS_PIN, ADDR_WFB_TRG_STAT) & 0xF000) >> 12;
+            printf("Last filled page is %u\n", last_filled_addr);
+            if (last_filled_addr == 15) { // last page filled is page 15
+                SPI_Burst_Read_Fixed_Rate(spi, CS_PIN, 0xC00, 128, &FixedWaveformData);
+                printf("Read from page 8-15\n");
+            } else { // last page filled is 15
+                SPI_Burst_Read_Fixed_Rate(spi, CS_PIN, 0x800, 128, &FixedWaveformData);
+                printf("Read from page 0-7\n");
+            }
+            memcpy(&(data.waveform_buffer1[128*count]), &(FixedWaveformData.VA_waveform[0]), 128*4);
+            SPI_Write_32(spi, CS_PIN, ADDR_STATUS0, 0); // clear interrupt
+            SPI_Write_16(spi, CS_PIN, ADDR_WFB_CFG, 0x03F0); // start sampling again
+            count++;
+        }
+        sleep_ms(1);
+    }
+
+    SPI_Write_16(spi, CS_PIN, ADDR_WFB_CFG, 0x1000); // Stop waveform sampling
+    SPI_Write_32(spi, CS_PIN, ADDR_STATUS0, 0x00000000); // Clear interrupts
+    SPI_Write_32(spi, CS_PIN, ADDR_MASK0, mask0_init); // Restore mask0
+    printf("MASK0 after waveform read: %u\n", SPI_Read_32(spi, CS_PIN, ADDR_MASK0));
+}
+
+/*Read Waveform data in fixed data rate mode*/
+void getResampledWaveform() {
+    SPI_Write_16(spi, CS_PIN, ADDR_WFB_CFG, 0x1000); // Stop waveform sampling
+    SPI_Write_16(spi, CS_PIN, ADDR_RUN,ADE9000_RUN_ON); //DSP ON
+    SPI_Write_16(spi, CS_PIN, ADDR_WFB_CFG, 0x1010);  //Start sampling
+    sleep_ms(200); // Time to fill waveform bufer
+    SPI_Burst_Read_Resampled_Wfb(spi, CS_PIN, 0x800, 512, &resampledData);
+    SPI_Write_16(spi, CS_PIN, ADDR_WFB_CFG, 0x1000); // Stop waveform sampling
+
+    // update data struct
+    memcpy(&(data.resampled_IA[0]), &(resampledData.IA_Resampled[0]), 1024);
+    memcpy(&(data.resampled_VA[0]), &(resampledData.VA_Resampled[0]), 1024);
+    memcpy(&(data.resampled_IB[0]), &(resampledData.IB_Resampled[0]), 1024);
+    memcpy(&(data.resampled_VB[0]), &(resampledData.VB_Resampled[0]), 1024);
 }
 
 void printWaveformBuffer() {
     printf("\n==========Waveform buffer============\n");
     uint32_t temp;
-    for(temp=0;temp<WFB_ELEMENT_ARRAY_SIZE;temp++)
+    for(temp=0;temp<512;temp++)
         {
-        printf("VA: %d\n", data.waveform_buffer[temp]);
+        printf("VA: %d\n", data.resampled_VA[temp]);
         //printf("IA: %f\n", resampledData.IA_Resampled[temp]);
         //printf("VB: %d\n", resampledData.VB_Resampled[temp]);
         //printf("IB: %d\n", resampledData.IB_Resampled[temp]);
@@ -461,6 +532,9 @@ int main() {
     //printf("Initial VERSION: %d\n", SPI_Read_16(spi, CS_PIN, ADDR_VERSION));
     printf("Initial STATUS1: %d\n", SPI_Read_16(spi, CS_PIN, ADDR_STATUS1));
 
+    //SPI_Write_32(spi,CS_PIN, ADDR_STATUS0, 0xFFFFFFFF);
+    //SPI_Write_32(spi,CS_PIN, ADDR_STATUS1, 0xFFFFFFFF);
+
     /* BME280 configs */
     bme280_init_struct(&bme280, i2c, 0x76, &pico_callbacks_blocking);
     bme280_init(&bme280);
@@ -522,31 +596,76 @@ int main() {
     //SPI_Write_32(spi, CS_PIN, ADDR_MASK1, MASK1_USER); 
     //SPI_Write_32(spi, CS_PIN, ADDR_EVENT_MASK, EVENTMASK_USER);
 
-    put_pixel(urgb_u32(0, 0x80, 0)); // green. Can now connect
+    put_pixel(urgb_u32(0x80, 0x80, 0)); // yellow. Can now connect
 
 
     // Loop forever
     while (true) {
         if (state->client_pcb) {
+            put_pixel(urgb_u32(0,0x80, 0)); //green, connected
             getData();
+            //getWaveForm();
+            getResampledWaveform();
             printData();
-            // Copy contents to send buffer
-            memcpy(state->buffer_sent, &data, DATA_SIZE);
+            //printWaveformBuffer();
+            printf("Sending data...\n");
+
             /* printf("Elements of send buffer: ");
             for (int i = 0; i<DATA_SIZE; i++) {
                 printf("%hhu ", state->buffer_sent[i]);
             }*/
-            printf("Sending data...\n");
-            tcp_server_send_data(state, state->client_pcb);
+
+            // First send 60
+            //memcpy(&(state->buffer_sent[0]), &data, 60);
+            //tcp_server_send_data(state, state->client_pcb, 60);
+            //sleep_ms(500);
+
+            bool send_success = false;
+            char i;
+            err_t send_error;
+
+            if (state -> client_pcb) {
+                memcpy(&(state->buffer_sent[0]), &(data), 60);
+                send_error = tcp_server_send_data(state, state->client_pcb, 60);
+                if (send_error != ERR_OK) {
+                        put_pixel(urgb_u32(0x80, 0, 0));
+                        tcp_restart(state);
+                    } else {
+                        send_success = true;
+                    }
+                    sleep_ms(500);
+            }
+
+            for (i = 0; i<2; i++) {
+                if (state->client_pcb){
+                    memcpy(&(state->buffer_sent[0]), &(data.resampled_VA[256*i]), 512);
+                    send_error = tcp_server_send_data(state, state->client_pcb, 512);
+                    if (send_error != ERR_OK) {
+                        put_pixel(urgb_u32(0x80, 0, 0));
+                        tcp_restart(state);
+                        break;
+                    } else {
+                        send_success = true;
+                    }
+                    sleep_ms(500);
+                }
+            }
+
+            if (!send_success) {
+                tcp_restart(state);
+            } else {
+                printf("Data sent!\n");
+            }
+
             sleep_ms(DELAY_CONN);
+
         } else {
-        //getData(state);
+            put_pixel(urgb_u32(0x80, 0x80, 0)); // yellow, ready to connect
             getData();
+            //getWaveForm();
+            getResampledWaveform();
             printData();
             //printWaveformBuffer();
-            //printf("STATUS0: %u\n", SPI_Read_32(spi, CS_PIN, ADDR_STATUS0));
-            //printf("STATUS1: %u\n", SPI_Read_32(spi, CS_PIN, ADDR_STATUS1));
-            //printf("Not yet connected to client oops\n");
             printf("Connect to %s:%u\n\n", ip4addr_ntoa(netif_ip4_addr(netif_list)), TCP_PORT);
             sleep_ms(DELAY_NOCONN);
         }

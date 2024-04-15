@@ -9,7 +9,7 @@
 
 #define TCP_PORT 4242
 #define DEBUG_printf printf
-#define BUF_SIZE 1084
+#define BUF_SIZE 512
 #define TEST_ITERATIONS 10
 #define POLL_TIME_S 3
 
@@ -25,14 +25,14 @@ typedef struct TCP_SERVER_T_ {
 } TCP_SERVER_T;
 
 TCP_SERVER_T* tcp_server_init(void);
-err_t tcp_server_close(void *arg);
+err_t tcp_server_close(TCP_SERVER_T *state);
 err_t tcp_server_result(void *arg, int status);
 err_t tcp_server_sent(void *arg, struct tcp_pcb *tpcb, u16_t len);
-err_t tcp_server_send_data(void *arg, struct tcp_pcb *tpcb);
+err_t tcp_server_send_data(TCP_SERVER_T *state, struct tcp_pcb *tpcb, uint buffer_size);
 err_t tcp_server_recv(void *arg, struct tcp_pcb *tpcb, struct pbuf *p, err_t err);
 err_t tcp_server_poll(void *arg, struct tcp_pcb *tpcb);
 void tcp_server_err(void *arg, err_t err);
 err_t tcp_server_accept(void *arg, struct tcp_pcb *client_pcb, err_t err);
 bool tcp_server_open(TCP_SERVER_T *state, uint port);
-err_t tcp_restart(void *arg);
+err_t tcp_restart(TCP_SERVER_T *state);
 //void run_tcp_server_test(void);

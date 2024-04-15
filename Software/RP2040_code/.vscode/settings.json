@@ -3,6 +3,7 @@
     "files.associations": {
         "i2c.h": "c",
         "tcp.h": "c",
-        "cyw43_arch.h": "c"
+        "cyw43_arch.h": "c",
+        "lwipopts.h": "c"
     }
 }
