@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <title>EDL Project - TUE01</title>
+</head>
+<body>
+  <nav class="container-fluid">
+    <ul>
+      <li><strong>EDL Project - TUE01</strong></li>
+    </ul>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Project Documentation</a></li>
+      <!--li><a href="#" role="button">Contact Us</a></li-->
+    </ul>
+  </nav>
+  <main class="container">
+    <div class="grid">
+      <section>
+        <hgroup>
+          <h2>Dynamic BME280 & ADE9000 Data Exploration: Interactive Visualizations</h2>
+          <h3></h3>
+        </hgroup>
+        <p>Temperature readings from last 10 minutes.</p>
+        <figure>
+          <iframe src="https://charts.mongodb.com/charts-project-0-ufwkc/embed/charts?id=661a9a8d-235e-427a-8108-03a4b72d1de6&maxDataAge=60&theme=light&autoRefresh=true" title="MongoDB Chart" style="width:100%; height:600px; max-width:1000px; max-height:600px;" frameborder="0">
+          </iframe>
+          <figcaption>BME280 - sensor data</figcaption>
+        </figure>
+        <!-- Additional MongoDB plot -->
+        <p>Relative Humidity readings from last 10 minutes.</p>
+        <figure>
+          <iframe src="https://charts.mongodb.com/charts-project-0-ufwkc/embed/charts?id=661a9ccb-4ab3-48be-8a9c-977a76278d7d&maxDataAge=60&theme=light&autoRefresh=true" title="MongoDB Chart" style="width:100%; height:600px; max-width:1000px; max-height:600px;" frameborder="0">
+          </iframe>
+          <figcaption>BME280 - sensor data</figcaption>
+        </figure>
+        <p>RMS Voltage readings from last 10 minutes.</p>
+        <figure>
+          <iframe src="https://charts.mongodb.com/charts-project-0-ufwkc/embed/charts?id=da8d2fde-e84f-4e6d-8881-2f28d385e60b&maxDataAge=60&theme=light&autoRefresh=true" title="MongoDB Chart" style="width:100%; height:600px; max-width:1000px; max-height:600px;" frameborder="0">
+          </iframe>
+          <figcaption>ADE9000 - sensor data</figcaption>
+        </figure>
+        <p>RMS Current readings from last 10 minutes.</p>
+        <figure>
+          <iframe src="https://charts.mongodb.com/charts-project-0-ufwkc/embed/charts?id=1241bbad-eb47-44e0-9c14-377ed11b4297&maxDataAge=60&theme=light&autoRefresh=true" title="MongoDB Chart" style="width:100%; height:600px; max-width:1000px; max-height:600px;" frameborder="0">
+          </iframe>
+          <figcaption>ADE9000 - sensor data</figcaption>
+        </figure>
+        </figure>
+        <p>Power readings from last 10 minutes.</p>
+        <figure>
+          <iframe src="https://charts.mongodb.com/charts-project-0-ufwkc/embed/charts?id=fd02e85c-1106-4e85-911c-ce9f5df09398&maxDataAge=60&theme=light&autoRefresh=true" title="MongoDB Chart" style="width:100%; height:600px; max-width:1000px; max-height:600px;" frameborder="0">
+          </iframe>
+          <figcaption>ADE9000 - sensor data</figcaption>
+        </figure>
+        </figure>
+        <!-- Real-time plot from local server -->
+        <p>Real-time plot of Voltage values and it's Periodogram.</p>
+        <figure>
+          <img src="http://localhost:8000/plot_realtime.png" alt="Real-time Plot">
+          <figcaption>Last updated: <span id="lastUpdated"></span></figcaption>
+        </figure>
+      </section>
+    </div>
+  </main>
+  <footer class="container">
+    <small><a href="#">Privacy Policy</a> • <a href="#">Terms of Use</a></small>
+  </footer>
+  <script>
+    document.getElementById('lastUpdated').textContent = new Date().toLocaleTimeString();
+    setInterval(() => {
+      const imageElement = document.querySelector('img');
+      const src = imageElement.src;
+      imageElement.src = src.split('?')[0] + '?' + new Date().getTime();
+    }, 5000); // Update the image source every 5 seconds to avoid cache issues
+  </script>
+</body>
+</html>
