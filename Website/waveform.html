@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="5"> <!-- Page refreshes every 5 seconds -->
+    <title>Local Real-time Plot Display</title>
+    <link href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" rel="stylesheet">
+</head>
+<body>
+    <main class="container">
+        <h1>Real-time Volatage values and Periodogram</h1>
+        <figure>
+            <img src="http://localhost:8000/Waveform_plot.png" alt="Real-time Plot">
+            <figcaption>Last updated: <span id="lastUpdated"></span></figcaption>
+        </figure>
+    </main>
+
+    <script>
+        document.getElementById('lastUpdated').textContent = new Date().toLocaleTimeString();
+        setInterval(() => {
+            const imageElement = document.querySelector('img');
+            const src = imageElement.src;
+            imageElement.src = src.split('?')[0] + '?' + new Date().getTime();
+        }, 5000); // Update the image source every 5 seconds to avoid cache issues
+    </script>
+</body>
+</html>
