@@ -1,26 +1,46 @@
-import matplotlib.pyplot as plt 
-import numpy as np 
+from pymongo import MongoClient
+import numpy as np
+import matplotlib.pyplot as plt
 from scipy.fft import fft
 
-numpy_waveform = np.array(list(map(float, open("sample_waveform.txt").read().splitlines())))
-#data = data*801/18196
-print("Max reading:", np.max(numpy_waveform))
-print("Min reading:", np.min(numpy_waveform))
+while True:
 
-# Given parameters
-sampling_rate = 8000  # Sampling rate in Hz
+    conn_string = ""  # Provide the connection string unique to each user accessing the database
+    client = MongoClient(conn_string) 
 
-signal_fft = fft(numpy_waveform)
+    db = client['SensorData']  
+    collection = db['Waveform']  
 
-# Calculate frequency bins with the given sampling rate
-fft_freqs = np.fft.fftfreq(n=numpy_waveform.size, d=1/sampling_rate)
+    signal = []
+    time = []
+    for document in collection.find():
+        signal.append(document['Waveform Buffer'])
+        time.append(document['Time'])
 
-# Plotting Periodogram with the known sampling rate
-plt.figure(figsize=(12, 6))
-plt.plot(fft_freqs, np.abs(signal_fft))
-plt.title('Periodogram with Sampling Rate of 8,000 Hz')
-plt.xlabel('Frequency [Hz]')
-plt.ylabel('Magnitude')
-plt.xlim([0, 100])  # Display up to Nyquist frequency
-plt.grid(True)
-plt.show()
+    numpy_waveform = np.array(signal[-1])
+    time_rn = str(time[-1])
+
+    # Given parameters
+    sampling_rate = 6400  # Sampling rate in Hz
+    signal_fft = fft(numpy_waveform)
+
+    # Calculate frequency bins with the given sampling rate
+    fft_freqs = np.fft.fftfreq(n=numpy_waveform.size, d=1/sampling_rate)
+
+    # Plotting Periodogram with the known sampling rate
+    fig, ax = plt.subplots(2, 1, figsize = (12, 8))
+
+    ax[0].plot(fft_freqs, np.abs(signal_fft))
+    ax[0].set_title(f'Periodogram and Voltage values sampled at Time: {time_rn}')
+    ax[0].set_xlabel('Frequency [Hz]')
+    ax[0].set_ylabel('Magnitude')
+    ax[0].set_xlim([0, 150])  
+    ax[0].grid(True)
+
+    ax[1].plot(numpy_waveform)
+    ax[1].set_xlabel('Timestamps')
+    ax[1].set_ylabel('Volatge')
+    ax[1].grid(True)
+    #plt.show()
+
+    fig.savefig('Waveform_plot.png')
