@@ -1,0 +1,45 @@
+iframe {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Updated responsive iframe styling to accommodate larger charts */
+iframe {
+  height: auto;
+  width: 100%;
+  /* Adjusting max-width to 1000px to match your specified requirements */
+  max-width: 600px;
+  /* Ensuring iframes are centered and display correctly */
+  margin: 0 auto;
+  display: block;
+}
+
+/* Additional styling to ensure the rest of the page looks great */
+body, html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* Ensuring consistent font usage */
+}
+
+/* Styling for the main container to add some padding around the content */
+.main .container {
+  padding: 20px;
+}
+
+/* Enhancing navigation and footer for better visual appeal */
+nav.container-fluid, footer.container {
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Link styling for better visibility and interaction */
+a {
+  color: #007bff; /* A nice, visible blue */
+  text-decoration: none; /* Cleaner look without underlines */
+}
+
+a:hover {
+  text-decoration: underline; /* Adding interaction feedback */
+}
