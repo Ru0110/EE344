@@ -8,7 +8,7 @@ import pylab as pyl
 import time
 
 #unpacking_str = "fffffffffffi"
-unpacking_str = "ifffffffffffffi" + "i"*256
+unpacking_str = "ifffffffffffffi" + "s"*512
 print("Unpacking length: ", struct.calcsize(unpacking_str))
 received_params = ["Time (ms)", "RMS Voltage (V)", "VBrms", "RMS Current (A)", "IBrms", "Power (W)", "PowerB", "Power factor", "PfB", "Frequency (Hz)", "FrequencyB", "Temperature (C)", "Pressure (Pa)", "Humidity (%)", "Emergency Status"]
 not_needed = ["VBrms", "IBrms", "PowerB", "PfB", "FrequencyB"]
